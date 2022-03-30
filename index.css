@@ -14,13 +14,12 @@ body{
     color: white;
     padding: 25px;
     margin-top: 30px;
-    border-radius: 25px;
+    border-radius: 25px;                                                                                                                        
     width: 30%;
 }
 fieldset{
     border:3px solid cyan;
     border-radius: 25px;
-
 }
 legend{
     border: 1px solid dodgerblue;
