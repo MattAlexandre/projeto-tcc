@@ -1,12 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <title> forulario 02 </title>
 </head>
 <body>
+
+    <div class="box"> <!-- div form -->
+        <form action="process.html"> <!--- formulario -->
+            
+            <fieldset> <!-- topo forms -->
+                <legend> <!-- legenda topo -->
+                    <strong>formulario de cliente </strong>
+                </legend>
+
+                <!-- input Nome -->
+                <div class="inputBox">
+                    <input type="text" name="txtName" id="name" class="inputUser" required> <!-- input -->
+                    <label for="name" class="labelInput"> nome completo </label>                               <!-- name imput -->
+                </div> <br><br>
+
+                <!-- input email -->
+                <div class="inputBox">
+                    <input type="text" name="txtEmail" id="email" class="inputUser" required> 
+                    <label for="email" class="labelInput"> email </label>
+                </div><br><br>
+
+                <!-- telefone -->
+                <div class="inputBox">
+                    <input type="tel" name="txtNumber" id="number" class="inputUser" required>
+                    <label for="number" class="labelInput"> telefone </label>
+                </div><br>
+
+                <p>
+                    secho:
+                </p>
+                <div class="inputbox"> <!-- radius de seleção - genero -->
+
+                    <input type="radio" name="genero" id="masculino" value="masculino" required>
+                    <label for="masculino"> Masculinio </label><br><br>
+
+                    <input type="radio" name="genero" id="feminino" value="feminino" required>
+                    <label for="feminino"> Feminino </label><br><br>
+
+                    <input type="radio" name="genero" id="outro" value="outro" required>
+                    <label for="outro"> Outro </label><br><br>
+
+                </div><br><br>
+
+                <!-- data de nascimento -->
+                
+                    <label for="date" > <strong>Data de nascimento :</strong></label>
+                    <input type="date" name="txtDate" id="date"  required>
+                
+                <br><br>
+                <!-- cidade -->
+                <div class="inputBox">
+                    <input type="cidade" name="txtCity" id="city" class="inputUser" required>
+                    <label for="ciry" class="labelInput"> cidade </label>
+                </div><br><br>
+
+                <!-- estado -->
+                <div class="inputBox">
+                    <input type="text" name="txtstate" id="state" class="inputUser" required>
+                    <label for="state" class="labelInput"> estado </label>
+                </div><br><br>
+
+                <!-- endereço -->
+                <div class="inputBox">
+                    <input type="text" name="txtAddress" id="address" class="inputUser" required>
+                    <label for="address" class="labelInput"> telefone </label>
+                </div><br><br>
+
+                <!-- button enviar -->
+                <input type="button" value="enviar" name="sumbmit" id="submit">
+
+              
+
+
+            </fieldset>
+
+        </form>
+    </div>
+
+
     
 </body>
 </html>

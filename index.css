@@ -1,0 +1,81 @@
+body{
+    background-image: linear-gradient(to right , rgb(81, 81, 233) , rgb(21, 21, 126));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font: italic bold 15px 'arial';
+}
+.box{
+    position: absolute;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.76);
+    color: white;
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 25px;
+    width: 30%;
+}
+fieldset{
+    border:3px solid cyan;
+    border-radius: 25px;
+
+}
+legend{
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+background-image: linear-gradient(to right, blue,purple);
+    border-radius: 15px;
+}
+.inputBox{
+    position: relative;
+}
+.inputUser{
+    text-align: left;
+    background-color: rgba(30, 143, 255, 0);
+    border: none;
+    border-bottom: 2px solid white ;
+    outline: none;
+    color: white;
+    font-size: 1em;
+    width: 100%;
+    letter-spacing: 2px;
+}
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5px;
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+#date{
+    border: none;
+    padding:10px;
+    border-radius: 20px;
+    outline: none;
+    font-size: 1em;
+
+}
+#submit{
+    background-image: linear-gradient(to right, blue , purple);
+    outline:none;
+    width: 350px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+#submit:hover{
+    background-image: linear-gradient(to right, rgb(77, 77, 255),rgb(187, 42, 187));
+    color: black;
+}
