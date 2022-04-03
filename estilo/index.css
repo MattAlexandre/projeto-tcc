@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+/*inicializando a pagina com margin e padding sem formatação*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*declarando variaveis*/
+
+:root{
+
+    --font1: verdana, Geneva, tahoma, sans-serif;
+
+    --cor1:black;
+    --cor2:white;
+    --cor3:none;
+    --cor4:none;
+    --cor5:none;
+    --cor6:none;
+}
+
+
+/*seletor cabeçalho*/
+header{
+    background: black url('../imagens/img-01.jpeg') bottom center no-repeat fixed;
+    background-size: cover;
+    min-height: 150px;
+}
+
+
+/*seletor section do header*/
+header > section{
+    /*shorthand background*/
+    padding: 45px;
+}
+
+
+/*seletor do h1 da section do header*/
+header > section > h1{
+    /*shorthand font*/
+    font:italic bold 7.5vh var(--font1);
+    text-align: center;
+    margin-bottom: 20px ;
+}
+
+/*seletor do p da section do header*/
+header > section > p{
+    color: var(--cor1);
+    font:normal normal 1.5vw var(--font1);
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    max-width: 600px;
+}
+
+nav{
+    background-color: rgba(255, 255, 255, 0.411);
+    padding: 10px 0px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.555);
+}
+
+nav > a{
+    color: var(--cor1);
+    text-decoration: none;
+    margin: 0px 35px;
+    font:normal normal 1.5vw var(--font1);
+    transition-duration: 0.5s ;
+}
+
+nav > a:hover{
+    background-color: var(--cor1);
+    color: var(--cor2);
+    border-radius: 20px;
+    text-decoration: underline;
+    padding: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.438);
+
+}
