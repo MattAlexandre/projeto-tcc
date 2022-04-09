@@ -16,7 +16,7 @@
     --cor1:black;
     --cor2:white;
     --cor3:lightgray;
-    --cor4:none;
+    --cor4:rgba(0, 0, 0, 0);
     --cor5:none;
     --cor6:none;
 }
@@ -24,7 +24,7 @@
 
 /*seletor cabeçalho*/
 header{
-    background: var(--cor) url('../imagens/img-01.jpeg') bottom center no-repeat fixed;
+    background: var(--cor1) url('../imagens/img-01.jpeg') bottom center no-repeat fixed;
     background-size: cover;
     min-height: 150px;
 }
@@ -73,7 +73,6 @@ nav > a:hover{
     background-color: var(--cor1);
     color: var(--cor2);
     border-radius: 20px;
-    text-decoration: underline;
     padding: 15px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.438);
 }
@@ -102,7 +101,7 @@ section.padrao > p{
 }
 
 section.padrao{
-    padding: 15vh 0vh;
+    padding: 15vh 0vw;
     background-color: var(--cor2);
     color:var(--cor1);
     display: inline-block;
@@ -219,5 +218,40 @@ footer{
     color: var(--cor2);
     padding: 20vh 0vh;
 }
+
+section.topo_footer{
+    background-color: red;
+    height: 25vh;
+    width: 97.7vw;
+    display: inline-block;
+    align-items: center;
+}
+#topo_f01{
+    margin: -139px 0px 0px 0px;
+    padding: 15vh 0vw;
+    display: inline-block;
+}
+
+
+#img-topo_f{
+    background: var(--cor4) url('../imagens/icon-direito.png') center center no-repeat fixed;
+    background-size: cover;
+    height: 35vh;
+    width: 30vw;
+    margin: 15px;
+}
+
+#text_topo_f{
+    height: 20vh;
+    width: 50vw;
+    margin: 20px ;
+    background-color: cyan;
+}
+
+#text_topo_f > h4{
+    text-align: center;
+}
+
+
 
 
