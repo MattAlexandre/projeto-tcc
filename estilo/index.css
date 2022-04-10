@@ -35,6 +35,7 @@ header{
 header > section{
     /*shorthand background*/
     padding: 45px;
+    height: 40vh;
 }
 
 
@@ -44,6 +45,7 @@ header > section > h1{
     font:italic bold 7.5vh var(--font1);
     text-align: center;
     margin-bottom: 20px ;
+    margin-top: 45px;
 }
 
 /*seletor do p da section do header*/
@@ -57,9 +59,15 @@ header > section > p{
 }
 
 nav{
-    background-color: rgba(255, 255, 255, 0.411);
-    padding: 15px 0px;
+    padding: 25px 0px;
+}
+
+#nav_topo{
+    background-color: rgb(255, 255, 255);
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.555);
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 nav > a{
@@ -296,6 +304,7 @@ aside.box_footer > h5{
 
 nav.nav_f{
     display: inline-flex;
+
 }
 
 #nav_f01{
@@ -312,12 +321,12 @@ ul.list_footer{
     text-align: center;
 }
 
-li > a{
+li.list_f > a{
     font: normal bold 1em var(--cor1);
     text-decoration: none;
     color: black;
 }
-li > a:hover{
+li.list_f > a:hover{
     background-color: black;
     color: white;
     text-align: underline;
@@ -328,3 +337,46 @@ li > a:hover{
 }
 
 
+#nav_f02 > ul{
+    position: relative;
+    margin: 30px 0px;
+}
+
+#nav_f02 > ul > li{
+    float: left;
+    width: 65px;
+    height: 65px;
+    overflow: hidden;
+    margin-right: 20px;
+    background-color: aliceblue;
+}
+
+#nav_f02 ul > li:last-child{
+    margin-right: 0;
+
+}
+
+#nav_f02 ul > li >  a > img{
+    height: 65px;
+    width: 65px;
+    margin: 0px;
+}
+
+#nav_f02 ul > li > a > img:first-child{
+    -o-transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+    transition: 1s;
+    height: 65px;
+    width: 65px;
+}
+
+#nav_f02 > ul > li:hover a > img:first-child {
+    margin: -65px 0px;
+    /*
+    transform: rotate(135deg);
+    -webkit-transform:rotate(135deg);
+    -o-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    */
+}
