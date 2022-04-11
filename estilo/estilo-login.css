@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(to right , rgb(81, 81, 233) , rgb(21, 21, 126));
+    background-image: linear-gradient(to right , rgb(202, 16, 16) , rgb(63, 202, 45));
     background-repeat: no-repeat;
     background-attachment: fixed;
     font: italic bold 15px 'arial';
@@ -18,15 +18,17 @@ body{
     width: 30%;
 }
 fieldset{
-    border:3px solid cyan;
+    border:3px solid rgb(219, 122, 84);
     border-radius: 25px;
 }
 legend{
-    border: 1px solid dodgerblue;
-    padding: 10px;
+    border: 1px solid rgb(202, 16, 16);
+    padding: 20px;
     text-align: center;
-background-image: linear-gradient(to right, blue,purple);
+    background-image: linear-gradient(to right, rgb(230, 73, 73),rgb(140, 201, 131));
     border-radius: 15px;
+    font-size: 1.3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .inputBox{
     position: relative;
@@ -53,7 +55,7 @@ background-image: linear-gradient(to right, blue,purple);
 .inputUser:valid ~ .labelInput{
     top: -20px;
     font-size: 12px;
-    color: dodgerblue;
+    color: rgb(240, 112, 102);
 }
 #date{
     border: none;
@@ -64,7 +66,7 @@ background-image: linear-gradient(to right, blue,purple);
 
 }
 #submit{
-    background-image: linear-gradient(to right, blue , purple);
+    background-image: linear-gradient(to right, rgb(230, 73, 73), rgb(140, 201, 131));
     outline:none;
     width: 350px;
     height: 40px;
@@ -73,8 +75,9 @@ background-image: linear-gradient(to right, blue,purple);
     color: white;
     font-size: 1em;
     cursor: pointer;
+    font-style:unset;
 }
 #submit:hover{
-    background-image: linear-gradient(to right, rgb(77, 77, 255),rgb(187, 42, 187));
+    background-image: linear-gradient(to right, rgb(231, 38, 13),rgb(248, 70, 70));
     color: black;
 }
