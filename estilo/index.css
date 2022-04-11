@@ -221,7 +221,7 @@ section#img02_1{
 
 /* style rodapé */
 footer{
-    background-color: var(--cor1);
+    background-color: var(--cor2);
     color: var(--cor2);
     padding: 20vh 0vw;
 }
@@ -266,7 +266,7 @@ section#topo_f01{
 }
 
 .body_footer{
-    background-color: blue;
+    background-color: var(--cor2);
     height: 90vh;
 }
 
@@ -277,7 +277,7 @@ section#topo_f01{
 aside.box_footer{
     height: 25vh;
     padding: 15px;
-    background-color: red;
+    background-color:  var(--cor2);
 }
 
 aside.box_footer > h5{
@@ -286,6 +286,7 @@ aside.box_footer > h5{
     font-weight: bold;
     text-align: center;
     margin-top: 10px;
+    color:var(--cor1);
 }
 
 #box_f01{
@@ -294,7 +295,6 @@ aside.box_footer > h5{
 
 nav.nav_f{
     display: inline-flex;
-
 }
 
 #nav_f01{
@@ -311,22 +311,26 @@ ul.list_footer{
     text-align: center;
 }
 
+ul > li > #list_f {
+    font: normal bold 18px var(--cor1);
+}
+
 li.list_f > a{
     font: normal bold 1em var(--cor1);
     text-decoration: none;
     color: black;
 }
+
 li.list_f > a:hover{
     background-color: black;
     color: white;
     text-align: underline;
     box-shadow: 0px 0px 5px white;
     border-radius: 20px;
-    padding: 5px;
-    margin: 5px;
 }
 
-/*tamanho icons */
+
+/*tamanho icons redes sociais */
 #nav_f02 ul > li > a > img{
     height: 65px;
     width: 65px;
@@ -367,4 +371,26 @@ li.list_f > a:hover{
     -webkit-transform:rotate(-135deg);
     -o-transform: rotate(-135deg);
     -moz-transform: rotate(-135deg);
+}
+
+
+/*icons install app*/
+
+ #nav_f02 > #ul_f02 > li > a > img{
+    height: 65px;
+    width: 120px;
+}
+
+#nav_f02 > #ul_f02 > li{
+    float: right;
+    width: 120px;
+    height: 65px;
+    overflow: hidden;
+    margin-right: 20px;
+    border-radius: 20px;
+    background-color: rgb(240, 248, 255);
+}
+
+#nav_f02 > #ul_f02 > li:hover img:first-child {
+    margin-top: -100px ;
 }
