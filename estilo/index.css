@@ -58,16 +58,13 @@ header > section > p{
     max-width: 600px;
 }
 
-nav{
-    padding: 25px 0px;
-}
-
 #nav_topo{
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.555);
     position: fixed;
     top: 0;
     width: 100%;
+    padding: 25px 0px;
 }
 
 nav > a{
@@ -154,13 +151,6 @@ section#img02_1{
     animation-duration: 20s;
     animation-iteration-count: infinite;
 
-}
-
-img{
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 @keyframes animacao{
@@ -336,10 +326,17 @@ li.list_f > a:hover{
     margin: 5px;
 }
 
+/*tamanho icons */
+#nav_f02 ul > li > a > img{
+    height: 65px;
+    width: 65px;
+    border-radius: 10px;
+}
+
 
 #nav_f02 > ul{
     position: relative;
-    margin: 30px 0px;
+    margin: 50px 0px 0px 50px; 
 }
 
 #nav_f02 > ul > li{
@@ -348,35 +345,26 @@ li.list_f > a:hover{
     height: 65px;
     overflow: hidden;
     margin-right: 20px;
-    background-color: aliceblue;
+    border-radius: 20px;
+    background-color: rgba(240, 248, 255, 0);
 }
 
-#nav_f02 ul > li:last-child{
-    margin-right: 0;
-
-}
-
-#nav_f02 ul > li >  a > img{
-    height: 65px;
-    width: 65px;
-    margin: 0px;
+#nav_f02 ul > li > a > img:last-child{
+    margin-right: 20px;    
 }
 
 #nav_f02 ul > li > a > img:first-child{
+    float: left;
     -o-transition: 1s;
     -moz-transition: 1s;
     -webkit-transition: 1s;
     transition: 1s;
-    height: 65px;
-    width: 65px;
 }
 
-#nav_f02 > ul > li:hover a > img:first-child {
-    margin: -65px 0px;
-    /*
-    transform: rotate(135deg);
-    -webkit-transform:rotate(135deg);
-    -o-transform: rotate(135deg);
-    -moz-transform: rotate(135deg);
-    */
+#nav_f02 > ul > li:hover  img:first-child {
+    margin-top: -65px ;
+    transform: rotate(-135deg);
+    -webkit-transform:rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
 }
