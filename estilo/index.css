@@ -62,7 +62,7 @@ header > section > p{
     background-color: rgba(255, 255, 255, 0.459);
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.555);
     position: fixed;
-    top: 0;
+    top: 0; 
     width: 100%;
     height: 50px;
     padding: 25px 0px;
@@ -317,10 +317,12 @@ ul.list_footer{
     margin: 25px 130px;
     padding: 20px;
     text-align: center;
+    
 }
 
 ul.list_footer > h6{
-    font: normal bold 20px var(--cor1);
+    color: var(--cor1);
+    font-size: 20px;
 }
 
 ul > li > #list_f {
@@ -329,8 +331,8 @@ ul > li > #list_f {
 
 li.list_f > a{
     font: normal bold 1em var(--cor1);
-    text-decoration: none;
-    color: black;
+    text-decoration: none;  
+    color: var(--cor1);
 }
 
 li.list_f > a:hover{
