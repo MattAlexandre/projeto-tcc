@@ -232,6 +232,7 @@ footer{
     background-color: var(--cor2);
     color: var(--cor2);
     padding: 20vh 0vw;
+    height: 90vh;
 }
 
 section#topo_f01{
@@ -276,7 +277,7 @@ section#topo_f01{
 
 .body_footer{
     background-color: var(--cor2);
-    height: 70vh;
+    height: 90vh;
 }
 
 #body_f{
@@ -284,7 +285,7 @@ section#topo_f01{
 }
 
 aside.box_footer{
-    height: 25vh;
+    height: 50vh;
     padding: 15px;
     background-color:  var(--cor2);
 }
@@ -331,22 +332,19 @@ ul > li > #list_f {
 }
 
 li.list_f > a{
-    font: normal bold 1em var(--cor1);
+    font: normal normal 17px var(--font1);
     text-decoration: none;  
-    color: var(--cor1);
+    color: rgba(128, 128, 128, 0.829);
+    transition: 0.5s;
 }
 
 li.list_f > a:hover{
-    background-color: black;
-    color: white;
-    text-align: underline;
-    box-shadow: 0px 0px 5px white;
-    border-radius: 20px;
-    padding: 5px;
+    color: var(--cor1);
 }
 
 
 /*tamanho icons redes sociais */
+
 #nav_f02 ul > li > a > img{
     height: 65px;
     width: 65px;
@@ -405,9 +403,52 @@ li.list_f > a:hover{
     overflow: hidden;
     margin-right: 20px;
     border-radius: 20px;
-    background-color: rgb(240, 248, 255);
+    background-color: var(--cor2);
 }
 
 #nav_f02 > #ul_f02 > li:hover img:first-child {
     margin-top: -100px ;
 }
+
+#box_f02{
+    height: 20vh;
+    background-color: var(--cor2);
+}
+
+.footer_end{
+    display: inline-flex;
+}
+
+.box_end{
+    display: inline-flex;
+    height: 8vh;
+    width: 45vw;
+}
+
+
+
+#box_e01 > a{
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+}
+#box_e01 > a:hover{
+    color: var(--cor1);
+}
+#box_e01 > a > p{
+    font: normal bold 17px var(--font1);
+    margin: 0px 20px;
+}
+
+#box_e02{
+    background-color: var(--cor2);
+    float: right;
+}
+
+#box_e02 > img{
+    height: 50px;
+    width: 70px;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
