@@ -131,4 +131,5 @@ main{
 #conteudo_a02 > a > p:hover{
     background-color: darkturquoise;
     color: white;
+    box-shadow: 2px 2px 20px var(--cor1);
 }
