@@ -119,9 +119,9 @@ main{
 }
 
 #conteudo_a02 > a > p{
-    font: normal bold 2vw var(--cor1);
+    font: normal bold 2vw darkblue;
     background-color: rgb(198, 227, 236);
-    color: var(--cor1);
+    color: lightseagreen;
     text-align: center;
     padding: 10px;
     border-radius: 20px;    
