@@ -22,3 +22,41 @@
 }
 
 
+.conteudo_login{
+    height: 35vh;
+}
+
+#conteudo_l{
+    padding: 10px;
+}
+
+#conteudo_l > form{
+    padding: 5px;
+}
+
+#conteudo_l > form > h1{
+    font: normal bold 2.5vw var(--cor1);
+    color: var(--cor1);
+    text-align: center;
+    margin: 25px 0px;
+}
+
+#conteudo_l > form > a{
+    font: normal bold 2vw var(--cor1);
+    color: var(--cor1);
+    text-align: left;
+    margin-top: 150px;
+}
+
+#conteudo_l > form > input{
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: cyan;
+    margin-bottom: 25px;
+    outline: none;
+}
+
+#conteudo_l > form > input:hover{
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.534);
+}
