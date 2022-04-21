@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+/*inicializando a pagina com margin e padding sem formatação*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*declarando variaveis*/
+
+:root{
+
+    --font1: verdana, Geneva, tahoma, sans-serif;
+
+    --cor1:black;
+    --cor2:white;
+    --cor3:lightgray;
+    --cor4:rgba(0, 0, 0, 0);
+    --cor5:none;
+    --cor6:none;
+}
+
+

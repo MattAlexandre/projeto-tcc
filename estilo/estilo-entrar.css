@@ -48,7 +48,7 @@ main{
 
 #aside_b01{
     animation: gradient 10s ease  alternate infinite;
-    background: linear-gradient(-45deg, darkblue, cyan, rgb(224, 224, 122), rgb(247, 42, 76)) no-repeat;
+    background: linear-gradient(-45deg,lightcyan, #0FAB4F,#2FF782,#4AFF95,#FA1304,#a8190e) no-repeat;
     display: flex;
     background-size: 300% 300%;
     align-items: center;
