@@ -3,9 +3,12 @@
 
 body{ 
     position: relative;
-    background-color: #a8190e;
     background-size:auto;
     font: italic bold 15px 'arial';
+}
+
+main{
+    background-color: #a8190e;
 }
 
 /*configuração do fundo do formulário*/
@@ -23,7 +26,7 @@ body{
     margin-bottom: -230px;
     border-radius: 25px;                                                                                                                          
     width: 550px;
-    height: 700px;
+    height: 750px;
 }
 
 /*configuração da bordinha*/
@@ -32,7 +35,7 @@ fieldset{
     border:3px solid rgb(219, 122, 84);
     border-radius: 25px;
     width: 550px;
-    height: 650px;
+    height: 720px;
 }
 
 /*formulário*/
@@ -61,6 +64,7 @@ legend{
     font-size: 1em;
     width: 95%;
     letter-spacing: 2px;
+    margin-bottom: 10px;
 }
 .labelInput{
     position: absolute;
@@ -68,6 +72,8 @@ legend{
     left: 10px;
     pointer-events: none;
     transition: .5px;
+    margin-top: 2px;
+    margin-bottom: 40px;
 }
 .inputUser:focus ~ .labelInput,
 .inputUser:valid ~ .labelInput{
@@ -97,9 +103,10 @@ legend{
     cursor: pointer;
     font-style:unset;
     position: relative;
-    margin-top: 20px;
+
 }
 #submit:hover{
     background-image: linear-gradient(to right, rgb(231, 38, 13),rgb(248, 70, 70));
     color: black;
+    transition: 1s;
 }
