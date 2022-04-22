@@ -1,31 +1,47 @@
-body{
-    background-image: linear-gradient(to right , rgb(202, 16, 16) , rgb(63, 202, 45));
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+
+/*configurando o corpo*/ 
+
+body{ 
+    position: relative;
+    background-color: #a8190e;
+    background-size:auto;
     font: italic bold 15px 'arial';
 }
+
+/*configuração do fundo do formulário*/
+
 .box{
-    position: absolute;
+    position: relative;
     align-items: center;
-    top: 50%;
-    left: 50%;
+    top: 60%;
+    left: 47%;
     transform: translate(-50%,-50%);
     background-color: rgba(0, 0, 0, 0.76);
     color: white;
-    padding: 25px;
-    margin-top: 30px;
+    padding: 35px;
+    margin-top: 500px;
+    margin-bottom: -230px;
     border-radius: 25px;                                                                                                                          
-    width: 30%;
+    width: 550px;
+    height: 700px;
 }
+
+/*configuração da bordinha*/
 fieldset{
+    align-items: baseline;
     border:3px solid rgb(219, 122, 84);
     border-radius: 25px;
+    width: 550px;
+    height: 650px;
 }
+
+/*formulário*/
+
 legend{
-    border: 1px solid rgb(202, 16, 16);
+    border: 1px solid rgb(219, 122, 84);
     padding: 20px;
     text-align: center;
-    background-image: linear-gradient(to right, rgb(230, 73, 73),rgb(140, 201, 131));
+    background-color:#0FAB4F;
     border-radius: 15px;
     font-size: 1.3em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -34,6 +50,8 @@ legend{
     position: relative;
 }
 .inputUser{
+    position: relative;
+    left: 10px;
     text-align: left;
     background-color: rgba(30, 143, 255, 0);
     border: none;
@@ -41,13 +59,13 @@ legend{
     outline: none;
     color: white;
     font-size: 1em;
-    width: 100%;
+    width: 95%;
     letter-spacing: 2px;
 }
 .labelInput{
     position: absolute;
     top: 0px;
-    left: 0px;
+    left: 10px;
     pointer-events: none;
     transition: .5px;
 }
@@ -59,23 +77,27 @@ legend{
 }
 #date{
     border: none;
-    padding:10px;
     border-radius: 20px;
-    outline: none;
+    border-left-width: 10px;
     font-size: 1em;
-
+    padding-left: 10px;
+    padding-right: 10px;
 }
+
 #submit{
     background-image: linear-gradient(to right, rgb(230, 73, 73), rgb(140, 201, 131));
     outline:none;
     width: 350px;
     height: 40px;
+    left: 100px;
     border-radius: 15px;
     border: none;
     color: white;
     font-size: 1em;
     cursor: pointer;
     font-style:unset;
+    position: relative;
+    margin-top: 20px;
 }
 #submit:hover{
     background-image: linear-gradient(to right, rgb(231, 38, 13),rgb(248, 70, 70));
