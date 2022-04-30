@@ -1,11 +1,8 @@
 
 
-
-
-
 /*estilizando o título*/
 #titulo_p{
-    margin-top: 160px;
+    margin-top: 180px;
     font-size: 80px;
     text-align: center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -29,7 +26,7 @@
     font-size: 50px;
     font-style: italic;
     color: white; text-shadow: black 0.1em 0.1em 0.2em;
-    padding-top: 70px;
+    padding-top: 80px;
 }
 
 /*estilizando o texto de apresentação */
@@ -37,9 +34,9 @@
     margin-left: 500px;
     margin-right: 500px;
     padding-top: 10px;
-    padding-bottom: 40px;
+    padding-bottom: 300px;
     font-size: 25px;
-    text-align: center;
+    text-align: justify;
     color: white; text-shadow: black 0.1em 0.1em 0.2em;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
@@ -63,43 +60,32 @@ main{
 }
 
 /*configuração dos botões*/
-#btnEQP{
-    font-size: 30px;
-    text-align: center;
-    padding-left: 560px;
-    padding-right: 25px;
-    padding-top: 40px;
-    background-color: #a8190e;
-    height: 40px;
-    width: 250px;
-}
-#btnEQP > a{
-    text-decoration: none;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;  
-    text-shadow: black 0.1em 0.1em 0.2em;
-    float: left;
-    width: 100%
 
-}
-section.btnNOS{
-    font-size: 30px;
-    text-align: center;
-    margin-left: 500px;
-    padding-left: 25px;
-    padding-right: 25px;
-    background-color: #a8190e;
-    height: 40px;
-    width: 250px;
+#buttons > a{
 
-}
-section.btnNOS > a{
-    text-decoration: none;
+    display:inline-block;
+    margin-left: 540px;
+    margin-top: 30px;
+    background-color: grey;
+    height: 20px;
+    width: 130px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+
+    text-align: center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;  
+    text-decoration:none;
+    color: white;
     text-shadow: black 0.1em 0.1em 0.2em;
-    float: left;
-    width: 100%
+    font-size: 28px;
+}
+
+#buttons > a:hover{
+    background-color: black;
+    transition: 2s;
 }
 
 /*configuração da imagem*/
