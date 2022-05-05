@@ -1,112 +1,245 @@
+@charset "utf-8";
 
-/*configurando o corpo*/ 
+/*inicializando a pagina com margin e padding sem formatação */
 
-body{ 
-    position: relative;
-    background-size:auto;
-    font: italic bold 15px 'arial';
+*{
+    margin: 0px;
+    padding: 0px;
 }
 
-main{
-    background-color: #a8190e;
+/*declarando variaveis */
+
+:root{
+
+
+    --font: verdana, gevana , tahoma, sans-serif;
+
+    
+    --cor1:black;
+    --cor2:white;
+    --cor3:lightgray;
+    --cor4:rgba(0, 0, 0, 0);
+    --cor5:none;
+    --cor6:none;
+
 }
 
-/*configuração do fundo do formulário*/
-
-.box{
-    position: relative;
-    align-items: center;
-    top: 60%;
-    left: 47%;
-    transform: translate(-50%,-50%);
-    background-color: rgba(0, 0, 0, 0.76);
-    color: white;
-    padding: 35px;
-    margin-top: 500px;
-    margin-bottom: -230px;
-    border-radius: 25px;                                                                                                                          
-    width: 550px;
-    height: 750px;
+.body_cadastro{
+    height: 100vh;
+    padding: 5px;
+   
 }
 
-/*configuração da bordinha*/
-fieldset{
-    align-items: baseline;
-    border:3px solid rgb(219, 122, 84);
-    border-radius: 25px;
-    width: 550px;
-    height: 720px;
+#body_cadastro{
+    background-color: rgba(255, 0, 0, 0);
+    height: 100%;
 }
 
-/*formulário*/
+#central{
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    width: 75vw;
+}
 
-legend{
-    border: 1px solid rgb(219, 122, 84);
-    padding: 20px;
-    text-align: center;
-    background-color:#0FAB4F;
-    border-radius: 15px;
-    font-size: 1.3em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.conteudo_cadastro{
+    height: 25vh;
+    padding: 5px;
 }
-.inputBox{
-    position: relative;
+#conteudo_cadastro{
+    background-color: rgba(0, 0, 255, 0);
 }
-.inputUser{
-    position: relative;
-    left: 10px;
+
+.text_cadastro{
+    height: 15vh;
+    padding: 5px;
+}
+
+#text_c01{
+    background-color: rgba(127, 255, 212, 0);
+}
+
+#text_c01 > h1{
+    font: normal bold 2.5vw var(--font);
+    color:rgb(70, 70, 70);
     text-align: left;
-    background-color: rgba(30, 143, 255, 0);
-    border: none;
-    border-bottom: 2px solid white ;
+    margin: 20px 5px;
+}
+
+#text_c01 > p{
+    font: normal bold 1vw var(--font);
+    color:rgb(70, 70, 70);
+    text-align: center;
+}
+
+.formulario_cadastro{
+    height: 100%;
+    padding: 5px;
+}
+
+#form_c{
+    background-color: rgba(165, 42, 42, 0);
+}
+
+#form_cadastro{
+    background-color: rgba(127, 255, 212, 0);
+}
+
+.div_form{
+    padding: 5px;
+}
+
+#div_form_c01{
+    background-color: rgba(255, 255, 0, 0);
+    height: 20vh;
+}
+
+#div_form_c01 > label{
+    font: normal bold 1.2vw var(--font);
+    color: rgb(70,70,70);
+    text-align: left;
+}
+
+#div_form_c01 > input{
+    width: 100%;
+    margin: 5px 0px 25px 0px;
+    border-radius: 10px;
     outline: none;
-    color: white;
-    font-size: 1em;
-    width: 95%;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-}
-.labelInput{
-    position: absolute;
-    top: 0px;
-    left: 10px;
-    pointer-events: none;
-    transition: .5px;
-    margin-top: 2px;
-    margin-bottom: 40px;
-}
-.inputUser:focus ~ .labelInput,
-.inputUser:valid ~ .labelInput{
-    top: -20px;
-    font-size: 12px;
-    color: rgb(240, 112, 102);
-}
-#date{
     border: none;
-    border-radius: 20px;
-    border-left-width: 10px;
-    font-size: 1em;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 17px 10px;
+    text-align: left;
+    transition-duration: 0.5s;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+#div_form_c01 > input:hover{
+    outline: 2.5px solid rgb(70, 70, 70);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#div_form_c01 > a{
+    text-decoration: none;
+    background-color: rgb(255, 0, 0);
+    color: var(--cor2);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
+    transition-duration: 1s;
+}
+
+#div_form_c01 > a:hover{
+    background-color: rgb(0, 128, 0);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#div_form_c02{
+    display: inline-flex;
+}
+
+/**/
+#div_input_01{
+    background-color: rgba(255, 192, 203, 0);
+    margin: 10px 25px;
+    width: 30vw;
+}
+
+#div_input_01 > label {
+    font: normal bold 1vw var(--font);
+     color: rgb(70,70,70);
+     text-align: left;
+     margin: 10px;
+}
+
+#div_input_01 > input{
+    outline: none;
+    border: none;
+    margin: 15px 5px;
+    padding: 13px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
+}
+
+#div_input_01 > input:hover{
+    outline: 2.5px solid rgb(70, 70, 70);
+    border-color:white ;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/**/
+
+#div_input_02{
+    background-color: rgba(255, 192, 203, 0);
+    margin: 10px 25px;
+    width: 30vw;
+}
+
+#div_input_02 > label{
+     font: normal bold 1vw var(--font);
+     color: rgb(70,70,70);
+     text-align: left;
+     margin: 10px ;
+}
+
+#div_input_02 > input{
+    outline: none;
+    border: none;
+    margin: 15px 5px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 13px;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
+}
+
+#div_input_02 > input:hover{
+    outline: 2.5px solid rgb(70, 70, 70);
+    border-color:white ;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#label_s{
+    color: white; 
 }
 
 #submit{
-    background-image: linear-gradient(to right, rgb(230, 73, 73), rgb(140, 201, 131));
-    outline:none;
-    width: 350px;
-    height: 40px;
-    left: 100px;
-    border-radius: 15px;
+    font: normal bold 1vw var(--font);
+    background-color: red;
+    color: var(--cor2);
+    outline: none;
     border: none;
-    color: white;
-    font-size: 1em;
-    cursor: pointer;
-    font-style:unset;
-    position: relative;
-
 }
+
 #submit:hover{
-    background-image: linear-gradient(to right, rgb(231, 38, 13),rgb(248, 70, 70));
-    color: black;
-    transition: 1s;
+    box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.4);
+    background-color:green ;
+    color: var(--cor2);
+}
+
+/**/
+
+#div_form_c03{
+    background-color: rgba(128, 0, 128, 0);
+    height: 15vh;
+    padding: 5px;
+}
+
+#div_cbox{
+    height: 15vh;
+    display: inline-block;
+    background-color: rgba(255, 0, 0, 0);
+    width: 100%;
+    color: rgb(70,70,70);
+}
+
+#div_cbox > input{
+    padding: 5px;
+    margin: 10px 5px;
+}
+
+#div_cbox > label{
+    font: normal normal 1.2vw var(--font);
+    color: rgb(70, 70, 70);
+   
 }

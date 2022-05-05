@@ -1,275 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../estilo/index.css">
     <link rel="stylesheet" href="../estilo/estilo-cadastro.css">
     <link rel="shortcut icon" href="../imagens/favicon-kipreco.png" type="image/x-icon">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> cadastro  site </title>
 </head>
 <body>
+    <section class="body_cadastro" id="body_cadastro" > <!-- corpo da pagina -->
 
-       <!-- cabeçalho da pagina -->
-       <header>
+        <section id="central">
 
-        <section >
+            <section class="conteudo_cadastro" id="conteudo_cadastro"><!-- conteudo cacbeçalho, text-->
 
-            <h1> KiPreço </h1> <!-- titulo -->
+                <div class="text_cadastro" id="text_c01">
+                    <h1> Criar Conta </h1>
 
-            <p> <!-- paragrafo cabeçalho -->
-                Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Quasi tempora, repell
-                endus cumque soluta maiores laudantium.
-            </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Impedit minima simil
+                        ique voluptate facilis eius amet, inci
+                        dunt quasi quibusdam quae, iste molest
+                    </p>
 
+                </div>
+            </section>
+
+            <section class="formulario_cadastro" id="form_c">
+
+                <form id="form_cadastro" method="post" action="#">
+
+                    <div class="div_form" id="div_form_c01">
+
+                        <!-- input email -->
+                        <label for=""> e-mail </label><br>
+                        <input type="email" name="email" id=""><br>
+
+                        <a href=""> Enviar Codigo De Verificação </a>
+
+                    </div>
+
+                    <div class="div_form" id="div_form_c02">
+
+                        <div class="div_input" id="div_input_01">
+
+                            <!-- input nome -->
+                            <label for=""> nome empresarial </label><br>
+                            <input type="text" name="name" id=""><br>
+
+                            <!-- input telefone -->
+                            <label for=""> telefone </label><br>
+                            <input type="number" name="telefone" id=""><br>
+
+                            <!-- input CEP -->
+                            <label for=""> cep </label><br>
+                            <input type="number" name="CEP" id=""><br> 
+
+                        </div>
+
+                        <div class="div_input" id="div_input_02">
+
+                            <!-- input CNPJ -->
+                            <label for=""> cnpj </label><br>
+                            <input type="number" name="cnpj" id=""><br>
+
+                            <!-- input data de abertura -->
+                            <label for=""> data de abertura </label><br>
+                            <input type="date" name="data_abertura" id=""><br>
+
+                            <label id="label_s" for="" style="color: rgba(0, 0, 0, 0);"> a </label>
+                            <!-- input cadastrar  -->
+                            <input  id="submit" type="submit" value="Cadastrar"><br>
+                        </div>
+                    </div>
+
+                    <div class="div_form" id="div_form_c03">
+                        <div id="div_cbox">
+                            <!-- -->
+                            <input type="checkbox" name="" id="">
+                            <label for=""> aceitas receber email do ki-preço </label><br>
+                            
+
+                            <!---->
+                            <input type="checkbox" name=""" id="">
+                            <label for=""> li e aceitos os regulamentos do site </label>
+                            
+                        </div>
+                    </div>
+                </form>
         </section>
-
-        <nav id="nav_topo">
-
-            <img src="../imagens/img-ki-preco.png" alt="imagem-logo">
-
-            <a href="../arquivos-html/sobre.html">     SOBRE      </a>
-            <a href="../arquivos-html/index.html">      HOME      </a>
-            <a href="../arquivos-html/menu.html ">      MENU      </a>
-
-        </nav>
-
-    </header>
-
-    <main>
-        <div class="box"> <!-- div form -->
-            <form action="process.html"> <!--- formulario -->
-                
-                <fieldset> <!-- topo forms -->
-                    <legend> <!-- legenda topo -->
-                        <strong>Cadastro do Contribuinte </strong>
-                    </legend>
-                    <br><br>
-    
-                    <!-- input Nome -->
-                    <div class="inputBox">
-                        <input type="text" name="txtName" id="name" class="inputUser" required> <!-- input -->
-                        <label for="name" class="labelInput"> Nome empresarial </label>                               <!-- name imput -->
-                    </div> <br><br>
-    
-                    <!-- input email -->
-                    <div class="inputBox">
-                        <input type="text" name="txtEmail" id="email" class="inputUser" required> 
-                        <label for="email" class="labelInput"> E-mail </label>
-                    </div><br><br>
-    
-                    <!-- input telefone -->
-                    <div class="inputBox">
-                        <input type="tel" name="txtNumber" id="number" class="inputUser" required>
-                        <label for="number" class="labelInput"> Telefone </label>
-                    </div><br><br>
-    
-                    <!-- input CNPJ -->
-                     <div class="inputBox">
-                        <input type="text" name="txtCNPJ" id="cnpj" class="inputUser" required>
-                        <label for="address" class="labelInput"> CNPJ </label>
-                     </div><br><br>
-    
-    
-                    <!-- input data de abertura -->
-                    
-                        <label for="date" > <strong> Data de Abertura do Negócio: </strong></label>
-                        <input type="date" name="txtDate" id="date"  required>
-                    
-                    <br><br>
-        
-                    <!-- input cidade -->
-                    <div class="inputBox">
-                        <input type="cidade" name="txtCity" id="city" class="inputUser" required>
-                        <label for="ciry" class="labelInput"> Cidade </label>
-                    </div><br><br>
-    
-                    <!-- input estado -->
-                    <div class="inputBox">
-                        <input type="text" name="txtState" id="state" class="inputUser" required>
-                        <label for="state" class="labelInput"> Estado </label>
-                    </div><br><br>
-    
-                    <!-- input rua -->
-                    <div class="inputBox">
-                        <input type="text" name="txtStreet" id="street" class="inputUser" required>
-                        <label for="address" class="labelInput"> Rua </label>
-                    </div><br><br>
-    
-                    <!-- input bairro -->
-                    <div class="inputBox">
-                        <input type="text" name="txtNGBH" id="neighborhood" class="inputUser" required>
-                        <label for="address" class="labelInput"> Bairro </label>
-                    </div><br><br>
-    
-                    <!-- input número -->
-                    <div class="inputBox">
-                        <input type="text" name="txtNumber" id="number" class="inputUser" required>
-                        <label for="address" class="labelInput"> Número </label>
-                    </div><br><br>           
-    
-                    <!-- button enviar -->
-                    <input type="button" value="Próximo" name="sumbmit" id="submit">
-    
-                  
-    
-    
-                </fieldset>
-    
-            </form>
-        </div>
-    </main>
-
-    <footer> <!-- rodapé pagina-->
-
-
-        <section class="topo_footer" id="topo_f01">
-
-            <div class="img-topo_f"  >
-               <!-- <img  id="img_t01" src="../projeto-tcc/imagens/img-04.jpeg" alt="imagem-logo">-->
-            </div>
-
-            <div class="text_topo_f">
-                <h4>title footer</h4>
-
-                <p>
-                    Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. 
-                    Nihil eius molestiae hic ex 
-                </p>
-            </div>
-
         </section>
-
-
-        <section class="body_footer" id="body_f">
-
-            <aside class="box_footer" id="box_f01">
-
-                <h5> title </h5>
-
-
-                <nav class="nav_f" id="nav_f01">
-
-                    
-
-                    <ul  class="list_footer" >
-                        <h6> quem somos  </h6><br>
-
-                        <li class="list_f"><a href=""> abcdefghijk </a></li>
-                        <li class="list_f"><a href=""> abcdefghijk </a></li>
-                        <li class="list_f"><a href=""> abcdefghijk </a></li>
-                        <li class="list_f"><a href=""> abcdefghijk </a></li>
-                        <li class="list_f"><a href=""> abcdefghijk </a></li>
-                        <li class="list_f"><a href=""> abcdefghijk </a></li>
-                    </ul>
-
-
-                    <ul class="list_footer">
-                        <h6> contato </h6><br>
-
-                        <li class="list_f"><a href=""> abcdefghijk </a></li>
-                        <li class="list_f"><a href=""> abcdefghijk </a></li>
-                        <li class="list_f"><a href=""> abcdefghijk </a></li>
-                        <li class="list_f"><a href=""> abcdefghijk </a></li>
-                        <li class="list_f"><a href=""> abcdefghijk </a></li>
-                        <li class="list_f"><a href=""> abcdefghijk </a></li>
-                    </ul>
-
-                    <ul class="list_footer">
-                        <h6>nossos afiliados </h6><br>
-
-                        <li class="list_f"><a href=""> abcdefghijk </a></li>
-                        <li class="list_f"><a href=""> abcdefghijk </a></li>
-                        <li class="list_f"><a href=""> abcdefghijk </a></li>
-                        <li class="list_f"><a href=""> abcdefghijk </a></li>
-                        <li class="list_f"><a href=""> abcdefghijk </a></li>
-                        <li class="list_f"><a href=""> abcdefghijk </a></li>
-                    </ul>
-
-
-                </nav>
-
-                
-                <br><br><hr>
-
-
-                <nav id="nav_f02">
-                    
-                    
-                    <ul id="ul_f01">
-                        <li>
-                            <a href=""> <!-- link facebook-->
-                                <img  class="img_footer" src="../imagens/icon-face-notcolor.jpeg" alt="imagem-sem cor facebook">
-                                <img  class="img_footer" src="../imagens/icon-face-color.jpeg" alt="imagem facebook colorida">
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href=""> <!-- link facebook-->
-                                <img  class="img_footer" src="../imagens/icon-insta-notcolor.jpeg" alt="imagem-sem cor facebook">
-                                <img  class="img_footer" src="../imagens/icon-insta-color.jpeg" alt="imagem facebook colorida">
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href=""> <!-- link facebook-->
-                                <img  class="img_footer" src="../imagens/icon-twitter-notcolor.jpeg" alt="imagem-sem cor facebook">
-                                <img  class="img_footer" src="../imagens/icon-twitter-color.jpeg" alt="imagem facebook colorida">
-                            </a>
-                        </li>
-
-                    </ul>
-
-
-                    <ul id="ul_f02">
-                        <li >
-                            <a href=""> <!-- link play store -->
-                                <img  class="img_footer" src="../imagens/icon-playstore-notcolor.jpeg" alt="imagem-sem cor facebook">
-                                <img  class="img_footer" src="../imagens/icon-playstore-color.jpeg" alt="imagem facebook colorida">
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href=""> <!-- link app store-->
-                                <img  class="img_footer" src="../imagens/icon-appstore-notcolor.jpeg" alt="imagem-sem cor facebook">
-                                <img  class="img_footer" src="../imagens/icon-appstore-color.jpeg" alt="imagem facebook colorida">
-                            </a>
-                        </li>
-
-                    </ul>
-                </nav>           
-
-            </aside>
-
-            <aside class="box_footer" id="box_f01">
-
-            </aside>
-
-
-
-        </section>
-
-
-        <hr><br>
-        <section class="footer_end" id="box_f03">
-          
-
-            <aside class="box_end" id="box_e01">
-                <a href="#"> <p>politica de privacidade </p></a>
-                <a href="#"> <p>termos de uso </p></a>
-            </aside>
-
-            <aside  class="box_end" id="box_e02" >
-                <img src="../imagens/img-ki-preco.png" alt="imagem-logo">
-            </aside>
-
-        </section>
-
-
-    </footer>
-    
+    </section>
 </body>
 </html>
