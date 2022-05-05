@@ -27,12 +27,27 @@
 /*estilo corpo*/
 
 .body_entrar{
-    height: 97vh;
+    height: 100%;
     padding: 10px;
 }
 
 #body_entrar01{
-    background-color: rgb(255, 255, 255);
+    animation: gradient 10s ease alternate infinite;
+    background: linear-gradient(-45deg, #f5efea ,white, #f5efea ) no-repeat ;
+    background-size: 300%;
+    
+}
+
+@keyframes gradient {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
 }
 
 
@@ -45,7 +60,7 @@
 }
 
 #box_entrar01{
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
 }
 
 /*estilo asides*/
@@ -57,12 +72,12 @@
 }
 
 #aside_e01{
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
     margin-right: -2px;
 }
 
 #aside_e02{
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
     margin-left: -2px;
 }
 
@@ -74,17 +89,17 @@
 }
 
 #conteudo_01{
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
 }
 
 #conteudo_02{
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
 }
 
 /*estilo divs geral*/
 .div_conteudo_e{
     margin: 25px 0px;
-    background-color: var(--cor2);
+    background-color: rgba(245, 245, 220, 0);
     padding: 5px;
 }
 
@@ -100,7 +115,7 @@
 /*estilo inputs */ 
 
 #div_formulario{
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
   
 }
 #form{
@@ -209,7 +224,7 @@
 }
 
 #div_img{
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
     margin: 15px 0px;
 }
 
