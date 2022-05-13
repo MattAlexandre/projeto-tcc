@@ -417,7 +417,7 @@ main{
 }
 
 
-/*sessao */
+/*sessao 9 */
 
 #sessao_m09{
     animation: gradient 10s ease alternate infinite;
@@ -474,11 +474,217 @@ main{
 }
 
 #div_c02_m09 > p{
-    font: normal bold 1.7vw var(--font1);
-    text-align: center;
+    font: normal bold 1.5vw var(--font1);
+    text-align: justify;
     color: rgb(70,70,70);
     margin: 25px 10px;
 }
+
+/*sessao 10*/
+
+#sessao_m10{
+    background-image: linear-gradient(to top, #d9e7f8 , rgba(255, 255, 255, 0));
+    padding: 35px;
+    height: 100%;
+}
+
+#div_m10{
+    background: var(--cor2) url('../imagens/img-fundo-entra.jpeg') center center no-repeat fixed;
+    background-size: cover;
+    height: 35vh;
+    margin: 35px 15px;
+    border-radius: 15px;
+    padding: 35px;
+    text-align: center;
+}
+
+#div_m10 > p{
+    font: normal bold 2vw var(--font1);
+    text-align: center;
+    color: rgb(70,70,70);
+    margin: 35px 10px;
+}
+
+#div_m10 > a{
+    text-decoration: none;
+    font: normal bold 1.5vw var(--font1);
+    text-align: left;
+    color: #8dbcf5;
+    margin: 25px 10px;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 1px #8dbcf5;
+    border-radius: 10px;
+    transition-duration: 1s;
+}
+
+#div_m10 > a:hover{
+    background-color: #8dbcf5;
+    color:var(--cor2);
+    border-radius:  15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    border: solid 1px var(--cor2);   
+}
+
+/*sessao 11*/
+
+#sessao_m11{
+    background-image: linear-gradient(to top, #d9e7f8 , rgba(255, 255, 255, 0));
+    padding: 20px;
+    height: 100%;
+}
+
+/*cmc aide*/
+
+#div_m11{
+    background-color: rgba(255, 0, 0, 0);
+    height: 100%;
+    padding: 5px;
+    display: flex;
+}
+
+.div_c_m11{
+    height: 40vh;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.div_c_m11:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+#div_m11_01{
+    background-color: rgba(128, 0, 128, 0);
+}
+
+.div_m11_img{
+    height: 30%;
+}
+
+#div_m11_img_01{
+    background-image: linear-gradient(-45deg,#d9e7f8,#c0d8f5,#8dbcf5 );
+    border-radius: 15px 15px 0px 0px;
+}
+
+.div_m11_txt{
+    height: 70%;
+}
+
+#div_m11_txt_01{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#div_m11_txt_01 > img{
+    display: block;
+    float: left;
+    height: 7vh;
+    width: 5vw;
+    margin: -20px 10px;
+}
+
+#div_m11_txt_01 > h2{
+    font: normal bold 2vw var(--font1);
+    text-align: center;
+    color: rgb(70,70,70);
+    margin: 5px;
+}
+
+#div_m11_txt_01 > p{
+    font: normal bold 1vw var(--font1);
+    text-align: center;
+    color: rgb(70,70,70);
+    margin: 10px;
+}
+
+
+#div_m11_02{
+    background-color: rgba(0, 0, 255, 0);
+}
+
+
+.div_m11_img{
+    height: 30%;
+}
+
+#div_m11_img_02{
+    background-image: linear-gradient(to top,#d9e7f8,#c0d8f5 );
+    border-radius: 15px 15px 0px 0px;
+}
+
+.div_m11_txt{
+    height: 70%;
+}
+
+#div_m11_txt_02{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#div_m11_txt_02 > img{
+    display: block;
+    float: left;
+    height: 7vh;
+    width: 5vw;
+    margin: -20px 10px;
+}
+
+#div_m11_txt_02 > h2{
+    font: normal bold 2vw var(--font1);
+    text-align: center;
+    color: rgb(70,70,70);
+    margin: 5px;
+}
+
+#div_m11_txt_02 > p{
+    font: normal bold 1vw var(--font1);
+    text-align: center;
+    color: rgb(70,70,70);
+    margin: 10px;
+}
+
+#div_m11_03{
+    background-color: rgba(255, 166, 0, 0);
+}
+
+.div_m11_img{
+    height: 30%;
+}
+
+#div_m11_img_03{
+    background-image: linear-gradient(-45deg,#8dbcf5 ,#c0d8f5, #d9e7f8  );
+    border-radius: 15px 15px 0px 0px;
+}
+
+.div_m11_txt{
+    height: 70%;
+}
+
+#div_m11_txt_03{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#div_m11_txt_03 > img{
+    display: block;
+    float: left;
+    height: 7vh;
+    width: 5vw;
+    margin: -20px 10px;
+}
+
+#div_m11_txt_03 > h2{
+    font: normal bold 2vw var(--font1);
+    text-align: center;
+    color: rgb(70,70,70);
+    margin: 5px;
+}
+
+#div_m11_txt_03 > p{
+    font: normal bold 1vw var(--font1);
+    text-align: center;
+    color: rgb(70,70,70);
+    margin: 10px;
+}
+
 
 /*rodapé pag*/
 
