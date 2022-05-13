@@ -26,28 +26,18 @@
 
 /*estilo corpo*/
 
+body{
+    background: var(--cor1) url("../imagens/img-fundo-entra.jpeg") center center no-repeat fixed;
+    background-size: cover;
+}
+
 .body_entrar{
     height: 100%;
     padding: 10px;
 }
 
 #body_entrar01{
-    animation: gradient 10s ease alternate infinite;
-    background: linear-gradient(-45deg, #f5efea ,white, #f5efea ) no-repeat ;
-    background-size: 300%;
-    
-}
-
-@keyframes gradient {
-    0%{
-        background-position: 0 50%;
-    }
-    50%{
-        background-position: 100% 50%;
-    }
-    100%{
-        background-position: 0% 50%;
-    }
+    background-color: rgba(240, 248, 255, 0);
 }
 
 
@@ -153,14 +143,15 @@
     border: none;
     box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.4) ;
     transition-duration: 0.2s;
-    background-color: red;
-    color: var(--cor2);
+    background-color: #d9e7f8 ;
+    color: rgb(70, 70, 70);
     font: normal bold 1.2vw var(--font);
     transition-duration: 1s;
 }
 
 #form > #input_env:hover{
-    background-color: green;
+    color: white;
+    background-color: #909aa7;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
 }
 
@@ -177,7 +168,7 @@
 #div_cadastro > p{
     text-align: center;
     font:normal bold 1.7vw var(--font);
-    color: rgb(70, 70, 70);
+    color: rgb(0, 0, 0);
     margin: 25px 10px;
 }
 

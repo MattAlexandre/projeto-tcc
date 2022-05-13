@@ -24,6 +24,11 @@
 
 }
 
+body{
+    background: var(--cor1) url("../imagens/img-fundo-entra.jpeg") center center no-repeat fixed;
+    background-size: cover;
+}
+
 .body_cadastro{
     height: 100vh;
     padding: 5px;
@@ -31,23 +36,7 @@
 }
 
 #body_cadastro{
-    animation: gradient 10s ease alternate infinite;
-    background: linear-gradient(-45deg, #FAF0E6 ,white, #FAF0E6 ) no-repeat ;
-    height: 100%;
-    background-size: 300%;
-    
-}
-
-@keyframes gradient {
-    0%{
-        background-position: 0 50%;
-    }
-    50%{
-        background-position: 100% 50%;
-    }
-    100%{
-        background-position: 0% 50%;
-    }
+    background-color: rgba(240, 248, 255, 0);
 }
 
 #central{
@@ -134,7 +123,7 @@
 
 #div_form_c01 > a{
     text-decoration: none;
-    background-color: rgb(255, 0, 0);
+    background-color: #909aa7;
     color: var(--cor2);
     padding: 10px;
     margin: 10px;
@@ -143,7 +132,7 @@
 }
 
 #div_form_c01 > a:hover{
-    background-color: rgb(0, 128, 0);
+    background-color: #c3daf7 ;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -220,7 +209,7 @@
 
 #submit{
     font: normal bold 1vw var(--font);
-    background-color: red;
+    background-color: #909aa7;
     color: var(--cor2);
     outline: none;
     border: none;
@@ -228,8 +217,10 @@
 
 #submit:hover{
     box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.4);
-    background-color:green ;
+    background-color:#c3daf7 ;
     color: var(--cor2);
+    border: none;
+    outline: none;
 }
 
 /**/
