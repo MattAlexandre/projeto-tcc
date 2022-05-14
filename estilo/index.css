@@ -692,11 +692,11 @@ main{
 footer{
     height:100%;
     padding: 10px;
-    background: var(--cor2) url('../imagens/img-fundo-footer.jpeg') center center no-repeat fixed;
+    background: var(--cor2) url('../imagens/img-footer.png') center center no-repeat fixed;
     background-size: cover;
 }
 
 #footer_s{
     height: 70vh;
-    background-color: #c0d8f562;
+    background-color: #8b616162;
 }
