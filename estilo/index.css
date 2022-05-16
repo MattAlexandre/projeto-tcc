@@ -15,10 +15,11 @@
 
     --cor1:black;
     --cor2:white;
-    --cor3:lightgray;
-    --cor4:rgba(0, 0, 0, 0);
-    --cor5:none;
-    --cor6:none;
+    --cor3:rgba(0, 0, 0, 0);
+    --cor4:#909aa7 ;
+    --cor5:#8dbcf5;
+    --cor6:#c0d8f5;
+    --cor7:#d9e7f8;
 }
 
 /* cabeçalho pag */ 
@@ -28,11 +29,11 @@ header{
 }
 
 #header{
-    background-color: rgb(255, 255, 255);
+    background-color: var(--cor2);
 }
 
 #nav_topo{
-    background-color: white;
+    background-color: var(--cor2);
     position: fixed;
     top: 0; 
     width: 100%;
@@ -56,14 +57,14 @@ nav > a{
 }
 
 #link{
-    background-color: #c0d8f5;
+    background-color: var(--cor6);
     color: var(--cor2);
     padding: 10px;
     border-radius: 5px;
 }
 
 nav >  #link:hover{
-    background-color: #909aa7;
+    background-color: var(--cor4);
     color: var(--cor2);
     border-radius:  15px;
     padding: 10px;
@@ -82,7 +83,7 @@ main{
 }
 
 #sessao_m01{
-    background-image: linear-gradient(to bottom , white , #d9e7f8);
+    background-image: linear-gradient(to bottom , var(--cor2) , var(--cor7));
     display: flex;
     padding: 15px;
     margin: 20px 0px 0px 0px ;
@@ -95,26 +96,26 @@ main{
 }
 
 #div_text{
-    background-color: rgba(0, 0, 255, 0);
+    background-color: var(--cor3);
     padding: 5px;
 }
 
 #div_text > h1{
     font: normal bold 2.5vw var(--font1);
     text-align: left;
-    color: rgb(70,70,70);
+    color: var(--cor4);
     margin: 25px 10px;
 }
 
 #div_text > p{
     font: normal normal 1.5vw var(--font1);
     text-align: justify;
-    color: rgb(70,70,70);
+    color: var(--cor4);
     margin: 10px;
 }
 
 #div_img{
-    background-color: rgba(165, 42, 42, 0);
+    background-color: var(--cor3);
     padding: 5px;
 }
 
@@ -128,7 +129,7 @@ main{
 /* segunda sessao*/
 
 #sessao_m02{
-    background-image: linear-gradient(to bottom, #d9e7f8 , white);
+    background-image: linear-gradient(to bottom, var(--cor7), var(--cor3));
     padding: 20px;
     text-align: center;
 }
@@ -136,19 +137,19 @@ main{
 #sessao_m02 > h1{
     font: normal normal 2.5vw var(--font1);
     text-align: center;
-    color: rgb(70,70,70);
+    color: var(--cor3);
     margin: 25px 10px;
 }
 
 #sessao_m02 > p{
     font: normal normal 1.7vw var(--font1);
     text-align: center;
-    color: rgb(70,70,70);
+    color: var(--cor4);
     margin: 25px 10px ;
 }
 
 #sessao_m02 > a{
-    background-color: #c0d8f5;
+    background-color: var(--cor6);
     color: var(--cor2);
     padding: 10px;
     border-radius: 5px;
@@ -160,7 +161,7 @@ main{
 }
 
 #sessao_m02 > a:hover{
-    background-color: #909aa7;
+    background-color: var(--cor4);
     color: var(--cor2);
     border-radius:  15px;
     padding: 10px;
@@ -170,7 +171,7 @@ main{
 #sessao_m03{
     height: 100%;
     padding: 15px;
-    background-image: linear-gradient(to top, #d9e7f8 , white);
+    background-image: linear-gradient(to top, var(--cor7), var(--cor3));
 }
 
 #sessao_m03 > img{
@@ -184,7 +185,7 @@ main{
 /*sessao 4*/
 
 #sessao_m04{
-    background-image: linear-gradient(to bottom, #d9e7f8 , rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to bottom, var(--cor7), var(--cor3));
     padding: 20px;
     text-align: center;
     height: 100%;
@@ -193,7 +194,7 @@ main{
 #sessao_m04 > p{
     font: normal bold 2vw var(--font1);
     text-align: center;
-    color: rgb(70,70,70);
+    color: var(--cor4);
     margin: 25px 10px;
 }
 
@@ -211,7 +212,7 @@ main{
 /*sessao 05*/
 
 #sessao_m05{
-    background-image: linear-gradient(to top, #d9e7f8 , rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to top, var(--cor7), var(--cor3));
     padding: 20px;
     height: 100%;
     display: flex;
@@ -225,25 +226,25 @@ main{
 }
 
 #div_text05{
-    background-color: rgba(255, 0, 0, 0);
+    background-color: var(--cor3);
 }
 
 #div_text05 > h2{
     font: normal bold 2.3vw var(--font1);
     text-align: left;
-    color: rgb(70,70,70);
+    color: var(--cor4);
     margin: 25px 10px;
 }
 
 #div_text05 > p{
     font: normal normal 1.7vw var(--font1);
     text-align: justify;
-    color: rgb(70,70,70);
+    color: var(--cor4);
     margin: 25px 10px;
 }
 
 #div_img05{
-    background-color: rgba(0, 0, 255, 0);
+    background-color:var(--cor3);
 }
 
 #div_img05 > img{
@@ -256,7 +257,7 @@ main{
 /*sessao 6*/
 
 #sessao_m06{
-    background-image: linear-gradient(to bottom, #d9e7f8 , rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to bottom, var(--cor7), var(--cor3));
     padding: 20px;
     height: 100%;
     display: flex;
@@ -270,25 +271,25 @@ main{
 }
 
 #div_text06{
-    background-color: rgba(255, 0, 0, 0);
+    background-color: var(--cor3);
 }
 
 #div_text06 > h2{
     font: normal bold 2.3vw var(--font1);
     text-align: left;
-    color: rgb(70,70,70);
+    color: var(--cor4);
     margin: 25px 10px;
 }
 
 #div_text06 > p{
     font: normal normal 1.7vw var(--font1);
     text-align: justify;
-    color: rgb(70,70,70);
+    color: var(--cor4);
     margin: 25px 10px;
 }
 
 #div_img06{
-    background-color: rgba(0, 0, 255, 0);
+    background-color: var(--cor3);
 }
 
 #div_img06 > img{
@@ -301,7 +302,7 @@ main{
 /*sessao 7*/
 
 #sessao_m07{
-    background-image: linear-gradient(to top, #d9e7f8 , rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to top, var(--cor7), var(--cor3));
     padding: 20px;
     height: 100%;
     display: flex;
@@ -315,25 +316,25 @@ main{
 }
 
 #div_text07{
-    background-color: rgba(255, 0, 0, 0);
+    background-color: var(--cor3);
 }
 
 #div_text07 > h2{
     font: normal bold 2.3vw var(--font1);
     text-align: left;
-    color: rgb(70,70,70);
+    color: var(--cor4);
     margin: 25px 10px;
 }
 
 #div_text07 > p{
     font: normal normal 1.7vw var(--font1);
     text-align: justify;
-    color: rgb(70,70,70);
+    color: var(--cor4);
     margin: 25px 10px;
 }
 
 #div_img07{
-    background-color: rgba(0, 0, 255, 0);
+    background-color: var(--cor3);
 }
 
 #div_img07 > img{
@@ -346,13 +347,13 @@ main{
 
 /*sessao 8*/
 #sessao_m08{
-    background-image: linear-gradient(to bottom, #d9e7f8 , rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to bottom, var(--cor7), var(--cor3));
     padding: 20px;
     height: 100%;
 }
 
 #div_m08{
-    background-color: rgba(255, 0, 0, 0);
+    background-color: var(--cor3);
     height: 100%;
     padding: 5px;
 }
@@ -363,7 +364,7 @@ main{
 }
 
 .div_c_img{
-    background-color: rgba(0, 0, 255, 0);
+    background-color: var(--cor3);
     margin: 10px 15px;
     width: 22%;
 }
@@ -376,7 +377,7 @@ main{
 }
 
 .div_c_txt{
-    background-color: rgba(207, 135, 207, 0);
+    background-color: var(--cor3);
     margin: 10px 15px;
     width: 22%;
 }
@@ -384,14 +385,14 @@ main{
 .div_c_txt > h2{
     font: normal bold 2vw var(--font1);
     text-align: justify;
-    color: rgb(70,70,70);
+    color: var(--cor4);
     margin: 25px 10px;
 }
 
 .div_c_txt > p{
     font: normal bold 1vw var(--font1);
     text-align: left;
-    color: rgb(70,70,70);
+    color: var(--cor4);
     margin: 25px 10px;
 }
 
@@ -399,17 +400,17 @@ main{
     text-decoration: none;
     font: normal bold 1.5vw var(--font1);
     text-align: left;
-    color: #8dbcf5;
+    color: var(--cor5);
     margin: 25px 10px;
     padding: 7px;
-    background-color: rgba(0, 0, 0, 0);
-    border: solid 1px #8dbcf5;
+    background-color:var(--cor3);
+    border: solid 1px var(--cor5);
     border-radius: 10px;
     transition-duration: 1s;
 }
 
 .div_c_txt > a:hover{
-    background-color: #8dbcf5;
+    background-color: var(--cor5);
     color:var(--cor2);
     border-radius:  15px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
@@ -421,7 +422,7 @@ main{
 
 #sessao_m09{
     animation: gradient 10s ease alternate infinite;
-    background: linear-gradient(-45deg, #909aa7,#8dbcf5,#c0d8f5,#d9e7f8,var(--cor2)) no-repeat;
+    background: linear-gradient(-45deg, var(--cor4),var(--cor5),var(--cor6),var(--cor7),var(--cor2)) no-repeat;
     background-size: 300% 300%;
     padding: 20px;
     height: 100%;
@@ -445,7 +446,7 @@ main{
 }
 
 #div_c01_m09{
-    background-color: rgba(134, 67, 134, 0);
+    background-color: var(--cor3);
     margin: 10px;
 }
 
@@ -457,33 +458,33 @@ main{
 #div_c01_m09 > h2{
     font: normal bold 1.5vw var(--font1);
     text-align: center;
-    color: rgb(70,70,70);
+    color: var(--cor4);
     margin: 25px 10px;
 }
 
 #div_c02_m09{
-    background-color: rgba(255, 0, 0, 0);
+    background-color: var(--cor3);
     margin: 10px;
 }
 
 #div_c02_m09 > h2{
     font: normal bold 2vw var(--font1);
     text-align: center;
-    color: rgb(70,70,70);
+    color: var(--cor4);
     margin: 25px 10px;
 }
 
 #div_c02_m09 > p{
     font: normal bold 1.5vw var(--font1);
     text-align: justify;
-    color: rgb(70,70,70);
+    color: var(--cor4);
     margin: 25px 10px;
 }
 
 /*sessao 10*/
 
 #sessao_m10{
-    background-image: linear-gradient(to top, #d9e7f8 , rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to top, var(--cor7) , var(--cor3));
     padding: 35px;
     height: 100%;
 }
@@ -502,7 +503,7 @@ main{
 #div_m10 > p{
     font: normal bold 2vw var(--font1);
     text-align: center;
-    color: rgb(70,70,70);
+    color: var(--cor4);
     margin: 35px 10px;
 }
 
@@ -510,17 +511,17 @@ main{
     text-decoration: none;
     font: normal bold 1.5vw var(--font1);
     text-align: left;
-    color: #8dbcf5;
+    color: var(--cor5);
     margin: 25px 10px;
     padding: 7px;
-    background-color: rgba(0, 0, 0, 0);
-    border: solid 1px #8dbcf5;
+    background-color: var(--cor3);
+    border: solid 1px var(--cor5);
     border-radius: 10px;
     transition-duration: 1s;
 }
 
 #div_m10 > a:hover{
-    background-color: #8dbcf5;
+    background-color: var(--cor5);
     color:var(--cor2);
     border-radius:  15px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
@@ -530,7 +531,7 @@ main{
 /*sessao 11*/
 
 #sessao_m11{
-    background-image: linear-gradient(to top, #d9e7f8 , rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to top, var(--cor7) , var(--cor3));
     padding: 20px;
     height: 100%;
 }
@@ -538,7 +539,7 @@ main{
 /*cmc aide*/
 
 #div_m11{
-    background-color: rgba(255, 0, 0, 0);
+    background-color: var(--cor3);
     height: 100%;
     padding: 5px;
     display: flex;
@@ -556,7 +557,7 @@ main{
 }
 
 #div_m11_01{
-    background-color: rgba(128, 0, 128, 0);
+    background-color: var(--cor3);
 }
 
 .div_m11_img{
@@ -564,7 +565,7 @@ main{
 }
 
 #div_m11_img_01{
-    background-image: linear-gradient(-45deg,#d9e7f8,#c0d8f5,#8dbcf5 );
+    background-image: linear-gradient(-45deg,var(--cor7),var(--cor6),var(--cor5) );
     border-radius: 15px 15px 0px 0px;
 }
 
@@ -573,7 +574,7 @@ main{
 }
 
 #div_m11_txt_01{
-    background-color: rgba(255, 255, 255, 0);
+    background-color: var(--cor3);
 }
 
 #div_m11_txt_01 > img{
@@ -587,20 +588,20 @@ main{
 #div_m11_txt_01 > h2{
     font: normal bold 2vw var(--font1);
     text-align: center;
-    color: rgb(70,70,70);
+    color: var(--cor4);
     margin: 5px;
 }
 
 #div_m11_txt_01 > p{
     font: normal bold 1vw var(--font1);
     text-align: center;
-    color: rgb(70,70,70);
+    color: var(--cor4);
     margin: 10px;
 }
 
 
 #div_m11_02{
-    background-color: rgba(0, 0, 255, 0);
+    background-color: var(--cor3);
 }
 
 
@@ -609,7 +610,7 @@ main{
 }
 
 #div_m11_img_02{
-    background-image: linear-gradient(to top,#d9e7f8,#c0d8f5 );
+    background-image: linear-gradient(to top,var(--cor7),var(--cor6) );
     border-radius: 15px 15px 0px 0px;
 }
 
@@ -618,7 +619,7 @@ main{
 }
 
 #div_m11_txt_02{
-    background-color: rgba(255, 255, 255, 0);
+    background-color: var(--cor3);
 }
 
 #div_m11_txt_02 > img{
@@ -632,19 +633,19 @@ main{
 #div_m11_txt_02 > h2{
     font: normal bold 2vw var(--font1);
     text-align: center;
-    color: rgb(70,70,70);
-    margin: 5px;
+    color: var(--cor4);
+    margin: 15px;
 }
 
 #div_m11_txt_02 > p{
     font: normal bold 1vw var(--font1);
     text-align: center;
-    color: rgb(70,70,70);
+    color: var(--cor4);
     margin: 10px;
 }
 
 #div_m11_03{
-    background-color: rgba(255, 166, 0, 0);
+    background-color: var(--cor3);
 }
 
 .div_m11_img{
@@ -652,7 +653,7 @@ main{
 }
 
 #div_m11_img_03{
-    background-image: linear-gradient(-45deg,#8dbcf5 ,#c0d8f5, #d9e7f8  );
+    background-image: linear-gradient(-45deg,var(--cor5),var(--cor6),var(--cor7) );
     border-radius: 15px 15px 0px 0px;
 }
 
@@ -661,7 +662,7 @@ main{
 }
 
 #div_m11_txt_03{
-    background-color: rgba(255, 255, 255, 0);
+    background-color: var(--cor3);
 }
 
 #div_m11_txt_03 > img{
@@ -675,14 +676,14 @@ main{
 #div_m11_txt_03 > h2{
     font: normal bold 2vw var(--font1);
     text-align: center;
-    color: rgb(70,70,70);
+    color: var(--cor4);
     margin: 5px;
 }
 
 #div_m11_txt_03 > p{
     font: normal bold 1vw var(--font1);
     text-align: center;
-    color: rgb(70,70,70);
+    color: var(--cor4);
     margin: 10px;
 }
 
@@ -699,7 +700,7 @@ footer{
 #footer_s{
     height: 100%;
     padding: 10px;
-    background-color: #8b6161cc;
+    background-color: var(--cor3);
     display: flex;
 }
 
@@ -711,7 +712,7 @@ footer{
 }
 
 #div_f_01{
-    background-color: red;
+    background-color: var(--cor3);
     text-align: center;
 }
 
@@ -726,17 +727,17 @@ footer{
     text-decoration: none;
     font: normal bold 1vw var(--font1);
     text-align: left;
-    color: #8dbcf5;
+    color: var(--cor2);
     margin: 25px 10px;
     padding: 7px;
-    background-color: rgba(0, 0, 0, 0);
-    border: solid 1px #8dbcf5;
+    background-color: var(--cor5);
+    border: solid 1px var(--cor5);
     border-radius: 10px;
     transition-duration: 1s;
 }
 
 #div_f_01 > a:hover{
-    background-color: #8dbcf5;
+    background-color: var(--cor4);
     color:var(--cor2);
     border-radius:  15px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
@@ -744,21 +745,22 @@ footer{
 }
 
 #div_f_02{
-    background-color: yellow;
+    background-color: var(--cor3);
     padding: 5px;
     text-align: center;
     display: flex;
 }
 
 #div_f_02 > ul{
-    background-color: rgba(0, 255, 255, 0);
+    list-style-type: none;
+    background-color: var(--cor3);
     margin: 10px 5px;
 }
 
 #div_f_02 > ul > h2{
     font: normal bold 2vw var(--font1);
     text-align: center;
-    color: rgb(70,70,70);
+    color: var(--cor4);
     margin: 5px;
 }
 
@@ -770,17 +772,17 @@ footer{
     text-decoration: none;
     font: normal bold 1vw var(--font1);
     text-align: center;
-    color: #8dbcf5;
+    color: var(--cor2);
     margin: 25px 10px;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0);
-    border: solid 1px #8dbcf5;
+    background-color: var(--cor5);
+    border: solid 1px var(--cor5);
     border-radius: 10px;
     transition-duration: 1s;
 }
 
 #div_f_02 > ul > li > a:hover{
-    background-color: #8dbcf5;
+    background-color: var(--cor4);
     color:var(--cor2);
     border-radius:  15px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
@@ -789,7 +791,7 @@ footer{
 
 
 #div_f_03{
-    background-color: royalblue;
+    background-color: var(--cor3);
     padding: 5px;
     text-align: center;
 }
@@ -799,7 +801,7 @@ footer{
 }
 
 #div_l_01{
-    background-color: gray;
+    background-color: var(--cor3);
     padding: 5px;
 }
 
@@ -807,17 +809,17 @@ footer{
     text-decoration: none;
     font: normal bold 2vw var(--font1);
     text-align: center;
-    color: #8dbcf5;
+    color: var(--cor2);
     margin: 10px;
     padding: 15px;
-    background-color: rgba(0, 0, 0, 0);
-    border: solid 1px #8dbcf5;
+    background-color: var(--cor5);
+    border: solid 1px var(--cor5);
     border-radius: 10px;
     transition-duration: 1s;
 }
 
 #div_l_01 > a:hover{
-    background-color: #8dbcf5;
+    background-color: var(--cor4);
     color:var(--cor2);
     border-radius:  15px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
@@ -825,12 +827,96 @@ footer{
 }
 
 #div_l_02{
-    background-color: purple;
+    background-color: var(--cor3);
     display: flex;
+    margin: 10px 5px -25px 5px;
 }
 
-#ul_f01 > li > a > img{
-    height: 7vh;
-    width: 5vw;
+
+#div_l_02  ul > li > a > img{
+    height: 50px;
+    width: 50px;
     border-radius: 10px;
 }
+
+
+#div_l_02 > ul{
+    position: relative;
+    margin: 50px 0px 0px 50px; 
+}
+
+#div_l_02 > ul > li{
+    float: left;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    margin-right: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px var(--cor1);
+    background-color: rgba(240, 248, 255, 0);
+}
+
+#div_l_02 ul > li > a > img:last-child{
+    margin-right: 20px;    
+}
+
+#div_l_02 ul > li > a > img:first-child{
+    float: left;
+    -o-transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+#div_l_02 > ul > li:hover  img:first-child {
+    margin-top: -50px ;
+    transform: rotate(-135deg);
+    -webkit-transform:rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+}
+
+/* segunda sessao footer */
+
+
+
+#footer_ss{
+    height: 100%;
+    padding: 10px;
+    background-color: var(--cor3);
+}
+
+#div_footer_ss{
+    height: 100%;
+    background-color: var(--cor3);
+    flex: flex;
+    padding: 20px;
+}
+
+#div_footer_ss > a{
+    font: normal bold 1.2vw var(--font1);
+    text-align: left;
+    color: var(--cor4);
+    margin: 10px 15px;
+    text-decoration: none;
+    transition-duration: 1s;
+}
+
+#div_footer_ss > a:hover{
+    color: var(--cor1);
+}
+
+#div_footer_ss > img{
+    height: 15vh;
+    width: 10vw;
+    margin: auto;
+    display: block;
+}
+
+#div_footer_ss > p{
+    font: normal bold 1.2vw var(--font1);
+    text-align: right;
+    color: var(--cor4);
+    margin: 5px;
+}
+
