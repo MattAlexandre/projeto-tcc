@@ -30,13 +30,13 @@
 
             <section class="formulario_cadastro" id="form_c">
 
-                <form id="form_cadastro" method="post" action="#">
+                <form id="form_cadastro" method="post" action="../arquivos-php/process.php">
 
                     <div class="div_form" id="div_form_c01">
 
                         <!-- input email -->
                         <label for=""> e-mail </label><br>
-                        <input type="email" name="email" id=""><br>
+                        <input type="email" name="emailC" id=""><br>
 
                         <a href=""> Enviar Codigo De Verificação </a>
 
@@ -52,11 +52,11 @@
 
                             <!-- input telefone -->
                             <label for=""> Telefone </label><br>
-                            <input type="number" name="telefone" id=""><br>
+                            <input type="number" name="telephone" id=""><br>
 
                             <!-- input CEP -->
                             <label for=""> cep </label><br>
-                            <input type="number" name="CEP" id=""><br> 
+                            <input type="number" name="cep" id=""><br> 
 
                         </div>
 
@@ -68,7 +68,7 @@
 
                             <!-- input data de abertura -->
                             <label for=""> Data de Abertura </label><br>
-                            <input type="date" name="data_abertura" id=""><br>
+                            <input type="date" name="openingDate" id=""><br>
 
                             <label id="label_s" for="" style="color: rgba(0, 0, 0, 0);"> a </label>
                             <!-- input cadastrar  -->
@@ -79,12 +79,12 @@
                     <div class="div_form" id="div_form_c03">
                         <div id="div_cbox">
                             <!-- -->
-                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" name="aceptEmail" id="">
                             <label for=""> Aceitas Receber Email Do ki-preço </label><br>
                             
 
                             <!---->
-                            <input type="checkbox" name=""" id="">
+                            <input type="checkbox" name="aceptTerms" id="">
                             <label for=""> Li e Aceitos os Regulamentos do Site </label>
                             
                         </div>
