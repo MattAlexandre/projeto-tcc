@@ -1,9 +1,6 @@
 <?php
 
 
-
-/*
-
 class Empresa
 {
     private  $Pdo;
@@ -20,7 +17,5 @@ class Empresa
         }
 
     }
-
+    
 }
-
-*/

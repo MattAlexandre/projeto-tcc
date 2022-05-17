@@ -1,15 +1,12 @@
-<?php 
+<?php
+define('HOST', '127.0.0.1');
+define('USUARIO', 'root');
+define('SENHA', '');
+define('DB', 't.c.c');
 
-try {
+    $conexao = mysqli_connect(HOST,USUARIO,SENHA,DB) or die('erro de conect');
 
-    $pdo = new PDO("mysql:dbname=t.c.c;host=localhost","root","");
 
-} catch (PDOException $e) {
-    echo"erro banco : ".$e->getMessage();
-}catch(Exception $e){
-    echo"erro generico".$e->getMessage();
-}
-pdo()->close();
 
 
 // $var = (instancia var) new class( "parametros1(banco de dados) bdname;host;", parametro2, "usuario","senha" )
@@ -76,6 +73,7 @@ $res = $pdo->query("UPDATE pessoa SET email = 'paulo2@gmail.com'
 WHERE id = '4' ");
 */
 
+
 //--------select-----------
 /*
 
@@ -96,5 +94,5 @@ $resultado = $cmd->fetch(PDO::FETCH_ASSOC);
 foreach ($resultado as $indice => $value) {
     echo $indice.": ".$value."<br>"; 
 }
-
 */
+
