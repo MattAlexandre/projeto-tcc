@@ -1,9 +1,14 @@
 <?php
+/*requerimento arquivos */
+
+
+require_once 'pessoa.php';
+
 
 /*recebendo dados do login*/ 
 
         $emailLogin = $_POST['emailL'];         /*email login */
-        $password = $_POST['password'];         /*senha*/
+        $passwordL = $_POST['passwordL'];         /*senha*/
 
 /*recebendo dados do cadastro*/
 
@@ -12,9 +17,16 @@
         $telephone = $_POST['telephone'];       /*telefone */ 
         $cep = $_POST['cep'];                   /*cep */
         $cnpj = $_post['cnpj'];                 /* cnpj */
-        $openingDate = $post['openingDate'];    /*data de abertura*/
+        $passwordC = $post['passwordC'];    /*data de abertura*/
 
 /* checkbox */
 
         $aceptEmail = $_POST['aceptEmail'];
         $aceptTerms = $_POST['aceptTerms'];
+
+
+/*instancia classe*/
+
+$empresa = new Empresa("t.c.c","localhost","root","");
+
+             
