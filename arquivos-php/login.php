@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 include('../arquivos-php/conect.php');
 
 /*validação login nulo volta para o entrar */
@@ -23,8 +25,6 @@ $row = mysqli_num_rows($result);
 
 echo$row;exit;
 
-/*
-
 if($row == 1){
     $_session['email'] = $email;
     header('location: ../arquivos-php/painel.php');
@@ -32,4 +32,4 @@ if($row == 1){
 }else{
     header('location: ../arquivos-html/entrar.html');
     exit();
-}*/
+}
