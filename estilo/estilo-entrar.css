@@ -220,6 +220,8 @@ body{
 }
 
 #div_img > img{
+    height: 30vh;
+    width: 30vw;
     display: block;
     margin: auto auto;
 }

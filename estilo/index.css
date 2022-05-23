@@ -17,7 +17,7 @@
     --cor2:white;
     --cor3:rgba(0, 0, 0, 0);
     --cor4:#909aa7;
-    --cor5:#305d7c;
+    --cor5:#507997;
     --cor6:#8dbcf5;
     --cor7:#c0d8f5;
 }
@@ -205,7 +205,7 @@ main{
 }
 
 #sessao_m04 > div > img{
-    height: 30vh;
+    height: 38vh;
     width: 30vw;
 }
 
@@ -451,6 +451,8 @@ main{
 }
 
 #div_c01_m09 > img{
+    height: 35vh;
+    width: 35vw;
     display: block;
     margin: auto;
 }
@@ -570,6 +572,7 @@ main{
 }
 
 .div_m11_txt{
+    width: 28vw;
     height: 70%;
 }
 
