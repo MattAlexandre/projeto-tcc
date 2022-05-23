@@ -19,8 +19,10 @@
                     <h1> Criar Conta </h1>
 
                     <p>
-                       Crie agora uma conta para abrir um novo
-                       mundo de possibilidades.
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Impedit minima simil
+                        ique voluptate facilis eius amet, inci
+                        dunt quasi quibusdam quae, iste molest
                     </p>
 
                 </div>
@@ -33,7 +35,7 @@
                     <div class="div_form" id="div_form_c01">
 
                         <!-- input email -->
-                        <label for=""> E-mail </label><br>
+                        <label for=""> e-mail </label><br>
                         <input type="email" name="emailC" id=""><br>
 
                         <a href=""> Enviar Codigo De Verificação </a>
@@ -53,7 +55,7 @@
                             <input type="number" name="telephone" id=""><br>
 
                             <!-- input CEP -->
-                            <label for=""> CEP </label><br>
+                            <label for=""> cep </label><br>
                             <input type="number" name="cep" id=""><br> 
 
                         </div>
@@ -61,11 +63,11 @@
                         <div class="div_input" id="div_input_02">
 
                             <!-- input CNPJ -->
-                            <label for=""> CNPJ </label><br>
+                            <label for=""> cnpj </label><br>
                             <input type="number" name="cnpj" id=""><br>
 
                             <!-- input data de abertura -->
-                            <label for=""> Senha </label><br>
+                            <label for=""> senha </label><br>
                             <input type="password" name="passwordL" id=""><br>
 
                             <label id="label_s" for="" style="color: rgba(0, 0, 0, 0);"> a </label>
@@ -78,7 +80,7 @@
                         <div id="div_cbox">
                             <!-- -->
                             <input type="checkbox" name="aceptEmail" id="">
-                            <label for=""> Aceita Receber E-mail's Do KiPreço </label><br>
+                            <label for=""> Aceitas Receber Email Do ki-preço </label><br>
                             
 
                             <!---->

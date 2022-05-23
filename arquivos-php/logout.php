@@ -2,5 +2,5 @@
 
 session_start();
 session_destroy();
-header('location: ../arquivos-html/entrar.html');
+header('location: ../arquivos-php/entrar.php');
 exit();

@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -20,6 +24,19 @@
                     <div class="div_conteudo_e" id="div_title">
                         <h1> Entrar </h1> <!-- titulo -->
                     </div>
+                    
+                    <?php
+                        if(isset($_SESSION['naoAutenticado'])):
+                    ?>
+                        <div  class="div_conteudo_e" id="div_title">
+                            <h1 style="color: red;">
+                                usuario invalido
+                            </h1>
+                        </div>
+                    <?php
+                        endif;
+                        unset($_SESSION['naoAutenticado']);
+                    ?>
 
                     <div class="div_conteudo_e" id="div_formulario">
 
