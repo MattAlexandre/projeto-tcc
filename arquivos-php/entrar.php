@@ -24,6 +24,22 @@ session_start();
                     <div class="div_conteudo_e" id="div_title">
                         <h1> Entrar </h1> <!-- titulo -->
                     </div>
+
+                    <!-- campo null --> 
+                    <?php
+                        if(isset($_SESSION['campNull'])):
+                    ?>
+                        <div  class="div_conteudo_e" id="div_title">
+                            <h1 style="color: red;">
+                                campo vazio
+                            </h1>
+                        </div>
+                    <?php
+                        endif;
+                        unset($_SESSION['campNull']);
+                    ?>
+
+                    <!-- usuario invalido -->
                     
                     <?php
                         if(isset($_SESSION['naoAutenticado'])):
@@ -37,6 +53,9 @@ session_start();
                         endif;
                         unset($_SESSION['naoAutenticado']);
                     ?>
+
+
+                    
 
                     <div class="div_conteudo_e" id="div_formulario">
 
@@ -63,7 +82,7 @@ session_start();
 
                         <p> Não Possui Conta ?</p>
 
-                        <a href="cadastro.html"> Inscrever-se </a>
+                        <a href="../arquivos-php/cadastro.php"> Inscrever-se </a>
 
                     </div>
 

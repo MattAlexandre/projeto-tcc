@@ -7,6 +7,7 @@ include('../arquivos-php/conect.php');
 /*validação login nulo volta para o entrar */
 
 if(empty($_POST['email']) || empty($_POST['password'])){
+    $_SESSION['campNull'] = true;
     header('location: ../arquivos-php/entrar.php');
     exit();
 }

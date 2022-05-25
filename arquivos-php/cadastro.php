@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -25,21 +29,66 @@
                         dunt quasi quibusdam quae, iste molest
                     </p>
 
+
+                    <!-- validação campo email -->
+
+                    <?php
+                        if(isset($_SESSION['campNull'])):
+                        ?>
+
+                            <div  class="div_conteudo_e" id="div_title">
+                                <h1 style="
+                                color: red;
+                                font: normal bold 2.5vw arial;
+                                text-align: center;
+                                margin: 15px 10px;">
+                                    campo vazio
+                                </h1>
+                            </div>
+
+                        <?php
+                            unset($_SESSION['campNull']);
+                            endif;
+                        ?>
+
+                    <!-- validação usuario existente -->
+
+                    <?php
+                        if(isset($_SESSION['usuario_existe'])):
+                        ?>
+
+                            <div  class="div_conteudo_e" id="div_title">
+                                <h1 style="
+                                color: red;
+                                font: normal bold 2.5vw arial;
+                                text-align: center;
+                                margin: 15px 10px;">
+                                    usuario existente 
+                                </h1>
+                            </div>
+
+                        <?php
+                            unset($_SESSION['usuario_existe']);
+                            endif;
+                        ?>
+
                 </div>
             </section>
 
             <section class="formulario_cadastro" id="form_c">
 
-                <form id="form_cadastro" method="post" action="../arquivos-php/process.php">
+                <form id="form_cadastro" method="post" action="../arquivos-php/cadastro_.php">
 
                     <div class="div_form" id="div_form_c01">
 
                         <!-- input email -->
                         <label for=""> e-mail </label><br>
-                        <input type="email" name="emailC" id=""><br>
+                        <input type="email" name="email" id=""><br>
+
 
                         <a href=""> Enviar Codigo De Verificação </a>
 
+                    
                     </div>
 
                     <div class="div_form" id="div_form_c02">
@@ -68,7 +117,7 @@
 
                             <!-- input data de abertura -->
                             <label for=""> senha </label><br>
-                            <input type="password" name="passwordL" id=""><br>
+                            <input type="password" name="password" id=""><br>
 
                             <label id="label_s" for="" style="color: rgba(0, 0, 0, 0);"> a </label>
                             <!-- input cadastrar  -->
