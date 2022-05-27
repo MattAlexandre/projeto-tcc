@@ -36,12 +36,17 @@ session_start();
                         if(isset($_SESSION['campNull'])):
                         ?>
 
-                            <div  class="div_conteudo_e" id="div_title">
+                            <div id="div_title">
                                 <h1 style="
-                                color: red;
+                                color: white;
                                 font: normal bold 2.5vw arial;
                                 text-align: center;
-                                margin: 15px 10px;">
+                                margin: 15px 10px;
+                                background-color: red;
+                                border-radius: 15px;
+                                padding: 7px 2px;
+                                width: 100%;
+                                ">
                                     campo vazio
                                 </h1>
                             </div>
@@ -55,22 +60,53 @@ session_start();
 
                     <?php
                         if(isset($_SESSION['usuario_existe'])):
-                        ?>
+                    ?>
 
-                            <div  class="div_conteudo_e" id="div_title">
+                            <div  id="div_title">
                                 <h1 style="
-                                color: red;
+                                color: white;
                                 font: normal bold 2.5vw arial;
                                 text-align: center;
-                                margin: 15px 10px;">
-                                    usuario existente 
+                                margin: 15px 10px;
+                                background-color: red;
+                                border-radius: 15px;
+                                padding: 7px 2px;
+                                width: 100%;
+                                    ">
+                                    usuario existente
                                 </h1>
                             </div>
 
-                        <?php
+                    <?php
                             unset($_SESSION['usuario_existe']);
                             endif;
-                        ?>
+                    ?>
+
+                    <!-- confirmação cadastro  -->
+
+                    <?php
+                        if(isset($_SESSION['status_cadastro'])):
+                    ?>
+
+                            <div  id="div_title">
+                                <h1 style="
+                                color: white;
+                                font: normal bold 2.5vw arial;
+                                text-align: center;
+                                margin: 15px 10px;
+                                background-color: red;
+                                border-radius: 15px;
+                                padding: 7px 2px;
+                                width: 100%;
+                                    ">
+                                    usuario cadastrado , <a href="../arquivos-php/entrar.php"> acesse </a>
+                                </h1>
+                            </div>
+
+                    <?php
+                            unset($_SESSION['status_cadastro']);
+                            endif;
+                    ?>
 
                 </div>
             </section>

@@ -17,6 +17,10 @@ if(empty($_POST['email']) || empty($_POST['password'])){
 $email = mysqli_real_escape_string($conexao, $_POST['email']);
 $password = mysqli_real_escape_string($conexao, $_POST['password']);
 
+/*delimitando caracteres*/
+
+
+
 
 $query = "SELECT email_empresa , senha FROM empresa WHERE email_empresa ='{$email}' AND senha ='{$password}' ";
 $result = mysqli_query($conexao, $query);

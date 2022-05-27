@@ -30,7 +30,16 @@ session_start();
                         if(isset($_SESSION['campNull'])):
                     ?>
                         <div  class="div_conteudo_e" id="div_title">
-                            <h1 style="color: red;">
+                            <h1 style="
+                                color: white;
+                                font: normal bold 2.5vw arial;
+                                text-align: center;
+                                margin: 15px 10px;
+                                background-color: red;
+                                padding: 7px 2px;
+                                border-radius: 15px;
+                                width: 100%;
+                            ">
                                 campo vazio
                             </h1>
                         </div>
@@ -45,7 +54,16 @@ session_start();
                         if(isset($_SESSION['naoAutenticado'])):
                     ?>
                         <div  class="div_conteudo_e" id="div_title">
-                            <h1 style="color: red;">
+                            <h1 style="
+                                color: white;
+                                font: normal bold 2.5vw arial;
+                                text-align: center;
+                                margin: 15px 10px;
+                                background-color: red;
+                                border-radius: 15px;
+                                padding: 7px 2px;
+                                width: 100%;
+                            ">
                                 usuario invalido
                             </h1>
                         </div>
