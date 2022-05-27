@@ -108,6 +108,7 @@ session_start();
                             endif;
                     ?>
 
+
                 </div>
             </section>
 
@@ -119,7 +120,7 @@ session_start();
 
                         <!-- input email -->
                         <label for=""> e-mail </label><br>
-                        <input type="email" name="email" id=""><br>
+                        <input type="email"  maxlength="45" name="email" id=""><br>
 
 
                         <a href=""> Enviar Codigo De Verificação </a>
@@ -133,7 +134,7 @@ session_start();
 
                             <!-- input nome -->
                             <label for=""> Nome Empresarial </label><br>
-                            <input type="text" name="name" id=""><br>
+                            <input type="text" maxlength="45" name="name" id=""><br>
 
                             <!-- input telefone -->
                             <label for=""> Telefone </label><br>
@@ -153,7 +154,7 @@ session_start();
 
                             <!-- input data de abertura -->
                             <label for=""> senha </label><br>
-                            <input type="password" name="password" id=""><br>
+                            <input type="password" maxlength="11" name="password" id=""><br>
 
                             <label id="label_s" for="" style="color: rgba(0, 0, 0, 0);"> a </label>
                             <!-- input cadastrar  -->

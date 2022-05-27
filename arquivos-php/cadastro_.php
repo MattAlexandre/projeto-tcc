@@ -45,18 +45,16 @@ if($row['total'] == 1){
 
 /*insert*/
                           
-$sql = " INSERT INTO empresa(cnpj_empresa, cep_empresa, nome_empresa, telefone_empresa, email_empresa, senha) VALUES ('$cnpj','$cep','$name','$telephone','$email', '$password') ";
-
+$sql = "INSERT INTO empresa (cnpj_empresa, cep_empresa, nome_empresa, telefone_empresa, email_empresa, senha) VALUES ('$cnpj', '$cep', '$name', '$telephone', '$email', '$password')";
 
 /*validação insert*/
 
-
 if($conexao->query($sql) === true){
     $_SESSION['status_cadastro'] = true;
-}
-
+} 
 $conexao->close();
 
 header('location: ../arquivos-php/cadastro.php');
-exit();
+exit;
+
 

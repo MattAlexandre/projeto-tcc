@@ -79,11 +79,11 @@ session_start();
 
                         <form method="post" action="../arquivos-php/login.php" id="form"> <!-- formulario -->
 
-                            <label class="text_f" for=""> E-mail </label><br>  <!-- textbox email -->
-                            <input class=input_c type="email" name="email" ><br>
+                            <label class="text_f"   for=""> E-mail </label><br>  <!-- textbox email -->
+                            <input class=input_c maxlength="45" type="email" name="email" ><br>
 
                             <label class="text_f" for=""> Senha </label> <br><!-- textbox senha -->
-                            <input class=input_c type="password" name="password"><br>
+                            <input class=input_c maxlength="11" type="password" name="password"><br>
 
                             <input id="input_env" type="submit" value="Entrar"><br> <!-- bnt enviar -->
 

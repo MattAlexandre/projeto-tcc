@@ -13,8 +13,8 @@
 
     --font1: verdana, Geneva, tahoma, sans-serif;
 
-    --cor1:black;
-    --cor2:white;
+    --cor1:rgb(0, 0, 0);
+    --cor2:rgb(255, 255, 255);
     --cor3:rgba(0, 0, 0, 0);
     --cor4:#909aa7;
     --cor5:#507997;
@@ -40,16 +40,87 @@ header{
     padding: 15px 0px;
 }
 
-#nav_topo > img{
+#nav_topo > a > img{
     height: 100px;
     width: 145px;
+    float: left;
     margin-left: 20px;
     margin-top: -25px;
 }
 
-nav > a{
+/*drop down*/
+
+nav > ul{
+    float: left;
+}
+
+nav > ul > li{
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+nav > ul > li > a{
+    display: block;
+    font: normal bold 1.5vw var(--font1);
+    color: var(--cor5);
+    margin: 2px 15px;
+    padding: 15px;
+    text-decoration: none;
+    transition-duration: 1s;
+}
+
+nav > ul > li > a:hover{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    color: var(--cor6);
+}
+
+nav > ul > li > ul{
+    display: none;
+    position: relative;
+    background-image: linear-gradient(to bottom, var(--cor2) , var(--cor7));
+    padding: 10px;
+    border-radius:  0px 0px 10px 10px;
+    transition-duration: 1s;
+}
+
+nav > ul > li:hover ul{
+    display: block;
+    list-style: none;
+}
+
+#list{
+    color: var(--cor6);
+    margin: 10px 5px;
+    font: normal bold  1vw var(--font1);
+    padding: 10px;
+    transition-duration: 1s;
+}
+
+#list:hover{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    color: var(--cor2);
+    background-color: var(--cor6);
+}
+
+#list > a {
+    text-decoration: none;
+    color: var(--cor5);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*entrar*/
+nav > #link{
     float: right;
-    color: var(--cor1); 
     text-decoration: none;
     margin: 0px 35px;   
     font:normal normal 1.5vw var(--font1);
