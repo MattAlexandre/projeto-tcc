@@ -1,0 +1,343 @@
+@charset "utf-8";
+
+/*inicializando a pagina com margin e padding sem formatação*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*declarando variaveis*/
+
+:root{
+
+    --font1: verdana, Geneva, tahoma, sans-serif;
+
+    --cor1:black;
+    --cor2:white;
+    --cor3:rgba(0, 0, 0, 0);
+    --cor4:#909aa7;
+    --cor5:#507997;
+    --cor6:#8dbcf5;
+    --cor7:#c0d8f5;
+}
+
+#body{
+    height: 100%;
+    background: var(--cor1) url("../imagens/img-fundo-entra.jpeg") center center no-repeat fixed;
+    background-size: cover;
+    padding: 20px;
+}
+
+#title{
+    height: 100%;
+    padding: 15px;
+    background-color:rgba(0, 255, 255, 0);
+}
+
+#title > h1{
+    font: normal bold 3.5vw var(--font1);
+    color: var(--cor5);
+    text-align: center;
+    margin: 15px 5px;
+}
+
+#title > p{
+    font: normal bold 1.5vw var(--font1);
+    color: var(--cor5);
+    text-align: justify;
+    margin: 5px;
+}
+
+/*div assinatura*/ 
+
+#assinatura{
+    display: flex;
+}
+
+.ass{
+    height: 100%;
+    width: 29vw;
+    margin: 20px;
+}
+
+/*ass 01*/
+
+#ass01{
+    background-color: rgba(136, 72, 136, 0);
+    border-radius: 45px;
+}
+
+#ass01:hover{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+#ass01 > #gradient{
+    height: 15vh;
+    background: linear-gradient(to left,var(--cor7),var(--cor6),var(--cor7)) no-repeat;
+    border-radius: 45px 45px 0px 0px;
+    background-size: 300% 300%;
+    animation: gradient 10s ease alternate infinite;
+}
+
+@keyframes gradient{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+#ass01 > #text01{
+    height: 55vh;
+    margin: -40px 0px 0px 0px;
+    padding: 45px;
+    background-color: var(--cor7);
+    border-radius: 45px 45px 0px 0px;
+}
+
+#ass01 > #text01 > h1{
+    font: normal bold 2.2vw var(--font1);
+    color: var(--cor5);
+    text-align: center;
+
+}
+
+#ass01 > #text01 > p{
+    font: normal normal 1.5vw var(--font1);
+    color: var(--cor1);
+    text-align: justify;
+    margin: 25px 5px ;
+}
+
+#ass01 > #text01 > h2{
+    font: normal bold 3vw var(--font1);
+    color: var(--cor2);
+    text-align: center;
+    margin: 5px ;
+}
+
+#ass01 > #text01 > h2 > strong{
+    font: normal bold 5vw var(--font1);
+}
+
+#ass01 > #text02 {
+    height: 8vh;
+    background-color: var(--cor5);
+    padding: 15px;
+    margin: -43px 0px 0px 0px;
+    border-radius: 45px;
+    transition-duration: 1s;
+} 
+
+#ass01 > #text02:hover{
+    background-color: var(--cor6);
+}
+
+#ass01 > #text02 > p{
+    text-align: center;
+}
+
+#ass01 > #text02 > p > a{
+    font: normal bold 3vw var(--font1);
+    color: var(--cor2);
+    text-align: center;
+    margin: 5px ;
+    text-decoration: none;
+}
+
+
+
+
+/* ass02 */
+#ass02{
+    background-color: rgba(136, 72, 136, 0);
+    border-radius: 45px;
+}
+
+#ass02:hover{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+#ass02 > #gradient{
+    height: 15vh;
+    background: linear-gradient(to left,var(--cor7),var(--cor6),var(--cor7)) no-repeat;
+    border-radius: 45px 45px 0px 0px;
+    background-size: 300% 300%;
+    animation: gradient 10s ease alternate infinite;
+}
+
+@keyframes gradient{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+#ass02 > #text01{
+    height: 55vh;
+    margin: -40px 0px 0px 0px;
+    padding: 45px;
+    background-color: var(--cor7);
+    border-radius: 45px 45px 0px 0px;
+}
+
+#ass02 > #text01 > h1{
+    font: normal bold 2.2vw var(--font1);
+    color: var(--cor5);
+    text-align: center;
+
+}
+
+#ass02 > #text01 > p{
+    font: normal normal 1.5vw var(--font1);
+    color: var(--cor1);
+    text-align: justify;
+    margin: 25px 5px ;
+}
+
+#ass02 > #text01 > h2{
+    font: normal bold 3vw var(--font1);
+    color: var(--cor2);
+    text-align: center;
+    margin: 5px ;
+}
+
+#ass02 > #text01 > h2 > strong{
+    font: normal bold 5vw var(--font1);
+}
+
+#ass02 > #text02 {
+    height: 8vh;
+    background-color: var(--cor5);
+    padding: 15px;
+    margin: -43px 0px 0px 0px;
+    border-radius: 45px;
+    transition-duration: 1s;
+} 
+
+#ass02 > #text02:hover{
+    background-color: var(--cor6);
+}
+
+#ass02 > #text02 > p{
+    text-align: center;
+}
+
+#ass02 > #text02 > p > a{
+    font: normal bold 3vw var(--font1);
+    color: var(--cor2);
+    text-align: center;
+    margin: 5px ;
+    text-decoration: none;
+}
+
+/*ass03*/
+#ass03{
+    background-color: rgba(136, 72, 136, 0);
+    border-radius: 45px;
+}
+
+#ass03:hover{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+#ass03 > #gradient{
+    height: 15vh;
+    background: linear-gradient(to left,var(--cor7),var(--cor6),var(--cor7)) no-repeat;
+    border-radius: 45px 45px 0px 0px;
+    background-size: 300% 300%;
+    animation: gradient 10s ease alternate infinite;
+}
+
+@keyframes gradient{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+#ass03 > #text01{
+    height: 55vh;
+    margin: -40px 0px 0px 0px;
+    padding: 45px;
+    background-color: var(--cor7);
+    border-radius: 45px 45px 0px 0px;
+}
+
+#ass03 > #text01 > h1{
+    font: normal bold 2.2vw var(--font1);
+    color: var(--cor5);
+    text-align: center;
+
+}
+
+#ass03 > #text01 > p{
+    font: normal normal 1.5vw var(--font1);
+    color: var(--cor1);
+    text-align: justify;
+    margin: 25px 5px ;
+}
+
+#ass03 > #text01 > h2{
+    font: normal bold 3vw var(--font1);
+    color: var(--cor2);
+    text-align: center;
+    margin: 5px ;
+}
+
+#ass03 > #text01 > h2 > strong{
+    font: normal bold 5vw var(--font1);
+}
+
+#ass03 > #text02 {
+    height: 8vh;
+    background-color: var(--cor5);
+    padding: 15px;
+    margin: -43px 0px 0px 0px;
+    border-radius: 45px;
+    transition-duration: 1s;
+} 
+
+#ass03 > #text02:hover{
+    background-color: var(--cor6);
+}
+
+#ass03 > #text02 > p{
+    text-align: center;
+}
+
+#ass03 > #text02 > p > a{
+    font: normal bold 3vw var(--font1);
+    color: var(--cor2);
+    text-align: center;
+    margin: 5px ;
+    text-decoration: none;
+}
+
+
+#img{
+    background-color: rgba(44, 13, 13, 0);
+}
+
+#img > img{
+    height: 20vh;
+    width: 15vw;
+    display: block;
+    margin: auto;
+}

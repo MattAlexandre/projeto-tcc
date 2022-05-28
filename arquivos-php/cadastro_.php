@@ -54,7 +54,7 @@ if($conexao->query($sql) === true){
 } 
 $conexao->close();
 
-header('location: ../arquivos-php/cadastro.php');
+header('location: ../arquivos-php/assinatura.php');
 exit;
 
 

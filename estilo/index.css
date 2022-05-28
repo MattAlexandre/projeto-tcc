@@ -95,12 +95,13 @@ nav > ul > li:hover ul{
     font: normal bold  1vw var(--font1);
     padding: 10px;
     transition-duration: 1s;
+    text-align: center;
 }
 
 #list:hover{
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
-    color: var(--cor2);
     background-color: var(--cor6);
+    border-radius: 15px;
 }
 
 #list > a {
@@ -108,15 +109,10 @@ nav > ul > li:hover ul{
     color: var(--cor5);
 }
 
-
-
-
-
-
-
-
-
-
+#list > a:hover{
+    color: var(--cor2);
+}
+ 
 
 /*entrar*/
 nav > #link{
@@ -512,6 +508,7 @@ main{
             }
         }
 
+        
 .div_m09{
     height: 100%;
 }
