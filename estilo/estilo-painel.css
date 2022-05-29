@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+/*inicializando a pagina com margin e padding sem formatação*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*declarando variaveis*/
+
+:root{
+
+    --font1: verdana, Geneva, tahoma, sans-serif;
+
+    --cor1:rgb(0, 0, 0);
+    --cor2:rgb(255, 255, 255);
+    --cor3:rgba(0, 0, 0, 0);
+    --cor4:#909aa7;
+    --cor5:#507997;
+    --cor6:#8dbcf5;
+    --cor7:#c0d8f5;
+}
+
+main{
+    height: 100%;
+    background-color: var(--cor7);
+}
+
+.sidebar{
+    position: fixed;
+    background-color: var(--cor6);
+    width: 16vw;
+    height: 100%;
+    padding: 10px;
+    left: 0;
+    transition-duration: 0.5s;
+}
+
+
+.sidebar > center > img{
+    height: 20vh;
+    width: 12vw;
+    border-radius: 100%;
+    margin: 10px 5px;
+}
+
+.sidebar > center > h2{
+    font: normal bold 1.5vw var(--font1);
+    text-align: center;
+    color: var(--cor5);
+    margin: 15px 5px;
+}
+
+.sidebar > a{
+    display: block;
+    text-decoration: none;
+    font: normal bold 1.7vw var(--font1);
+    text-align: left;
+    color: var(--cor5);
+    margin: 15px 5px;
+    transition-duration: 1s;
+    padding: 15px;  
+    width: 100%;
+}
+
+.sidebar > a:hover{
+    background-color: var(--cor7);
+    border-radius: 15px;
+}
+
+.sidebar > ion-icon{
+    padding: 10px;
+}
+
+li > label > #sidebar_btn{
+    z-index: 1;
+    position: fixed;
+    left: 165px;
+    color: var(--cor5);
+    font-size: 5vw;
+    margin: 10px ;
+    cursor: pointer;
+    transition-duration:1s ;
+}
+
+li > label > #sidebar_btn:hover{
+    color: var(--cor6);
+}
+
+#check:checked ~ main > .sidebar{
+    left: -190px;
+}
+
+#check:checked ~ main > .sidebar  a  span{
+    display: none;
+}
+
+#check:checked ~ main > .sidebar  a{
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}
+
+#check{
+    display: none;
+}
+
+/* home */ 
+
+.home{
+    height: 100%;
+    padding: 25px;
+    background-color: var(--cor7);
+}
+
+/* --------------home topo---------------- */
+.home_topo{
+    background-color: var(--cor6);
+    height: 20vh;
+    margin: 15px 20px;
+    border-radius: 20px;
+}
+
+
+
+/* ---------------home body--------------------*/
+.home_body{
+    background-color: var(--cor6);
+    height: 100%;
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+    padding: 10px;
+}
+
+/* grafic */
+
+#grafic{
+    height: 55vh;
+    width: 70%;
+    margin: 10px 15px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+/* text */
+
+#text_grafic{
+    height: 55vh ;
+    width: 30%;
+    margin: 10px 15px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+/*---------------aside---------------*/
+
+.home_aside{
+    background-color: var(--cor6);
+    height: 100%;
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+    padding: 10px;
+}
+
+.h_aside{
+    height: 50vh ;
+    width: 30%;
+    margin: 10px 15px;
+    background-color: white;
+    border-radius: 20px;
+}

@@ -35,7 +35,7 @@ session_start();
             <section class="ass" id="ass01">
                 <!-- div gradient -->
                 <div id="gradient">
-
+                    
                 </div>
                 <!-- div text -->
                 <div id="text01">
