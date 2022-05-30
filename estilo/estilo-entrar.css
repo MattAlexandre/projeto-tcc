@@ -29,6 +29,7 @@
 body{
     background: var(--cor1) url("../imagens/img-fundo-entra.jpeg") center center no-repeat fixed;
     background-size: cover;
+    
 }
 
 .body_entrar{

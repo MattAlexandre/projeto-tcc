@@ -7,8 +7,8 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="../estilo/estilo-cadastro.css">
-    <link rel="shortcut icon" href="../imagens/favicon-kipreco.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../estilo/estilo-cadastro.css">
+    <link rel="shortcut icon" href="../../imagens/favicon-kipreco.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> cadastro  </title>
 </head>
@@ -99,7 +99,7 @@ session_start();
                                 padding: 7px 2px;
                                 width: 100%;
                                     ">
-                                    usuario cadastrado , <a href="../arquivos-php/entrar.php"> acesse </a>
+                                    usuario cadastrado , <a href="../../arquivos-php/f-end/entrar.php"> acesse </a>
                                 </h1>
                             </div>
 
@@ -114,7 +114,7 @@ session_start();
 
             <section class="formulario_cadastro" id="form_c">
 
-                <form id="form_cadastro" method="post" action="../arquivos-php/cadastro_.php">
+                <form id="form_cadastro" method="post" action="../../arquivos-php/b-end/cadastro_.php">
 
                     <div class="div_form" id="div_form_c01">
 

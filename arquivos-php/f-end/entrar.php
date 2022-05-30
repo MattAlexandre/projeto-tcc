@@ -7,7 +7,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="../estilo/estilo-entrar.css">
+    <link rel="stylesheet" href="../../estilo/estilo-entrar.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> entrar site </title>
 </head>
@@ -77,7 +77,7 @@ session_start();
 
                     <div class="div_conteudo_e" id="div_formulario">
 
-                        <form method="post" action="../arquivos-php/login.php" id="form"> <!-- formulario -->
+                        <form method="post" action="../../arquivos-php/b-end/login.php" id="form"> <!-- formulario -->
 
                             <label class="text_f"   for=""> E-mail </label><br>  <!-- textbox email -->
                             <input class=input_c maxlength="45" type="email" name="email" ><br>
@@ -100,7 +100,7 @@ session_start();
 
                         <p> Não Possui Conta ?</p>
 
-                        <a href="../arquivos-php/cadastro.php"> Inscrever-se </a>
+                        <a href="../../arquivos-php/f-end/cadastro.php"> Inscrever-se </a>
 
                     </div>
 
@@ -125,7 +125,7 @@ session_start();
 
                     <div  class="div_conteudo_e" id="div_img">
 
-                        <img src="../imagens/img-ki-preco.png" alt="imagem-logo-ki img-ki-preco">
+                        <img src="../../imagens/img-ki-preco.png" alt="imagem-logo-ki img-ki-preco">
                         
                     </div>
                 </div>

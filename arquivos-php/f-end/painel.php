@@ -2,7 +2,9 @@
 
 session_start();
 
-include('../arquivos-php/verifica_login.php');
+include('../../arquivos-php/b-end/verifica_login.php');
+include('../../arquivos-php/graficos/grafico01.php');
+include('../../arquivos-php/graficos/grafico02.php');
 
 ?>
 
@@ -12,9 +14,11 @@ include('../arquivos-php/verifica_login.php');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../estilo/estilo-painel.css">
-    <link rel="stylesheet" href="../estilo/index.css">
+    <link rel="stylesheet" href="../../estilo/estilo-painel.css">
+    <link rel="stylesheet" href="../../estilo/index.css">
     <title>Document</title>
+
+    
 </head>
 <body>
             <input type="checkbox" id="check">
@@ -25,7 +29,7 @@ include('../arquivos-php/verifica_login.php');
 
             <nav id="nav_topo">
 
-            <a href="../arquivos-php/painel.php"><img src="../imagens/img-ki-preco.png" alt="imagem-logo"></a>
+            <a href="../../arquivos-php/painel.php"><img src="../../imagens/img-ki-preco.png" alt="imagem-logo"></a>
 
             <ul>
 
@@ -77,7 +81,7 @@ include('../arquivos-php/verifica_login.php');
              <div class="sidebar">
 
                     <center>
-                        <img src="../imagens/img-footer.png" alt="">
+                        <img src="../../imagens/img-footer.png" alt="">
                         <h2> 
                             <?php
                             echo $_SESSION['email'];
@@ -113,7 +117,7 @@ include('../arquivos-php/verifica_login.php');
                         </span>
                     </a>
 
-                    <a href="../arquivos-php/logout.php">
+                    <a href="../../arquivos-php/b-end/logout.php">
                         <ion-icon name="exit-outline">
                             
                         </ion-icon>
@@ -136,8 +140,19 @@ include('../arquivos-php/verifica_login.php');
 
                         <!-- body -->
                         <section class="home_body">
-                            <div id="grafic">
+                            
+                            <!--grafico--> 
 
+                            <div id="grafic">
+                                    <div id="chart_div" 
+                                    style="
+                                    width: 100%;
+                                    height: 100%;
+                                    position: relative;
+                                    display: block;
+                                    border-radius: 20px;
+                                    ">
+                                    </div>
                             </div>
 
                             <div id="text_grafic">
@@ -151,15 +166,21 @@ include('../arquivos-php/verifica_login.php');
                         <section class="home_aside">
 
                             <div class="h_aside" id="h_aside_01">
-
+                                 <!-- grafico -->
+                                <div id="piechart_3d" 
+                                     style="
+                                     width: 25vw;
+                                     height: 50vh;
+                                     ">
+                                </div>     
                             </div>
 
                             <div class="h_aside" id="h_aside_02">
-
+                                
                             </div>
 
                             <div class="h_aside" id="h_aside_03">
-
+                                
                             </div>
 
                         </section>
@@ -176,7 +197,7 @@ include('../arquivos-php/verifica_login.php');
         <section id="footer_s">
 
             <div class="div_footer" id="div_f_01">
-                <img src="../imagens/img-ki-preco.png" alt="">
+                <img src="../../imagens/img-ki-preco.png" alt="">
 
                 <a href=""> entre em contato conosco </a>
                 
@@ -206,7 +227,7 @@ include('../arquivos-php/verifica_login.php');
                 
                 <div class="div_links" id="div_l_01">
 
-                    <a href="../arquivos-php/entrar.php"> entrar </a>
+                    <a href="../../arquivos-php/entrar.php"> entrar </a>
 
                 </div>
 
@@ -217,36 +238,36 @@ include('../arquivos-php/verifica_login.php');
                         <li>
                             <a href="">
 
-                                <img src="../imagens/face-escuro.png" alt="">
+                                <img src="../../imagens/face-escuro.png" alt="">
                                 
-                                <img src="../imagens/face-claro.png " alt="">
+                                <img src="../../imagens/face-claro.png " alt="">
                             </a>
                         </li>
 
                         <li>
                             <a href="">
 
-                                <img src="../imagens/insta-escuro.png" alt="">
+                                <img src="../../imagens/insta-escuro.png" alt="">
                                 
-                                <img src="../imagens/insta-claro.png" alt="">
+                                <img src="../../imagens/insta-claro.png" alt="">
                             </a>
                         </li>
 
                         <li>
                             <a href="">
 
-                                <img src="../imagens/twitter-escuro.png" alt="">
+                                <img src="../../imagens/twitter-escuro.png" alt="">
                                 
-                                <img src="../imagens/twitter-claro.png" alt="">
+                                <img src="../../imagens/twitter-claro.png" alt="">
                             </a>
                         </li>
 
                         <li>
                             <a href="">
 
-                                <img src="../imagens/abaixar-escuro.png" alt="">
+                                <img src="../../imagens/abaixar-escuro.png" alt="">
                                 
-                                <img src="../imagens/asbaixar-claro.png" alt="">
+                                <img src="../../imagens/asbaixar-claro.png" alt="">
 
                             </a>
                         </li>
@@ -267,7 +288,7 @@ include('../arquivos-php/verifica_login.php');
 
                 <p> © 2022 pankakes </p>
 
-                <img src="../imagens/img-ki-preco.png" alt="">
+                <img src="../../imagens/img-ki-preco.png" alt="">
 
                 
 

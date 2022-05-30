@@ -2,13 +2,13 @@
 
 session_start();
 
-include('../arquivos-php/conect.php');
+include('../../arquivos-php/b-end/conect.php');
 
 /*validação login nulo volta para o entrar */
 
 if(empty($_POST['email']) || empty($_POST['password'])){
     $_SESSION['campNull'] = true;
-    header('location: ../arquivos-php/entrar.php');
+    header('location: ../../arquivos-php/f-end/entrar.php');
     exit();
 }
 
@@ -28,11 +28,11 @@ $row = mysqli_num_rows($result);
 
 if($row == 1){
     $_SESSION['email'] = $email;
-    header('location: ../arquivos-php/painel.php');
+    header('location: ../../arquivos-php/f-end/painel.php');
     exit();
 }else{
     $_SESSION['naoAutenticado'] = true;
-    header('location: ../arquivos-php/entrar.php');
+    header('location: ../../arquivos-php/f-end/entrar.php');
     exit();
 }
 

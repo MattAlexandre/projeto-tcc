@@ -2,7 +2,7 @@
 
 session_start();
 
-include('../arquivos-php/conect.php');
+include('../../arquivos-php/b-end/conect.php');
 
 /*validação cadastro nulo volta para o entrar */
 
@@ -18,7 +18,7 @@ if(
 
     ){
     $_SESSION['campNull'] = true;
-    header('location: ../arquivos-php/cadastro.php');
+    header('location: ../../arquivos-php/f-end/cadastro.php');
     exit();
 }
 
@@ -39,7 +39,7 @@ $row = mysqli_fetch_assoc($result);
 
 if($row['total'] == 1){
     $_SESSION['usuario_existe'] = true;
-    header('location: ../arquivos-php/cadastro.php');
+    header('location: ../../arquivos-php/f-end/cadastro.php');
     exit();
 }
 
@@ -54,7 +54,7 @@ if($conexao->query($sql) === true){
 } 
 $conexao->close();
 
-header('location: ../arquivos-php/assinatura.php');
+header('location: ../../arquivos-php/f-end/assinatura.php');
 exit;
 
 
