@@ -2,6 +2,8 @@
 
 session_start();
 
+include('../../arquivos-php/b-end/verifica_login.php'); 
+
 ?>
 
 <!DOCTYPE html>
@@ -149,11 +151,32 @@ session_start();
                                 <div class="list_p">
                                     <table> <!--tabela -->
 
-                                        <tr id="text_list_01"><!-- linha -->
-                                            <td> nome produto </td>
+                                        <tr><!-- linha -->
+                                            <td > nome produto </td>
                                             <td> descrição </td>
                                             <td> codigo de barra </td>
                                             <td> marca </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td> arooz </td>
+                                            <td> arooz branco </td>
+                                            <td> 56124637356455246461</td>
+                                            <td> camil </td>
+                                            <td>
+                                            <a href="">
+                                                <ion-icon name="pencil-outline">
+                                
+                                                </ion-icon>
+                                                    editar
+                                                </a>
+                                                <a href="">
+                                                <ion-icon name="trash-outline">
+                                
+                                                </ion-icon>
+                                                    excluir
+                                                </a>
+                                            </td>
                                         </tr>
 
                                         <tr id="text_list_02">
@@ -162,8 +185,39 @@ session_start();
                                             <td> 56124637356455246461</td>
                                             <td> camil </td>
                                             <td>
-                                                <a href="">editar</a>
-                                                <a href="">excluir</a>
+                                                <a href="">
+                                                <ion-icon name="pencil-outline">
+                                
+                                                </ion-icon>
+                                                    editar
+                                                </a>
+                                                <a href="">
+                                                <ion-icon name="trash-outline">
+                                
+                                                </ion-icon>
+                                                    excluir
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                        <tr id="text_list_02">
+                                            <td> arooz </td>
+                                            <td> arooz branco </td>
+                                            <td> 56124637356455246461</td>
+                                            <td> camil </td>
+                                            <td>
+                                            <a href="">
+                                                <ion-icon name="pencil-outline">
+                                
+                                                </ion-icon>
+                                                    editar
+                                                </a>
+                                                <a href="">
+                                                <ion-icon name="trash-outline">
+                                
+                                                </ion-icon>
+                                                    excluir
+                                                </a>
                                             </td>
                                         </tr>
                                     </table>
@@ -219,7 +273,7 @@ session_start();
                 
                 <div class="div_links" id="div_l_01">
 
-                    <a href="../../arquivos-php/entrar.php"> entrar </a>
+
 
                 </div>
 
