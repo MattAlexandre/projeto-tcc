@@ -2,10 +2,6 @@
 
 session_start();
 
-include('../../arquivos-php/b-end/verifica_login.php');
-include('../../arquivos-php/graficos/grafico01.php');
-include('../../arquivos-php/graficos/grafico02.php');
-
 ?>
 
 <!DOCTYPE html>
@@ -16,6 +12,8 @@ include('../../arquivos-php/graficos/grafico02.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../estilo/estilo-painel.css">
     <link rel="stylesheet" href="../../estilo/index.css">
+    <link rel="stylesheet" href="../../estilo/estilo-produto.css">
+
     <title> ki preco </title>
 
     
@@ -130,61 +128,56 @@ include('../../arquivos-php/graficos/grafico02.php');
                     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
                     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
                             
-                <section class="home">
+                 <!-----------------------conteudo------------------------>
+                    <section  class="produto">
 
-                        <!--topo--> 
-                        <section class="home_topo">
+                            <!--topo--> 
+                            <section class="topo_p">
+                                <h1>produtos</h1>
 
-                        </section>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing
+                                    elit. Aliquam error ullam tempora. Est iste nesciunt 
+                                </p>
 
-                        <!-- body -->
-                        <section class="home_body">
-                            
-                            <!--grafico--> 
+                            </section>
 
-                            <div id="grafic">
-                                    <div id="chart_div" 
-                                    style="
-                                    width: 100%;
-                                    height: 100%;
-                                    position: relative;
-                                    display: block;
-                                    border-radius: 20px;
-                                    ">
-                                    </div>
-                            </div>
+                            <!-- body -->
 
-                            <div id="text_grafic">
+                            <section class="body_p">
 
-                            </div>
+                                <div class="list_p">
+                                    <table> <!--tabela -->
 
-                        </section>
-                        
+                                        <tr id="text_list_01"><!-- linha -->
+                                            <td> nome produto </td>
+                                            <td> descrição </td>
+                                            <td> codigo de barra </td>
+                                            <td> marca </td>
+                                        </tr>
 
-                        <!-- asides -->
-                        <section class="home_aside">
+                                        <tr id="text_list_02">
+                                            <td> arooz </td>
+                                            <td> arooz branco </td>
+                                            <td> 56124637356455246461</td>
+                                            <td> camil </td>
+                                            <td>
+                                                <a href="">editar</a>
+                                                <a href="">excluir</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
 
-                            <div class="h_aside" id="h_aside_01">
-                                 <!-- grafico -->
-                                <div id="piechart_3d" 
-                                     style="
-                                     width: 25vw;
-                                     height: 50vh;
-                                     ">
-                                </div>     
-                            </div>
+                            </section>
 
-                            <div class="h_aside" id="h_aside_02">
-                                
-                            </div>
+                            <!-- final -->
+                            <section class="final_p">
+                                <a href="">cadastrar - produto</a>
+                            </section>
 
-                            <div class="h_aside" id="h_aside_03">
-                                
-                            </div>
 
-                        </section>
-
-                </section>
+                    </section>
 
         </main>
 

@@ -82,32 +82,6 @@ session_start();
                             endif;
                     ?>
 
-                    <!-- confirmação cadastro  -->
-
-                    <?php
-                        if(isset($_SESSION['status_cadastro'])):
-                    ?>
-
-                            <div  id="div_title">
-                                <h1 style="
-                                color: white;
-                                font: normal bold 2.5vw arial;
-                                text-align: center;
-                                margin: 15px 10px;
-                                background-color: red;
-                                border-radius: 15px;
-                                padding: 7px 2px;
-                                width: 100%;
-                                    ">
-                                    usuario cadastrado , <a href="../../arquivos-php/f-end/entrar.php"> acesse </a>
-                                </h1>
-                            </div>
-
-                    <?php
-                            unset($_SESSION['status_cadastro']);
-                            endif;
-                    ?>
-
 
                 </div>
             </section>

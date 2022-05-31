@@ -16,16 +16,28 @@
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
           ['Year', 'Sales', 'Expenses'],
+
           <?php
           
           include('../../arquivos-php/b-end/conect.php');
-          $sql = "SELECT * FROM";
+
+          $sql = "SELECT * FROM acesso";
+          $buscar = mysqli_query($conexao,$sql);
+
+
+          while ($dados = mysql_fetch_array($buscar)) {
+                
+          }
+        
           ?>
 
           ['2013',  1000,      400],
           ['2014',  1170,      460],
           ['2015',  660,       1120],
           ['2016',  1030,      540]
+
+        
+
         ]);
 
         var options = {
