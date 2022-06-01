@@ -9,13 +9,13 @@ include('../../arquivos-php/graficos/grafico02.php');
 ?>
 
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../estilo/estilo-painel.css">
     <link rel="stylesheet" href="../../estilo/index.css">
+    <link rel="stylesheet" href="../../estilo/estilo-painel.css">
     <title> ki preco </title>
 
     
@@ -116,7 +116,7 @@ include('../../arquivos-php/graficos/grafico02.php');
                             </span>
                         </a>
 
-                        <a href="../arquivos-php/b-end/logout.php">
+                        <a href="../../arquivos-php/b-end/logout.php">
                             <ion-icon name="exit-outline">
                                 
                             </ion-icon>
@@ -133,9 +133,18 @@ include('../../arquivos-php/graficos/grafico02.php');
                 <section class="home">
 
                         <!--topo--> 
-                        <section class="home_topo">
-
-                        </section>
+                         <section class="home_topo">
+                            <h1 style="
+                                font: normal normal 70px var(--font1);
+                                font-size: ;
+                                color: var(--cor5);
+                                text-align: center;
+                                padding: 10px;
+                                margin:5px;
+                            ">
+                                Ki Preço
+                            </h1>
+                        </section> 
 
                         <!-- body -->
                         <section class="home_body">
@@ -143,18 +152,16 @@ include('../../arquivos-php/graficos/grafico02.php');
                             <!--grafico--> 
 
                             <div id="grafic">
-                                    <div id="chart_div" 
-                                    style="
-                                    width: 100%;
-                                    height: 100%;
-                                    position: relative;
-                                    display: block;
-                                    border-radius: 20px;
-                                    ">
-                                    </div>
+
+                                <!-- grafico 1-->
+                                <div id="chart_div" style="width: 100%; height: 100%;"></div>
+
                             </div>
 
                             <div id="text_grafic">
+
+                                <!-- grafico 2-->
+                                <div id="piechart" style="width: 100%; height: 100%;"></div>
 
                             </div>
 
@@ -162,16 +169,10 @@ include('../../arquivos-php/graficos/grafico02.php');
                         
 
                         <!-- asides -->
-                        <section class="home_aside">
+                        <!-- <section class="home_aside">
 
                             <div class="h_aside" id="h_aside_01">
-                                 <!-- grafico -->
-                                <div id="piechart_3d" 
-                                     style="
-                                     width: 25vw;
-                                     height: 50vh;
-                                     ">
-                                </div>     
+                                     
                             </div>
 
                             <div class="h_aside" id="h_aside_02">
@@ -182,7 +183,7 @@ include('../../arquivos-php/graficos/grafico02.php');
                                 
                             </div>
 
-                        </section>
+                        </section> -->
 
                 </section>
 
@@ -226,7 +227,7 @@ include('../../arquivos-php/graficos/grafico02.php');
                 
                 <div class="div_links" id="div_l_01">
 
-                    <a href="../../arquivos-php/entrar.php"> entrar </a>
+            
 
                 </div>
 

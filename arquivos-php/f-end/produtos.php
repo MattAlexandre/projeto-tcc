@@ -29,7 +29,7 @@ include('../../arquivos-php/b-end/verifica_login.php');
 
             <nav id="nav_topo">
 
-            <a href="../../arquivos-php/painel.php"><img src="../../imagens/img-ki-preco.png" alt="imagem-logo"></a>
+            <a href="../../arquivos-php/f-end/painel.php"><img src="../../imagens/img-ki-preco.png" alt="imagem-logo"></a>
 
             <ul>
 
@@ -44,11 +44,11 @@ include('../../arquivos-php/b-end/verifica_login.php');
                 </li>
 
                 <li>
-                    <a href="#">navegue</a>
+                    <a href="#">Navegue</a>
 
                     <ul>
-                        <li id="list"> <a href="#"> utilização </a></li>
-                        <li id="list"> <a href="#"> Ofertas    </a></li>
+                        <li id="list"> <a href="#"> Utilização </a></li>
+                        <li id="list"> <a href="#"> Assinatura  </a></li>
                     </ul>
                 </li>
 
@@ -56,14 +56,14 @@ include('../../arquivos-php/b-end/verifica_login.php');
                     <a href="#">Institucional</a>
 
                     <ul>
-                        <li id="list"> <a href="#"> trabalhe conosco   </a></li>
-                        <li id="list"> <a href="#"> duvidas frequentes </a></li>
-                        <li id="list"> <a href="#"> acessibilidade     </a></li>
+                        <li id="list"> <a href="#"> Trabalhe conosco   </a></li>
+                        <li id="list"> <a href="#"> Dúvidas frequentes </a></li>
+                        <li id="list"> <a href="#"> Acessibilidade     </a></li>
                     </ul>
                 </li>
 
                 <li>
-                    <a href="#"> contato </a>
+                    <a href="#"> Contato </a>
                 </li>
 
             </ul>
@@ -116,7 +116,7 @@ include('../../arquivos-php/b-end/verifica_login.php');
                             </span>
                         </a>
 
-                        <a href="../arquivos-php/b-end/logout.php">
+                        <a href="../../arquivos-php/b-end/logout.php">
                             <ion-icon name="exit-outline">
                                 
                             </ion-icon>
@@ -135,11 +135,10 @@ include('../../arquivos-php/b-end/verifica_login.php');
 
                             <!--topo--> 
                             <section class="topo_p">
-                                <h1>produtos</h1>
+                                <h1>Produtos</h1>
 
                                 <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing
-                                    elit. Aliquam error ullam tempora. Est iste nesciunt 
+                                    Cadastre os seus produtos.
                                 </p>
 
                             </section>
@@ -152,71 +151,71 @@ include('../../arquivos-php/b-end/verifica_login.php');
                                     <table> <!--tabela -->
 
                                         <tr><!-- linha -->
-                                            <td > nome produto </td>
-                                            <td> descrição </td>
-                                            <td> codigo de barra </td>
-                                            <td> marca </td>
+                                            <td >Nome produto </td>
+                                            <td> Descrição </td>
+                                            <td> Código de barra </td>
+                                            <td> Marca </td>
                                         </tr>
 
                                         <tr>
-                                            <td> arooz </td>
-                                            <td> arooz branco </td>
-                                            <td> 56124637356455246461</td>
-                                            <td> camil </td>
+                                            <td> Arroz </td>
+                                            <td> Arroz branco </td>
+                                            <td> 5612465243143069</td>
+                                            <td> Camil </td>
                                             <td>
                                             <a href="">
                                                 <ion-icon name="pencil-outline">
                                 
                                                 </ion-icon>
-                                                    editar
+                                                    Editar
                                                 </a>
                                                 <a href="">
                                                 <ion-icon name="trash-outline">
                                 
                                                 </ion-icon>
-                                                    excluir
+                                                    Excluir
                                                 </a>
                                             </td>
                                         </tr>
 
                                         <tr id="text_list_02">
-                                            <td> arooz </td>
-                                            <td> arooz branco </td>
-                                            <td> 56124637356455246461</td>
-                                            <td> camil </td>
+                                            <td> Leite </td>
+                                            <td> Leite em caixa </td>
+                                            <td> 5631413431456451</td>
+                                            <td> Hercules </td>
                                             <td>
                                                 <a href="">
                                                 <ion-icon name="pencil-outline">
                                 
                                                 </ion-icon>
-                                                    editar
+                                                    Editar
                                                 </a>
                                                 <a href="">
                                                 <ion-icon name="trash-outline">
                                 
                                                 </ion-icon>
-                                                    excluir
+                                                    Excluir
                                                 </a>
                                             </td>
                                         </tr>
 
                                         <tr id="text_list_02">
-                                            <td> arooz </td>
-                                            <td> arooz branco </td>
-                                            <td> 56124637356455246461</td>
-                                            <td> camil </td>
+                                            <td> Açucar </td>
+                                            <td> Açucar cristalino </td>
+                                            <td> 5612465243143124</td>
+                                            <td> União </td>
                                             <td>
                                             <a href="">
                                                 <ion-icon name="pencil-outline">
                                 
                                                 </ion-icon>
-                                                    editar
+                                                    Editar
                                                 </a>
                                                 <a href="">
                                                 <ion-icon name="trash-outline">
                                 
                                                 </ion-icon>
-                                                    excluir
+                                                    Excluir
                                                 </a>
                                             </td>
                                         </tr>
@@ -227,7 +226,7 @@ include('../../arquivos-php/b-end/verifica_login.php');
 
                             <!-- final -->
                             <section class="final_p">
-                                <a href="">cadastrar - produto</a>
+                                <a href="">Cadastrar - Produto</a>
                             </section>
 
 
@@ -245,7 +244,7 @@ include('../../arquivos-php/b-end/verifica_login.php');
             <div class="div_footer" id="div_f_01">
                 <img src="../../imagens/img-ki-preco.png" alt="">
 
-                <a href=""> entre em contato conosco </a>
+                <a href=""> Entre em contato conosco. </a>
                 
             </div>
 

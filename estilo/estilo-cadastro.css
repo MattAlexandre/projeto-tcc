@@ -73,7 +73,7 @@ body{
 #text_c01 > p{
     font: normal bold 1vw var(--font);
     color:rgb(70, 70, 70);
-    text-align: center;
+    text-align: left;
 }
 
 .formulario_cadastro{

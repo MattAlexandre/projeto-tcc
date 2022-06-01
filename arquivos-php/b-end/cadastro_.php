@@ -17,7 +17,7 @@ if(
     empty($_POST['aceptTerms'])
 
     ){
-    $_SESSION['campNull'] = true;
+    $_SESSION['campNull'] = TRUE;
     header('location: ../../arquivos-php/f-end/cadastro.php');
     exit();
 }
@@ -29,7 +29,7 @@ if(
     $telephone = mysqli_real_escape_string($conexao, trim($_POST['telephone']));
     $cep       = mysqli_real_escape_string($conexao, trim($_POST['cep']));
     $cnpj      = mysqli_real_escape_string($conexao, trim($_POST['cnpj']));
-    $password  = mysqli_real_escape_string($conexao, trim(md5($_POST['password'])));
+    $password  = mysqli_real_escape_string($conexao, trim($_POST['password']));
 
     /*validação emal existente */
 
@@ -38,24 +38,24 @@ $result = mysqli_query($conexao, $sql);
 $row = mysqli_fetch_assoc($result);
 
 if($row['total'] == 1){
-    $_SESSION['usuario_existe'] = true;
-    header('location: ../../arquivos-php/f-end/cadastro.php');
+    $_SESSION['usuario_existe'] = TRUE;
+    header('Location: ../../arquivos-php/f-end/cadastro.php');
     exit();
 }
 
 /*insert*/
                           
-$sql = "INSERT INTO empresa (id_empresa, cnpj_empresa, cep_empresa, nome_empresa, telefone_empresa, email_empresa, senha) VALUES ('DEFAULT', '$cnpj', '$cep', '$name', '$telephone', '$email', '$password')";
+$sql = "INSERT INTO empresa(cnpj_empresa, cep_empresa, nome_empresa, telefone_empresa, email_empresa, senha) VALUES ('$cnpj', '$cep', '$name', '$telephone', '$email', '$password')";
 
 /*validação insert*/
 
-if($conexao->query($sql) === true){
-    $_SESSION['status_cadastro'] = true;
+if($conexao->query($sql) === TRUE){
+     $_SESSION['status_cadastro'] = TRUE;
 } 
 
 $conexao->close();
 
-header('location: ../../arquivos-php/f-end/assinatura.php');
+header('Location: ../../arquivos-php/f-end/entrar.php');
 exit;
 
 

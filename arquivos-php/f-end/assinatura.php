@@ -15,8 +15,8 @@ session_start();
 
         <!-- confirmação cadastro  -->
 
-                    <?php
-                        if(isset($_SESSION['status_cadastro'])):
+                   <!-- <?php
+                     /*   if(isset($_SESSION['status_cadastro'])):*/
                     ?>
 
                             <div  id="div_title">
@@ -35,9 +35,11 @@ session_start();
                             </div>
 
                     <?php
-                            unset($_SESSION['status_cadastro']);
-                            endif;
-                    ?>
+                          /*  unset($_SESSION['status_cadastro']);
+                            endif;*/
+                    ?> -->
+
+                    
 
         <section id="title">
 

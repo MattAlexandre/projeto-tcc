@@ -123,6 +123,15 @@ li > label > #sidebar_btn:hover{
 }
 
 
+.home_topo > h1{
+    font: normal normal 2vw var(--font1);
+    color: var(--cor7);
+    text-align: center;
+    padding: 10px;
+    margin:5px;
+}
+
+
 
 /* ---------------home body--------------------*/
 .home_body{
