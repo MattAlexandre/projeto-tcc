@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Didact+Gothic&display=swap');
+
+@font-face {
+    font-family: 'Archivo Black';
+    src: url('text/Alfa Slab One.otf') format('opentype');
+
+    font-family: 'Didact Gothic';
+    src: url('text/Didact Gothic.otf') format('opentype');
+}
+
+/*inicializando a pagina com margin e padding sem formatação*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*declarando variaveis*/
+
+:root{
+
+    --font1: 'Archivo Black'; /* titulo */
+    --font2: 'Didact Gothic'; /* paragrafo*/
+
+    --cor1:black;
+    --cor2:white;
+    --cor3:rgba(0, 0, 0, 0);
+    --cor4:#909aa7;
+    --cor5:#507997;
+    --cor6:#8dbcf5;
+    --cor7:#c0d8f5;
+}
+
+/* home */ 
+
+.produto{
+    height: 100%;
+    padding: 25px;
+    background-color: var(--cor5);
+}
+
+
+/* --------------home topo---------------- */
+.topo_p{
+    background-color: var(--cor6);
+    height: 100%;
+    margin: 15px 20px;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.topo_p > h1{
+    font: normal bold 3vw var(--font1);
+    text-align: center;
+    color: var(--cor2);
+    margin: 5px;
+}
+
+.topo_p > p{
+    font: normal bold 2vw var(--font2);
+    text-align: center;
+    color: var(--cor7);
+    margin: 5px;
+}
+
+
+
+/* ---------------home body--------------------*/
+.body_p{
+    background-color: var(--cor6);
+    height: 100%;
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+    padding: 10px;
+}
+
+/*-----------lista---------*/
+
+.list_p{
+    background-color: var(--cor7);
+    height: 100%;
+    margin: auto;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+/* forms */
+
+form{
+    margin: 5px;
+    padding: 15px;
+}
+
+#inputs{
+    padding: 5px;
+    width: 100%;
+    display: flex;
+}
+
+#inputs > #input_p01{
+    margin: 20px;
+    padding: 5px;
+    width: 25vw;
+}
+
+#inputs > #input_p02{
+    margin: 20px;
+    padding: 5px;
+      width: 25vw;
+}
+
+label{
+    text-align: center;
+    font: normal bold 1.5vw var(--font1);
+    color:var(--cor5);
+    margin: 5px;
+}
+
+input{
+    text-align: none;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 15px;
+    margin: 20px 10px;
+    font: normal bold 1.5vw var(--font1);
+    color:var(--cor5);
+}
+
+input:hover{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+

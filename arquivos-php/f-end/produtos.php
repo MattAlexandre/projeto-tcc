@@ -148,6 +148,24 @@ include('../../arquivos-php/b-end/verifica_login.php');
                             <section class="body_p">
 
                                 <div class="list_p">
+                                                        <!-- produto existe -->
+                                                        <?php
+                                                            if(isset($_SESSION['cod_existe  '])):
+                                                        ?>
+                                                            <div  class="div_conteudo_e" id="div_title">
+                                                                <h1 style="
+                                                                    color: red;
+                                                                    font: normal bold 1.5vw 'arial';
+                                                                    text-align: center;
+                                                                    width: 100%;
+                                                                ">
+                                                                    <ion-icon name="close-circle-outline"></ion-icon> Produto cadastrado
+                                                                </h1>
+                                                            </div>
+                                                        <?php
+                                                            endif;
+                                                            unset($_SESSION['marcaNull']);
+                                                        ?>
                                     <table> <!--tabela -->
 
                                         <tr><!-- linha -->
@@ -226,7 +244,7 @@ include('../../arquivos-php/b-end/verifica_login.php');
 
                             <!-- final -->
                             <section class="final_p">
-                                <a href="">Cadastrar - Produto</a>
+                                <a href="../../arquivos-php/f-end/cadastro-produtos.php">Cadastrar - Produto</a>
                             </section>
 
 
