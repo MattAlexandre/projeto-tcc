@@ -15,7 +15,7 @@ include('../../arquivos-php/b-end/verifica_login.php');
     <link rel="stylesheet" href="../../estilo/estilo-painel.css">
     <link rel="stylesheet" href="../../estilo/index.css">
     <link rel="stylesheet" href="../../estilo/estilo-produto.css">
-
+    <link rel="shortcut icon" href="../imagens/favicon-kipreco.png" type="image/x-icon">
     <title> ki preco </title>
 
     

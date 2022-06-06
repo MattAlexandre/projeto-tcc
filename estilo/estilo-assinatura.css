@@ -1,5 +1,15 @@
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Didact+Gothic&display=swap');
+
+@font-face {
+    font-family: 'Archivo Black';
+    src: url('text/Alfa Slab One.otf') format('opentype');
+
+    font-family: 'Didact Gothic';
+    src: url('text/Didact Gothic.otf') format('opentype');
+}
+
 /*inicializando a pagina com margin e padding sem formatação*/
 *{
     margin: 0px;
@@ -11,7 +21,8 @@
 
 :root{
 
-    --font1: verdana, Geneva, tahoma, sans-serif;
+    --font1: 'Archivo Black'; /* titulo */
+    --font2: 'Didact Gothic'; /* paragrafo*/
 
     --cor1:black;
     --cor2:white;
@@ -43,7 +54,7 @@
 }
 
 #title > p{
-    font: normal bold 1.5vw var(--font1);
+    font: normal bold 1.5vw var(--font2);
     color: var(--cor5);
     text-align: justify;
     margin: 5px;
@@ -108,7 +119,7 @@
 }
 
 #ass01 > #text01 > p{
-    font: normal normal 1.5vw var(--font1);
+    font: normal normal 1.5vw var(--font2);
     color: var(--cor1);
     text-align: justify;
     margin: 25px 5px ;
@@ -199,7 +210,7 @@
 }
 
 #ass02 > #text01 > p{
-    font: normal normal 1.5vw var(--font1);
+    font: normal normal 1.5vw var(--font2);
     color: var(--cor1);
     text-align: justify;
     margin: 25px 5px ;
@@ -288,7 +299,7 @@
 }
 
 #ass03 > #text01 > p{
-    font: normal normal 1.5vw var(--font1);
+    font: normal normal 1.5vw var(--font2);
     color: var(--cor1);
     text-align: justify;
     margin: 25px 5px ;

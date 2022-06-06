@@ -1,5 +1,15 @@
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Didact+Gothic&display=swap');
+
+@font-face {
+    font-family: 'Archivo Black';
+    src: url('text/Alfa Slab One.otf') format('opentype');
+
+    font-family: 'Didact Gothic';
+    src: url('text/Didact Gothic.otf') format('opentype');
+}
+
 /*inicializando a pagina com margin e padding sem formatação*/
 *{
     margin: 0px;
@@ -11,12 +21,13 @@
 
 :root{
 
-    --font1: verdana, Geneva, tahoma, sans-serif;
+    --font1: 'Archivo Black'; /* titulo */
+    --font2: 'Didact Gothic'; /* paragrafo*/
 
-    --cor1:rgb(0, 0, 0);
-    --cor2:rgb(255, 255, 255);
+    --cor1:black;
+    --cor2:white;
     --cor3:rgba(0, 0, 0, 0);
-    --cor4:#909aa7;
+    --cor4:#507997;
     --cor5:#507997;
     --cor6:#8dbcf5;
     --cor7:#c0d8f5;
@@ -175,7 +186,7 @@ main{
 }
 
 #div_text > p{
-    font: normal normal 1.5vw var(--font1);
+    font: normal normal 1.5vw var(--font2);
     text-align: justify;
     color: var(--cor4);
     margin: 10px;
@@ -209,7 +220,7 @@ main{
 }
 
 #sessao_m02 > p{
-    font: normal normal 1.7vw var(--font1);
+    font: normal normal 1.7vw var(--font2);
     text-align: center;
     color: var(--cor4);
     margin: 25px 10px ;
@@ -259,7 +270,7 @@ main{
 }
 
 #sessao_m04 > p{
-    font: normal bold 2vw var(--font1);
+    font: normal bold 2vw var(--font2);
     text-align: center;
     color: var(--cor4);
     margin: 25px 10px;
@@ -304,7 +315,7 @@ main{
 }
 
 #div_text05 > p{
-    font: normal normal 1.7vw var(--font1);
+    font: normal normal 1.7vw var(--font2);
     text-align: justify;
     color: var(--cor4);
     margin: 25px 10px;
@@ -349,7 +360,7 @@ main{
 }
 
 #div_text06 > p{
-    font: normal normal 1.7vw var(--font1);
+    font: normal normal 1.7vw var(--font2);
     text-align: justify;
     color: var(--cor4);
     margin: 25px 10px;
@@ -394,7 +405,7 @@ main{
 }
 
 #div_text07 > p{
-    font: normal normal 1.7vw var(--font1);
+    font: normal normal 1.7vw var(--font2);
     text-align: justify;
     color: var(--cor4);
     margin: 25px 10px;
@@ -457,7 +468,7 @@ main{
 }
 
 .div_c_txt > p{
-    font: normal bold 1vw var(--font1);
+    font: normal bold 1vw var(--font2);
     text-align: left;
     color: var(--cor4);
     margin: 25px 10px;
@@ -489,7 +500,7 @@ main{
 
 #sessao_m09{
     animation: gradient 10s ease alternate infinite;
-    background: linear-gradient(-45deg, var(--cor4),var(--cor5),var(--cor6),var(--cor7),var(--cor2)) no-repeat;
+    background: linear-gradient(-45deg,var(--cor6),var(--cor7),var(--cor2)) no-repeat;
     background-size: 300% 300%;
     padding: 20px;
     height: 100%;
@@ -545,7 +556,7 @@ main{
 }
 
 #div_c02_m09 > p{
-    font: normal bold 1.5vw var(--font1);
+    font: normal bold 1.5vw var(--font2);
     text-align: justify;
     color: var(--cor4);
     margin: 25px 10px;
@@ -571,7 +582,7 @@ main{
 }
 
 #div_m10 > p{
-    font: normal bold 2vw var(--font1);
+    font: normal bold 2vw var(--font2);
     text-align: center;
     color: var(--cor4);
     margin: 35px 10px;
@@ -664,7 +675,7 @@ main{
 }
 
 #div_m11_txt_01 > p{
-    font: normal bold 1vw var(--font1);
+    font: normal bold 1vw var(--font2);
     text-align: center;
     color: var(--cor4);
     margin: 10px;
@@ -709,7 +720,7 @@ main{
 }
 
 #div_m11_txt_02 > p{
-    font: normal bold 1vw var(--font1);
+    font: normal bold 1vw var(--font2);
     text-align: center;
     color: var(--cor4);
     margin: 10px;
@@ -752,7 +763,7 @@ main{
 }
 
 #div_m11_txt_03 > p{
-    font: normal bold 1vw var(--font1);
+    font: normal bold 1vw var(--font2);
     text-align: center;
     color: var(--cor4);
     margin: 10px;

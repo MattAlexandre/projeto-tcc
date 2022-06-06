@@ -6,8 +6,16 @@ include('../../arquivos-php/b-end/conect.php');
 
 /*validação login nulo volta para o entrar */
 
-if(empty($_POST['email']) || empty($_POST['password'])){
-    $_SESSION['campNull'] = true;
+
+
+if(empty($_POST['email']) ){
+    $_SESSION['emailNull'] = true;
+    header('location: ../../arquivos-php/f-end/entrar.php');
+    exit();
+}
+
+if(empty($_POST['password']) ){
+    $_SESSION['passwordNull'] = true;
     header('location: ../../arquivos-php/f-end/entrar.php');
     exit();
 }

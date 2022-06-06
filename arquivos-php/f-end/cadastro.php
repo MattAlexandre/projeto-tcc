@@ -8,7 +8,9 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="../../estilo/estilo-cadastro.css">
-    <link rel="shortcut icon" href="../../imagens/favicon-kipreco.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../imagens/favicon-kipreco.png" type="image/x-icon">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> cadastro  </title>
 </head>
@@ -27,62 +29,28 @@ session_start();
                         KiPreço
                     </p>
 
-
-                    <!-- validação campo email -->
-
-                    <?php
-                        if(isset($_SESSION['campNull'])):
-                        ?>
-
-                            <div id="div_title">
-                                <h1 style="
-                                color: white;
-                                font: normal bold 2.5vw arial;
-                                text-align: center;
-                                margin: 15px 10px;
-                                background-color: red;
-                                border-radius: 15px;
-                                padding: 7px 2px;
-                                width: 100%;
-                                ">
-                                    Campo Vazio
-                                </h1>
-                            </div>
-
-                        <?php
-                            unset($_SESSION['campNull']);
-                            endif;
-                        ?>
-
                     <!-- validação usuario existente -->
 
                     <?php
-                        if(isset($_SESSION['usuario_existe'])):
-                    ?>
+                                    if(isset($_SESSION['usuario_existe'])):
+                                ?>
 
-                            <div  id="div_title">
-                                <h1 style="
-                                color: white;
-                                font: normal bold 2.5vw arial;
-                                text-align: center;
-                                margin: 15px 10px;
-                                background-color: red;
-                                border-radius: 15px;
-                                padding: 7px 2px;
-                                width: 100%;
-                                    ">
-                                    Usuário Existente
-                                </h1>
-                            </div>
+                                        <div  id="div_title">
+                                            <h1 style="
+                                                color: red;
+                                                font: normal bold 2vw 'arial';
+                                                text-align: center;
+                                                width: 100%;
+                                            ">
+                                                <ion-icon name="close-circle-outline"></ion-icon> usuario existente     
+                                            </h1>
+                                        </div>
 
-                    <?php
-                            unset($_SESSION['usuario_existe']);
-                            endif;
-                    ?>
-
+                                <?php
+                                        unset($_SESSION['usuario_existe']);
+                                        endif;
+                                ?>
                     
-
-
                 </div>
             </section>
 
@@ -95,6 +63,32 @@ session_start();
                         <!-- input email -->
                         <label for=""> E-mail </label><br>
                         <input type="email"  maxlength="45" name="email" id=""><br>
+
+
+                                <!-- validação campo email -->
+
+                                <?php
+                                    if(isset($_SESSION['emailNull'])):
+                                    ?>
+
+                                        <div id="div_title">
+                                        
+                                            <h1 style="
+                                                color: red;
+                                                font: normal bold 2vw 'arial';
+                                                text-align: center;
+                                                width: 100%;
+                                            ">
+                                                 <ion-icon name="close-circle-outline"></ion-icon> email vazio
+                                            </h1>
+                                        </div>
+
+                                    <?php
+                                        unset($_SESSION['emailNull']);
+                                        endif;
+                                    ?>
+
+                                
 
 
                         <a href=""> Enviar Codigo De Verificação </a>
@@ -110,13 +104,80 @@ session_start();
                             <label for=""> Nome Empresarial </label><br>
                             <input type="text" maxlength="45" name="name" id=""><br>
 
+                                <!-- validação campo nome -->
+
+                                <?php
+                                    if(isset($_SESSION['nameNull'])):
+                                    ?>
+
+                                        <div id="div_title">
+                                        
+                                            <h1 style="
+                                                color: red;
+                                                font: normal bold 2vw 'arial';
+                                                text-align: center;
+                                                width: 100%;
+                                            ">
+                                            <ion-icon name="close-circle-outline"></ion-icon> nome vazio
+                                            </h1>
+                                        </div>
+
+                                    <?php
+                                        unset($_SESSION['nameNull']);
+                                        endif;
+                                    ?>
+
                             <!-- input telefone -->
                             <label for=""> Telefone </label><br>
                             <input type="number" name="telephone" id=""><br>
 
+                                        <!-- validação campo nome -->
+                                        <?php
+                                                if(isset($_SESSION['telephoneNull'])):
+                                                ?>
+
+                                                    <div id="div_title">
+                                                    
+                                                        <h1 style="
+                                                            color: red;
+                                                            font: normal bold 2vw 'arial';
+                                                            text-align: center;
+                                                            width: 100%;
+                                                        ">
+                                                            <ion-icon name="close-circle-outline"></ion-icon> Telefone vazio
+                                                        </h1>
+                                                    </div>
+
+                                                <?php
+                                                    unset($_SESSION['telephoneNull']);
+                                                    endif;
+                                                ?>
+
                             <!-- input CEP -->
                             <label for=""> CEP </label><br>
                             <input type="number" name="cep" id=""><br> 
+
+                                        <!-- validação campo cep -->
+                                        <?php
+                                                if(isset($_SESSION['cepNull'])):
+                                                ?>
+
+                                                    <div id="div_title">
+                                                    
+                                                        <h1 style="
+                                                            color: red;
+                                                            font: normal bold 2vw 'arial';
+                                                            text-align: center;
+                                                            width: 100%;
+                                                        ">
+                                                            <ion-icon name="close-circle-outline"></ion-icon> cep vazio
+                                                        </h1>
+                                                    </div>
+
+                                                <?php
+                                                    unset($_SESSION['cepNull']);
+                                                    endif;
+                                                ?>
 
                         </div>
 
@@ -126,9 +187,54 @@ session_start();
                             <label for=""> CNPJ </label><br>
                             <input type="number" name="cnpj" id=""><br>
 
+                                        <!-- validação campo cnpj -->
+                                        <?php
+                                                if(isset($_SESSION['cnpjNull'])):
+                                                ?>
+
+                                                    <div id="div_title">
+                                                    
+                                                        <h1 style="
+                                                            color: red;
+                                                            font: normal bold 2vw 'arial';
+                                                            text-align: center;
+                                                            width: 100%;
+                                                        ">
+                                                            <ion-icon name="close-circle-outline"></ion-icon> cnpj vazio
+                                                        </h1>
+                                                    </div>
+
+                                                <?php
+                                                    unset($_SESSION['cnpjNull']);
+                                                    endif;
+                                                ?>
+
                             <!-- input data de abertura -->
                             <label for=""> Senha </label><br>
                             <input type="password" maxlength="11" name="password" id=""><br>
+
+                                        <!-- validação campo cep -->
+                                        <?php
+                                                if(isset($_SESSION['passwordNull'])):
+                                                ?>
+
+                                                    <div id="div_title">
+                                                    
+                                                        <h1 style="
+                                                            color: red;
+                                                            font: normal bold 2vw 'arial';
+                                                            text-align: center;
+                                                            width: 100%;
+                                                        ">
+                                                            <ion-icon name="close-circle-outline"></ion-icon> senha vazio
+                                                        </h1>
+                                                    </div>
+
+                                                <?php
+                                                    unset($_SESSION['passwordNull']);
+                                                    endif;
+                                                ?>
+
 
                             <label id="label_s" for="" style="color: rgba(0, 0, 0, 0);"> a </label>
                             <!-- input cadastrar  -->
@@ -146,6 +252,28 @@ session_start();
                             <!---->
                             <input type="checkbox" name="aceptTerms" id="">
                             <label for=""> Li e Aceito os Regulamentos do Site </label>
+
+                            <!-- validação campo cep -->
+                            <?php
+                                                if(isset($_SESSION['aceptNull'])):
+                                                ?>
+
+                                                    <div id="div_title">
+                                                    
+                                                        <h1 style="
+                                                            color: red;
+                                                            font: normal bold 2vw 'arial';
+                                                            text-align: center;
+                                                            width: 100%;
+                                                        ">
+                                                            <ion-icon name="close-circle-outline"></ion-icon> box vazia
+                                                        </h1>
+                                                    </div>
+
+                                                <?php
+                                                    unset($_SESSION['aceptNull']);
+                                                    endif;
+                                                ?>
                             
                         </div>
                     </div>

@@ -1,27 +1,36 @@
 @charset "utf-8";
 
-/*inicializando a pagina com margin e padding sem formatação */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Didact+Gothic&display=swap');
 
+@font-face {
+    font-family: 'Archivo Black';
+    src: url('text/Alfa Slab One.otf') format('opentype');
+
+    font-family: 'Didact Gothic';
+    src: url('text/Didact Gothic.otf') format('opentype');
+}
+
+/*inicializando a pagina com margin e padding sem formatação*/
 *{
     margin: 0px;
     padding: 0px;
 }
 
-/*declarando variaveis */
+
+/*declarando variaveis*/
 
 :root{
 
+    --font1: 'Archivo Black'; /* titulo */
+    --font2: 'Didact Gothic'; /* paragrafo*/
 
-    --font: verdana, gevana , tahoma, sans-serif;
-
-    
     --cor1:black;
     --cor2:white;
-    --cor3:lightgray;
-    --cor4:rgba(0, 0, 0, 0);
-    --cor5:none;
-    --cor6:none;
-
+    --cor3:rgba(0, 0, 0, 0);
+    --cor4:#909aa7;
+    --cor5:#507997;
+    --cor6:#8dbcf5;
+    --cor7:#c0d8f5;
 }
 
 body{
@@ -64,14 +73,14 @@ body{
 }
 
 #text_c01 > h1{
-    font: normal bold 2.5vw var(--font);
+    font: normal bold 2.5vw var(--font1);
     color:rgb(70, 70, 70);
     text-align: left;
     margin: 20px 5px;
 }
 
 #text_c01 > p{
-    font: normal bold 1vw var(--font);
+    font: normal bold 1vw var(--font2);
     color:rgb(70, 70, 70);
     text-align: left;
 }
@@ -148,10 +157,10 @@ body{
 }
 
 #div_input_01 > label {
-    font: normal bold 1vw var(--font);
-     color: rgb(70,70,70);
-     text-align: left;
-     margin: 10px;
+    font: normal bold 1vw var(--font1);
+    color: rgb(70,70,70);
+    text-align: left;
+    margin: 10px;
 }
 
 #div_input_01 > input{
@@ -180,7 +189,7 @@ body{
 }
 
 #div_input_02 > label{
-     font: normal bold 1vw var(--font);
+     font: normal bold 1vw var(--font1);
      color: rgb(70,70,70);
      text-align: left;
      margin: 10px ;
@@ -208,7 +217,7 @@ body{
 }
 
 #submit{
-    font: normal bold 1vw var(--font);
+    font: normal bold 1vw var(--font1);
     background-color: #909aa7;
     color: var(--cor2);
     outline: none;
@@ -245,7 +254,7 @@ body{
 }
 
 #div_cbox > label{
-    font: normal normal 1.2vw var(--font);
+    font: normal normal 1.2vw var(--font1);
     color: rgb(70, 70, 70);
    
 }

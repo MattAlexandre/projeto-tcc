@@ -6,18 +6,53 @@ include('../../arquivos-php/b-end/conect.php');
 
 /*validação cadastro nulo volta para o entrar */
 
-if(  
-    empty($_POST['email'])         ||
-    empty($_POST['name'])          ||
-    empty($_POST['telephone'])     ||
-    empty($_POST['cep'])           ||
-    empty($_POST['cnpj'])          ||
-    empty($_POST['password'])      ||
-    empty($_POST['aceptEmail'])    ||
-    empty($_POST['aceptTerms'])
 
-    ){
-    $_SESSION['campNull'] = TRUE;
+/* email nulo */
+if(empty($_POST['email']) ){
+    $_SESSION['emailNull'] = TRUE;
+    header('location: ../../arquivos-php/f-end/cadastro.php');
+    exit();
+}
+
+/* name nulo */
+if(empty($_POST['name']) ){
+    $_SESSION['nameNull'] = TRUE;
+    header('location: ../../arquivos-php/f-end/cadastro.php');
+    exit();
+}
+
+/* telefone nulo */
+if(empty($_POST['telephone']) ){
+    $_SESSION['telephoneNull'] = TRUE;
+    header('location: ../../arquivos-php/f-end/cadastro.php');
+    exit();
+}
+
+
+/* cep nulo */
+if(empty($_POST['cep']) ){
+    $_SESSION['cepNull'] = TRUE;
+    header('location: ../../arquivos-php/f-end/cadastro.php');
+    exit();
+}
+
+/* cnpj nulo */
+if(empty($_POST['cnpj']) ){
+    $_SESSION['cnpjNull'] = TRUE;
+    header('location: ../../arquivos-php/f-end/cadastro.php');
+    exit();
+}
+
+/* password nulo */
+if(empty($_POST['password']) ){
+    $_SESSION['passwordNull'] = TRUE;
+    header('location: ../../arquivos-php/f-end/cadastro.php');
+    exit();
+}
+
+/* acept nulo */
+if(empty($_POST['aceptEmail']) || empty($_POST['aceptTerms'])  ){
+    $_SESSION['aceptNull'] = TRUE;
     header('location: ../../arquivos-php/f-end/cadastro.php');
     exit();
 }
