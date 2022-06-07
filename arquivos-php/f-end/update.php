@@ -3,6 +3,7 @@
 session_start();
 
 include('../../arquivos-php/b-end/verifica_login.php'); 
+include('../../arquivos-php/b-end/conect.php');
 
 ?>
 
@@ -151,7 +152,53 @@ include('../../arquivos-php/b-end/verifica_login.php');
 
                                     <div class="list_p"> <!-- forms -->
 
-                                    <form method="post" action="../../arquivos-php/b-end/products.php" id="form">
+                                    <?php /* adicionadno o conteudo das variaveis nos inputs */ 
+                                    
+                                    if(isset($_GET['id'])){
+                                        $id = $_GET['id'];
+                                    
+
+                                        $consulta = "SELECT * FROM produtos where id_produto = '$id' ";
+                                      /*  $consulta = "UPDATE produtos SET id_produto ='',nome_produto='',desc_produto='',barCode_produto='',marca_produto='' WHERE id_produto =  '$id' ";*/
+                                        $con = mysqli_query($conexao, $consulta);
+
+                                        if(!$con){
+                                            die("query failed".mysqli_error());
+                                        }else{
+                                                $row = mysqli_fetch_assoc($con);
+                                        }
+                                    }
+                                    ?>
+
+
+                                    <?php /* update */
+                                            if(isset($_POST['update'])){
+
+                                                    if(isset($_GET['id_new'])){
+                                                        $id_new = $_GET['id_new'];
+                                                    }
+
+                                                    $nameP = $_POST['nameP'];
+                                                    $descP = $_POST['descP'];
+                                                    $codP = $_POST['codP'];
+                                                    $marcaP = $_POST['marcaP'];
+
+                                                    $query = "UPDATE produtos SET id_produto ='$id',nome_produto='$nameP',desc_produto='$descP',barCode_produto='$codP',marca_produto='$marcaP' WHERE id_produto = '$id_new' ";
+                                            
+
+                                                    $con = mysqli_query($conexao, $query);
+
+                                                    if(!$con){
+                                                        die("query failed".mysqli_error());
+                                                    }else{
+                                                        $_SESSION['atualizado'] = true;
+                                                        header('location: ../../arquivos-php/f-end/update.php');
+                                                    }
+
+                                                }
+                                    ?>
+
+                                    <form method="post" action="../../arquivos-php/f-end/update.php? id_new = <?php $id = $_GET['id']; ?>" id="form">
 
 
                                         <div id="inputs">
@@ -160,7 +207,7 @@ include('../../arquivos-php/b-end/verifica_login.php');
                                                         
 
                                                 <label class="text_f" for=""> Nome Produto </label><br>  <!-- textbox name -->
-                                                <input class=input_c maxlength="45" type="text" name="nameP" ><br>
+                                                <input class=input_c maxlength="45" type="text" name="nameP" value="<?php echo $row['nome_produto']; ?>" ><br>
 
                                                      <!-- name null --> 
                                                     <?php
@@ -182,7 +229,7 @@ include('../../arquivos-php/b-end/verifica_login.php');
                                                         ?>
 
                                                 <label class="text_f" for=""> Descrição Produto </label><br>  <!-- textbox descrição produto-->
-                                                <input class=input_c maxlength="45" type="text" name="descP" ><br>
+                                                <input class=input_c maxlength="45" type="text" name="descP"  value="<?php echo $row['desc_produto']; ?>" ><br>
 
 
                                                     <!-- desc null --> 
@@ -209,7 +256,7 @@ include('../../arquivos-php/b-end/verifica_login.php');
                                             <div clas="input_p" id="input_p02">
 
                                                 <label class="text_f" for=""> Codigo de barra </label><br>  <!-- textbox codigo de barra -->
-                                                <input class=input_c type="number" name="codP" ><br>
+                                                <input class=input_c type="number" name="codP" value="<?php echo $row['barCode_produto']; ?>" ><br>
 
                                                     <!-- codBar null --> 
                                                     <?php
@@ -231,7 +278,7 @@ include('../../arquivos-php/b-end/verifica_login.php');
                                                         ?>
 
                                                 <label class="text_f" for=""> Marca Produto </label><br>  <!-- textbox descrição produto-->
-                                                <input class=input_c maxlength="45" type="text" name="marcaP" ><br>
+                                                <input class=input_c maxlength="45" type="text" name="marcaP" value="<?php echo $row['marca_produto']; ?>"><br>
 
                                                  <!-- marca null --> 
                                                         <?php
@@ -256,7 +303,7 @@ include('../../arquivos-php/b-end/verifica_login.php');
 
                                         </div>
 
-                                        <input id="input_env" type="submit" value="cadastrar"><br> <!-- bnt enviar -->
+                                        <input id="input_env" type="submit" value="Atualizar" name="update"><br> <!-- bnt enviar -->
 
                                                         <!-- produto existe -->
                                                         <?php
@@ -281,123 +328,10 @@ include('../../arquivos-php/b-end/verifica_login.php');
 
                             </div>
 
-                        </section>
-
-
-
-
-                        </section>
 
         </main>
 
 
-        <!---------------------------footer----------------------------------->
-
-        <footer id="footer"> <!-- rodapé pagina-->
-
-        <section id="footer_s">
-
-            <div class="div_footer" id="div_f_01">
-                <img src="../../imagens/img-ki-preco.png" alt="">
-
-                <a href=""> Entre em contato conosco. </a>
-                
-            </div>
-
-            <div class="div_footer" id="div_f_02">
-                <ul>
-
-                    <h2> Navegue </h2>
-
-                    <li><a href=""> Utilização</a></li>
-                    <li><a href=""> Ofertas  </a></li>
-
-                </ul>
-                <ul>
-
-                    <h2> Institucional </h2>
-
-                    <li><a href=""> Trabalhe Conosco </a></li>
-                    <li><a href=""> Dúvidas Frequentes </a></li>
-                    <li><a href=""> Acessibilidade </a></li>
-                </ul>
-
-            </div>
-
-            <div class="div_footer" id="div_f_03">
-                
-                <div class="div_links" id="div_l_01">
-
-
-
-                </div>
-
-                <div class="div_links" id="div_l_02">
-                    
-                    <ul id="ul_f01">
-
-                        <li>
-                            <a href="">
-
-                                <img src="../../imagens/face-escuro.png" alt="">
-                                
-                                <img src="../../imagens/face-claro.png " alt="">
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="">
-
-                                <img src="../../imagens/insta-escuro.png" alt="">
-                                
-                                <img src="../../imagens/insta-claro.png" alt="">
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="">
-
-                                <img src="../../imagens/twitter-escuro.png" alt="">
-                                
-                                <img src="../../imagens/twitter-claro.png" alt="">
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="">
-
-                                <img src="../../imagens/abaixar-escuro.png" alt="">
-                                
-                                <img src="../../imagens/asbaixar-claro.png" alt="">
-
-                            </a>
-                        </li>
-
-                    </ul>
-
-                </div>
-                
-            </div>
-
-        </section id="footer_ss">
-
-            <div id="div_footer_ss">    
-
-                <a href=""> politica de privacidade </a>
-                
-                <a href=""> termos de uso </a>
-
-                <p> © 2022 pankakes </p>
-
-                <img src="../../imagens/img-ki-preco.png" alt="">
-
-                
-
-            </div>
-
-        <section>
-
-        </section>
-        </footer>
+        
 </body>
 </html>

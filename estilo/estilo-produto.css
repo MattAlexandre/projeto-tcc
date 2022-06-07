@@ -109,14 +109,14 @@
     border-radius: 8px ;
     font: normal bold 1.5vw var(--font1);
     color: var(--cor2);
-    padding: 15px;
+    padding: 10px;
 }
 
 /*-------linha2------------------*/
 
  td > a{
     background-color: var(--cor5);
-    padding: 10px;
+    padding: 5px;
     border-radius: 8px;
     border: none;
     outline: none;
@@ -140,7 +140,7 @@
     margin: 15px;
     border-radius: 20px;
     text-align: center;
-    padding: 10px;
+    padding: 7px;
 }
 
 .final_p > a{
@@ -148,7 +148,7 @@
     background-color: var(--cor7);
     font: normal bold 3vw var(--font1);
     color: var(--cor5);
-    padding: 15px;
+    padding: 10px;
     text-align: center;
     margin: auto;
     transition-duration: 1s;

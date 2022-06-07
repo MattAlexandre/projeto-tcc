@@ -108,7 +108,7 @@ body{
 }
 
 #div_form_c01 > label{
-    font: normal bold 1.2vw var(--font);
+    font: normal bold 1.2vw var(--font1);
     color: rgb(70,70,70);
     text-align: left;
 }

@@ -130,6 +130,7 @@ input{
     margin: 20px 10px;
     font: normal bold 1.5vw var(--font1);
     color:var(--cor5);
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 input:hover{

@@ -3,6 +3,7 @@
 session_start();
 
 include('../../arquivos-php/b-end/verifica_login.php'); 
+include('../../arquivos-php/b-end/conect.php'); 
 
 ?>
 
@@ -150,86 +151,91 @@ include('../../arquivos-php/b-end/verifica_login.php');
                                 <div class="list_p">
                                                         <!-- produto existe -->
                                                         <?php
-                                                            if(isset($_SESSION['cod_existe  '])):
+                                                            if(isset($_SESSION['cadastro_produto'])):
                                                         ?>
                                                             <div  class="div_conteudo_e" id="div_title">
                                                                 <h1 style="
-                                                                    color: red;
-                                                                    font: normal bold 1.5vw 'arial';
+                                                                    color: #507997;
+                                                                    font: normal bold 2vw 'arial';
                                                                     text-align: center;
                                                                     width: 100%;
                                                                 ">
-                                                                    <ion-icon name="close-circle-outline"></ion-icon> Produto cadastrado
+                                                                    <ion-icon name="checkmark-outline"></ion-icon> Produto cadastrado
                                                                 </h1>
                                                             </div>
                                                         <?php
                                                             endif;
-                                                            unset($_SESSION['marcaNull']);
+                                                            unset($_SESSION['cadastro_produto']);
+                                                        ?>
+
+                                                        <!-- produto existe -->
+                                                        <?php
+                                                            if(isset($_SESSION['atualizado'])):
+                                                        ?>
+                                                            <div  class="div_conteudo_e" id="div_title">
+                                                                <h1 style="
+                                                                    color: #507997;
+                                                                    font: normal bold 2vw 'arial';
+                                                                    text-align: center;
+                                                                    width: 100%;
+                                                                ">
+                                                                    <ion-icon name="checkmark-outline"></ion-icon> Produto atualizado
+                                                                </h1>
+                                                            </div>
+                                                        <?php
+                                                            endif;
+                                                            unset($_SESSION['atualizado']);
                                                         ?>
                                     <table> <!--tabela -->
 
+                                    <?php
+                                        $consulta = "SELECT * FROM produtos";
+                                        $con = mysqli_query($conexao, $consulta);
+                                       /* $result = mysqli_query($conexao, $query);*/
+                                    ?>
+
                                         <tr><!-- linha -->
+                                            <td >produto </td>
                                             <td >Nome produto </td>
                                             <td> Descrição </td>
                                             <td> Código de barra </td>
                                             <td> Marca </td>
+                                            <td> Ki Preço </td>
                                         </tr>
 
+                                    <?php
+                                        while($dado = $con->fetch_array()){
+                                    ?>
                                         <tr>
-                                            <td> Arroz </td>
-                                            <td> Arroz branco </td>
-                                            <td> 5612465243143069</td>
-                                            <td> Camil </td>
-                                            <td>
-                                            <a href="">
-                                                <ion-icon name="pencil-outline">
-                                
-                                                </ion-icon>
-                                                    Editar
-                                                </a>
-                                                <a href="">
-                                                <ion-icon name="trash-outline">
-                                
-                                                </ion-icon>
-                                                    Excluir
-                                                </a>
-                                            </td>
-                                        </tr>
 
-                                        <tr id="text_list_02">
-                                            <td> Leite </td>
-                                            <td> Leite em caixa </td>
-                                            <td> 5631413431456451</td>
-                                            <td> Hercules </td>
                                             <td>
-                                                <a href="">
-                                                <ion-icon name="pencil-outline">
-                                
-                                                </ion-icon>
-                                                    Editar
-                                                </a>
-                                                <a href="">
-                                                <ion-icon name="trash-outline">
-                                
-                                                </ion-icon>
-                                                    Excluir
-                                                </a>
+                                                <?php echo $dado['id_produto']; ?> 
                                             </td>
-                                        </tr>
 
-                                        <tr id="text_list_02">
-                                            <td> Açucar </td>
-                                            <td> Açucar cristalino </td>
-                                            <td> 5612465243143124</td>
-                                            <td> União </td>
                                             <td>
-                                            <a href="">
+                                                <?php echo $dado['nome_produto']; ?> 
+                                            </td>
+
+                                            <td>
+                                                <?php echo $dado['desc_produto']; ?>
+                                            </td>
+
+                                            <td>
+                                                <?php echo $dado['barCode_produto']; ?>
+                                            </td>
+
+                                            <td> 
+                                                <?php echo $dado['marca_produto']; ?>
+                                            </td>
+
+                                            <td>
+                                            <a href="../../arquivos-php/f-end/update.php? id=<?php echo $dado['id_produto']; ?> ">
                                                 <ion-icon name="pencil-outline">
                                 
                                                 </ion-icon>
-                                                    Editar
+                                                    Editar 
                                                 </a>
-                                                <a href="">
+                                                <a href="../../arquivos-php/b-end/delete.php? id=<?php echo $dado['id_produto']; ?> ">
                                                 <ion-icon name="trash-outline">
                                 
                                                 </ion-icon>
@@ -237,6 +243,9 @@ include('../../arquivos-php/b-end/verifica_login.php');
                                                 </a>
                                             </td>
                                         </tr>
+                                    <?php
+                                        }
+                                    ?>
                                     </table>
                                 </div>
 

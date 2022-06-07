@@ -107,7 +107,7 @@ body{
 
 
 #div_title > h1{
-    font: normal bold 2.5vw var(--font);
+    font: normal bold 3vw var(--font1);
     text-align: center;
     color: rgb(70, 70, 70);
 }
