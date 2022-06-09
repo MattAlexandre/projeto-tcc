@@ -73,7 +73,7 @@ $result = mysqli_query($conexao, $sql);
 $row = mysqli_fetch_assoc($result);
 
 if($row['total'] == 1){
-    $_SESSION['usuario_existe'] = TRUE;
+    $_SESSION['usuario_existe'] = true;
     header('Location: ../../arquivos-php/f-end/cadastro.php');
     exit();
 }
@@ -84,8 +84,8 @@ $sql = "INSERT INTO empresa(cnpj_empresa, cep_empresa, nome_empresa, telefone_em
 
 /*validação insert*/
 
-if($conexao->query($sql) === TRUE){
-     $_SESSION['status_cadastro'] = TRUE;
+if($conexao->query($sql) === true){
+     $_SESSION['status_cadastro'] = true;
 } 
 
 $conexao->close();

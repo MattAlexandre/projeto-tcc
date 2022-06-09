@@ -89,11 +89,26 @@
 
 
 .body_p > .list_p > table{
-    background-color: #507997;
+    animation: gradient 15s ease alternate infinite;
+    background: linear-gradient(-45deg,var(--cor5),var(--cor7),var(--cor5)) no-repeat;
+    background-size: 300% 300%;
     padding: 25px;
     border-radius: 10px;
+    
 }
 
+
+@keyframes gradient{
+            0%{
+                background-position: 0 50%;
+            }
+            50%{
+                background-position:100% 50%;
+            }
+            100%{
+                background-position: 0 50%;
+            }
+        }
 
 /*------------linha 1--------------*/
  tr {
@@ -110,6 +125,13 @@
     font: normal bold 1.5vw var(--font1);
     color: var(--cor2);
     padding: 10px;
+    transition: 1s;
+    border: none;
+}
+
+td:hover{
+    box-shadow: 0px 0px 40px white;
+    background-color: var(--cor5);
 }
 
 /*-------linha2------------------*/

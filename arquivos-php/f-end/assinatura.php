@@ -10,36 +10,12 @@ session_start();
     <link rel="stylesheet" href="../../estilo/index.css">
     <link rel="shortcut icon" href="../imagens/favicon-kipreco.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> assinatura ki preco </title>
+    <title> Assinatura KiPreço </title>
 </head>
 <body>
     <section id="body">
 
-        <!-- confirmação cadastro  -->
-
-                   <!-- <?php
-                     /*   if(isset($_SESSION['status_cadastro'])):*/
-                    ?>
-
-                            <div  id="div_title">
-                                <h1 style="
-                                color: white;
-                                font: normal bold 2.5vw arial;
-                                text-align: center;
-                                margin: 15px 10px;
-                                background-color: red;
-                                border-radius: 15px;
-                                padding: 7px 2px;
-                                width: 100%;
-                                    ">
-                                   quase pronto , escolha uma assinatura !
-                                </h1>
-                            </div>
-
-                    <?php
-                          /*  unset($_SESSION['status_cadastro']);
-                            endif;*/
-                    ?> -->
+        
 
                     
 
@@ -47,17 +23,12 @@ session_start();
 
             <h1> Assinatura </h1>
 
-            <p>
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. A tempora quam tempo
-                ribus ea dolor accusamus inventore. Do
-                lore ex veniam atque iste voluptate no
-                strum eligendi libero placeat. Ipsam p
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. A tempora quam tempo
-                ribus ea dolor accusamus inventore. Do
-                lore ex veniam atque iste voluptate no
-                strum eligendi libero placeat. Ipsam p
+            <p>    
+            O KiPreço oferece o auxílio que os seus clientes
+            precisam e a organização que a sua empresa merece.
+            Inicie hoje a sua assinatura para obter o melhor 
+            da plataforma KiPreço.
+
             </p>
         </section>
 
@@ -70,11 +41,13 @@ session_start();
                 </div>
                 <!-- div text -->
                 <div id="text01">
-                    <h1> plano mensal </h1>
+                    <h1> Plano Mensal </h1>
 
                     <p>
-                        adipisicing elit. A tempora quam tempo
-                        ribus ea dolor accusamus inventore. Do
+                    A assinatura do plano mensal gera
+                    cobranças a partir do momento do
+                    contrato. Todos os meses, pelo mesmo
+                    valor.
                         
                     </p>
 
@@ -83,11 +56,11 @@ session_start();
                     </h2>
 
                     <p>
-                        no cartão de credito ou debito  em conta
+                        No cartão de credito ou debito  em conta
                     </p>
 
                     <p>
-                        no cartão de credito ou debito  em conta
+                        Sem taxa de cancelamento.
                     </p>
 
                 </div>
@@ -107,12 +80,12 @@ session_start();
                 </div>
                 <!-- div text -->
                 <div id="text01">
-                    <h1> plano semestral </h1>
+                    <h1> Plano Semestral </h1>
 
-                    <p>
-                        adipisicing elit. A tempora quam tempo
-                        ribus ea dolor accusamus inventore. Do
-                        
+                    <p> 
+                    O plano semestral gera cobranças a
+                    cada seis meses, de maneira recorrente.
+                   
                     </p>
 
                     <h2>
@@ -120,11 +93,11 @@ session_start();
                     </h2>
 
                     <p>
-                        no cartão de credito ou debito  em conta
+                        No cartão de credito ou debito  em conta
                     </p>
 
                     <p>
-                        no cartão de credito ou debito  em conta
+                        Sem taxa de cancelamento.
                     </p>
 
                 </div>
@@ -143,11 +116,12 @@ session_start();
                 </div>
                 <!-- div text -->
                 <div id="text01">
-                    <h1> plano  anual </h1>
+                    <h1> Plano  Anual </h1>
 
                     <p>
-                        adipisicing elit. A tempora quam tempo
-                        ribus ea dolor accusamus inventore. Do
+                    O plano anual gera cobranças somente uma 
+                    vez por ano, garantindo à você um funcionamento
+                    completo.
                         
                     </p>
 
@@ -156,11 +130,11 @@ session_start();
                     </h2>
 
                     <p>
-                        no cartão de credito ou debito  em conta
+                        No cartão de credito ou debito  em conta
                     </p>
 
                     <p>
-                        no cartão de credito ou debito  em conta
+                        Sem taxa de cancelamento.
                     </p>
 
                 </div>

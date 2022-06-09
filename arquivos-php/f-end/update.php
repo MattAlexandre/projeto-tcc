@@ -5,6 +5,8 @@ session_start();
 include('../../arquivos-php/b-end/verifica_login.php'); 
 include('../../arquivos-php/b-end/conect.php');
 
+
+
 ?>
 
 <!DOCTYPE html>
@@ -158,8 +160,7 @@ include('../../arquivos-php/b-end/conect.php');
                                         $id = $_GET['id'];
                                     
 
-                                        $consulta = "SELECT * FROM produtos where id_produto = '$id' ";
-                                      /*  $consulta = "UPDATE produtos SET id_produto ='',nome_produto='',desc_produto='',barCode_produto='',marca_produto='' WHERE id_produto =  '$id' ";*/
+                                        $consulta = "SELECT * FROM produtos where id_produto = '$id' "; 
                                         $con = mysqli_query($conexao, $consulta);
 
                                         if(!$con){
@@ -167,39 +168,17 @@ include('../../arquivos-php/b-end/conect.php');
                                         }else{
                                                 $row = mysqli_fetch_assoc($con);
                                         }
+
+                                        
                                     }
                                     ?>
 
+                                    
 
-                                    <?php /* update */
-                                            if(isset($_POST['update'])){
+                                   
 
-                                                    if(isset($_GET['id_new'])){
-                                                        $id_new = $_GET['id_new'];
-                                                    }
-
-                                                    $nameP = $_POST['nameP'];
-                                                    $descP = $_POST['descP'];
-                                                    $codP = $_POST['codP'];
-                                                    $marcaP = $_POST['marcaP'];
-
-                                                    $query = "UPDATE produtos SET id_produto ='$id',nome_produto='$nameP',desc_produto='$descP',barCode_produto='$codP',marca_produto='$marcaP' WHERE id_produto = '$id_new' ";
-                                            
-
-                                                    $con = mysqli_query($conexao, $query);
-
-                                                    if(!$con){
-                                                        die("query failed".mysqli_error());
-                                                    }else{
-                                                        $_SESSION['atualizado'] = true;
-                                                        header('location: ../../arquivos-php/f-end/update.php');
-                                                    }
-
-                                                }
-                                    ?>
-
-                                    <form method="post" action="../../arquivos-php/f-end/update.php? id_new = <?php $id = $_GET['id']; ?>" id="form">
-
+                                    <form method="post" action="../../arquivos-php/f-end/update.php " id="form">
+                                           
 
                                         <div id="inputs">
                                                 
@@ -207,7 +186,7 @@ include('../../arquivos-php/b-end/conect.php');
                                                         
 
                                                 <label class="text_f" for=""> Nome Produto </label><br>  <!-- textbox name -->
-                                                <input class=input_c maxlength="45" type="text" name="nameP" value="<?php echo $row['nome_produto']; ?>" ><br>
+                                                <input class="input_c" maxlength="45" type="text" name="nameP" value="<?php echo $row['nome_produto']; ?>" ><br>
 
                                                      <!-- name null --> 
                                                     <?php
@@ -229,7 +208,7 @@ include('../../arquivos-php/b-end/conect.php');
                                                         ?>
 
                                                 <label class="text_f" for=""> Descrição Produto </label><br>  <!-- textbox descrição produto-->
-                                                <input class=input_c maxlength="45" type="text" name="descP"  value="<?php echo $row['desc_produto']; ?>" ><br>
+                                                <input class="input_c" maxlength="45" type="text" name="descP"  value="<?php echo $row['desc_produto']; ?>" ><br>
 
 
                                                     <!-- desc null --> 
@@ -276,6 +255,9 @@ include('../../arquivos-php/b-end/conect.php');
                                                             endif;
                                                             unset($_SESSION['codPNull']);
                                                         ?>
+
+                                               
+
 
                                                 <label class="text_f" for=""> Marca Produto </label><br>  <!-- textbox descrição produto-->
                                                 <input class=input_c maxlength="45" type="text" name="marcaP" value="<?php echo $row['marca_produto']; ?>"><br>
@@ -328,10 +310,7 @@ include('../../arquivos-php/b-end/conect.php');
 
                             </div>
 
-
         </main>
-
-
         
 </body>
 </html>

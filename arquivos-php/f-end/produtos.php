@@ -168,7 +168,7 @@ include('../../arquivos-php/b-end/conect.php');
                                                             unset($_SESSION['cadastro_produto']);
                                                         ?>
 
-                                                        <!-- produto existe -->
+                                                        <!-- produto atualizado -->
                                                         <?php
                                                             if(isset($_SESSION['atualizado'])):
                                                         ?>
@@ -186,6 +186,27 @@ include('../../arquivos-php/b-end/conect.php');
                                                             endif;
                                                             unset($_SESSION['atualizado']);
                                                         ?>
+
+                                                        <!-- produto deletado -->
+                                                        <?php
+                                                            if(isset($_SESSION['delete'])):
+                                                        ?>
+                                                            <div  class="div_conteudo_e" id="div_title">
+                                                                <h1 style="
+                                                                    color: #507997;
+                                                                    font: normal bold 2vw 'arial';
+                                                                    text-align: center;
+                                                                    width: 100%;
+                                                                ">
+                                                                    <ion-icon name="checkmark-outline"></ion-icon> Produto deletado
+                                                                </h1>
+                                                            </div>
+                                                        <?php
+                                                            endif;
+                                                            unset($_SESSION['delete']);
+                                                        ?>
+                                                        
+
                                     <table> <!--tabela -->
 
                                     <?php
@@ -195,7 +216,7 @@ include('../../arquivos-php/b-end/conect.php');
                                     ?>
 
                                         <tr><!-- linha -->
-                                            <td >produto </td>
+                                            <!--<td >produto </td>-->
                                             <td >Nome produto </td>
                                             <td> Descrição </td>
                                             <td> Código de barra </td>
@@ -207,10 +228,6 @@ include('../../arquivos-php/b-end/conect.php');
                                         while($dado = $con->fetch_array()){
                                     ?>
                                         <tr>
-
-                                            <td>
-                                                <?php echo $dado['id_produto']; ?> 
-                                            </td>
 
                                             <td>
                                                 <?php echo $dado['nome_produto']; ?> 
@@ -229,7 +246,7 @@ include('../../arquivos-php/b-end/conect.php');
                                             </td>
 
                                             <td>
-                                            <a href="../../arquivos-php/f-end/update.php? id=<?php echo $dado['id_produto']; ?> ">
+                                            <a href="../../arquivos-php/f-end/update.php? id = <?php echo $dado['id_produto']; ?> ">
                                                 <ion-icon name="pencil-outline">
                                 
                                                 </ion-icon>
