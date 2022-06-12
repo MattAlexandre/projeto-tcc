@@ -246,13 +246,13 @@ include('../../arquivos-php/b-end/conect.php');
                                             </td>
 
                                             <td>
-                                            <a href="../../arquivos-php/f-end/update.php? id = <?php echo $dado['id_produto']; ?> ">
+                                            <a href="../../arquivos-php/f-end/update.php?id=<?php echo $dado['id_produto']; ?> ">
                                                 <ion-icon name="pencil-outline">
                                 
                                                 </ion-icon>
                                                     Editar 
                                                 </a>
-                                                <a href="../../arquivos-php/b-end/delete.php? id=<?php echo $dado['id_produto']; ?> ">
+                                                <a href="../../arquivos-php/b-end/delete.php?id=<?php echo $dado['id_produto']; ?> ">
                                                 <ion-icon name="trash-outline">
                                 
                                                 </ion-icon>

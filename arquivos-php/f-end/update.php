@@ -153,40 +153,70 @@ include('../../arquivos-php/b-end/conect.php');
                                 <section class="body_p">
 
                                     <div class="list_p"> <!-- forms -->
-
+                                   
                                     <?php /* adicionadno o conteudo das variaveis nos inputs */ 
                                     
                                     if(isset($_GET['id'])){
                                         $id = $_GET['id'];
                                     
 
-                                        $consulta = "SELECT * FROM produtos where id_produto = '$id' "; 
-                                        $con = mysqli_query($conexao, $consulta);
+                                        $query = "SELECT * FROM produtos where id_produto = '$id' ";
+                                        $result = mysqli_query($conexao, $query);
 
-                                        if(!$con){
+                                        if(!$result){
                                             die("query failed".mysqli_error());
-                                        }else{
-                                                $row = mysqli_fetch_assoc($con);
                                         }
+                                        else{
+                                                $row = mysqli_fetch_assoc($result);
 
-                                        
+                                                
+                                        }
                                     }
                                     ?>
 
+                                    <?php   /* update dos campos */ 
                                     
+                                        if(isset($_POST['atualizar_produto'])){
 
-                                   
 
-                                    <form method="post" action="../../arquivos-php/f-end/update.php " id="form">
+                                            if(isset($_GET['newId'])){
+                                                $id = $_GET['newId'];
+                                            }
+                                        
+
+                                            $newName  = $_POST['newName'];
+                                            $newDesc  = $_POST['newDesc'];
+                                            $newCod   = $_POST['newCod'];
+                                            $newMarca = $_POST['newMarca'];
+
+
+                                            $query = "UPDATE produtos SET nome_produto='$newName', desc_produto='$newDesc', barCode_produto='$newCod', marca_produto='$newMarca' WHERE id_produto = '$id' ";
+                                            $result = mysqli_query($conexao, $query);
+
+                                            if(!$result){
+                                                die("query failed".mysqli_error());
+                                            }
+                                            else{
+                                                $_SESSION['atualizado'] = true;
+                                                
+                                            header('Location: ../../arquivos-php/f-end/produtos.php');
+                                            exit;
+                                            }
+                                        }
+                                    
+                                    ?>
+
+                                    <form method="post" action="../../arquivos-php/f-end/update.php? newId=<?php echo $id; ?>" id="form">
                                            
 
                                         <div id="inputs">
+                                            
                                                 
                                             <div clas="input_p" id="input_p01">
                                                         
 
                                                 <label class="text_f" for=""> Nome Produto </label><br>  <!-- textbox name -->
-                                                <input class="input_c" maxlength="45" type="text" name="nameP" value="<?php echo $row['nome_produto']; ?>" ><br>
+                                                <input class="input_c" maxlength="45" type="text" name="newName" value="<?php echo $row['nome_produto']; ?>"><br>
 
                                                      <!-- name null --> 
                                                     <?php
@@ -208,7 +238,7 @@ include('../../arquivos-php/b-end/conect.php');
                                                         ?>
 
                                                 <label class="text_f" for=""> Descrição Produto </label><br>  <!-- textbox descrição produto-->
-                                                <input class="input_c" maxlength="45" type="text" name="descP"  value="<?php echo $row['desc_produto']; ?>" ><br>
+                                                <input class="input_c" maxlength="45" type="text" name="newDesc"  value="<?php echo $row['desc_produto']; ?>" ><br>
 
 
                                                     <!-- desc null --> 
@@ -235,7 +265,7 @@ include('../../arquivos-php/b-end/conect.php');
                                             <div clas="input_p" id="input_p02">
 
                                                 <label class="text_f" for=""> Codigo de barra </label><br>  <!-- textbox codigo de barra -->
-                                                <input class=input_c type="number" name="codP" value="<?php echo $row['barCode_produto']; ?>" ><br>
+                                                <input class="input_c" type="number" name="newCod" value="<?php echo $row['barCode_produto']; ?>" ><br>
 
                                                     <!-- codBar null --> 
                                                     <?php
@@ -260,7 +290,7 @@ include('../../arquivos-php/b-end/conect.php');
 
 
                                                 <label class="text_f" for=""> Marca Produto </label><br>  <!-- textbox descrição produto-->
-                                                <input class=input_c maxlength="45" type="text" name="marcaP" value="<?php echo $row['marca_produto']; ?>"><br>
+                                                <input class="input_c" maxlength="45" type="text" name="newMarca" value="<?php echo $row['marca_produto']; ?>"><br>
 
                                                  <!-- marca null --> 
                                                         <?php
@@ -285,7 +315,7 @@ include('../../arquivos-php/b-end/conect.php');
 
                                         </div>
 
-                                        <input id="input_env" type="submit" value="Atualizar" name="update"><br> <!-- bnt enviar -->
+                                        <input id="input_env" type="submit" value="Atualizar" name="atualizar_produto"><br> <!-- bnt enviar -->
 
                                                         <!-- produto existe -->
                                                         <?php
