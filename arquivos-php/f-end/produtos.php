@@ -88,7 +88,7 @@ include('../../arquivos-php/b-end/conect.php');
              <div class="sidebar">
 
                     <center>
-                        <img src="../../imagens/img-footer.png" alt="">
+                        <img src="../../imagens/img-ki-preco.png" alt="">
                         <h2> 
                             <?php
                             echo $_SESSION['email'];
@@ -101,7 +101,7 @@ include('../../arquivos-php/b-end/conect.php');
                                 
                             </ion-icon>
                             <span>
-                                home
+                                Home
                             </span>
                         </a>
 
@@ -110,7 +110,7 @@ include('../../arquivos-php/b-end/conect.php');
                             
                             </ion-icon>
                             <span>
-                                produtos
+                                Produtos
                             </span>
                         </a>
 
@@ -119,7 +119,7 @@ include('../../arquivos-php/b-end/conect.php');
                                 
                             </ion-icon>
                             <span>
-                                    exit
+                                    Sair
                             </span>
                         </a>
                     </div>
@@ -278,111 +278,6 @@ include('../../arquivos-php/b-end/conect.php');
 
         <!---------------------------footer----------------------------------->
 
-        <footer id="footer"> <!-- rodapé pagina-->
-
-        <section id="footer_s">
-
-            <div class="div_footer" id="div_f_01">
-                <img src="../../imagens/img-ki-preco.png" alt="">
-
-                <a href=""> Entre em contato conosco. </a>
-                
-            </div>
-
-            <div class="div_footer" id="div_f_02">
-                <ul>
-
-                    <h2> Navegue </h2>
-
-                    <li><a href=""> Utilização</a></li>
-                    <li><a href=""> Ofertas  </a></li>
-
-                </ul>
-                <ul>
-
-                    <h2> Institucional </h2>
-
-                    <li><a href=""> Trabalhe Conosco </a></li>
-                    <li><a href=""> Dúvidas Frequentes </a></li>
-                    <li><a href=""> Acessibilidade </a></li>
-                </ul>
-
-            </div>
-
-            <div class="div_footer" id="div_f_03">
-                
-                <div class="div_links" id="div_l_01">
-
-
-
-                </div>
-
-                <div class="div_links" id="div_l_02">
-                    
-                    <ul id="ul_f01">
-
-                        <li>
-                            <a href="https://www.facebook.com/oficialkipreco" target="_blank">
-
-                                <img src="../../imagens/face-escuro.png" alt="">
-                                
-                                <img src="../../imagens/face-claro.png " alt="">
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="https://www.instagram.com/oficialkipreco/" target="_blank">
-
-                                <img src="../../imagens/insta-escuro.png" alt="">
-                                
-                                <img src="../../imagens/insta-claro.png" alt="">
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="https://twitter.com/KiPreco" target="_blank">
-
-                                <img src="../../imagens/twitter-escuro.png" alt="">
-                                
-                                <img src="../../imagens/twitter-claro.png" alt="">
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href=""  target="_blank">
-
-                                <img src="../../imagens/abaixar-escuro.png" alt="">
-                                
-                                <img src="../../imagens/abaixar-claro.png" alt="">
-
-                            </a>
-                        </li>
-
-                    </ul>
-
-                </div>
-                
-            </div>
-
-        </section id="footer_ss">
-
-            <div id="div_footer_ss">    
-
-                <a href="../../arquivos-html/politica.html"> politica de privacidade </a>
-                
-                <a href="../../arquivos-html/politica.html"> termos de uso </a>
-
-                <p> © 2022 pankakes </p>
-
-                <img src="../../imagens/pancakes-logo-removebg-preview.png" alt="imagem-empresa">
-
-                
-
-            </div>
-
-        <section>
-
-        </section>
-        </footer>
+       
 </body>
 </html>

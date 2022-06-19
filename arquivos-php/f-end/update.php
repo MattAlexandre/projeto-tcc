@@ -92,7 +92,7 @@ include('../../arquivos-php/b-end/conect.php');
              <div class="sidebar">
 
                     <center>
-                        <img src="../../imagens/img-footer.png" alt="">
+                        <img src="../../imagens/img-ki-preco.png" alt="">
                         <h2> 
                             <?php echo $_SESSION['email']; ?>
                         </h2>
@@ -103,7 +103,7 @@ include('../../arquivos-php/b-end/conect.php');
                                 
                             </ion-icon>
                             <span>
-                                home
+                                Home
                             </span>
                         </a>
 
@@ -112,7 +112,7 @@ include('../../arquivos-php/b-end/conect.php');
                             
                             </ion-icon>
                             <span>
-                                produtos
+                                Produtos
                             </span>
                         </a>
 
@@ -121,7 +121,7 @@ include('../../arquivos-php/b-end/conect.php');
                                 
                             </ion-icon>
                             <span>
-                                    exit
+                                    sair
                             </span>
                         </a>
                     </div>
@@ -194,7 +194,14 @@ include('../../arquivos-php/b-end/conect.php');
                                             if ($result){
                                                  
                                                 $_SESSION['atualizado'] = true;
-                                                echo"<a href='../../arquivos-php/f-end/produtos.php' > acesse aqui <a/>";
+                                                echo" <h1 style=' color:var(--cor2);  font-family:var(--font1);'> Produto Atualizado <a href='../../arquivos-php/f-end/produtos.php'
+                                                 style='
+                                                 color:var(--cor5); 
+                                                 font-family:var(--font1);
+                                                 border-radius: 10px;
+                                                 padding:10px
+                                                 background-color: var(--cor6);
+                                                 '> acesse aqui <a/></h1>";
                                                 exit;
                                             }
                                         }
