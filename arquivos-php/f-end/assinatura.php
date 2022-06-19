@@ -8,7 +8,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="../../estilo/estilo-assinatura.css">
     <link rel="stylesheet" href="../../estilo/index.css">
-    <link rel="shortcut icon" href="../imagens/favicon-kipreco.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../imagens/favicon-kipreco.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Assinatura KiPreço </title>
 </head>
@@ -150,7 +150,7 @@ session_start();
 
 
         <section id="img">
-            <img src="../../imagens/img-ki-preco.png" alt="imagem-empresa">
+            <img src="../../imagens/pancakes-logo-removebg-preview.png" alt="imagem-empresa">
         </section>
 
     </section>

@@ -20,7 +20,7 @@ include('../../arquivos-php/b-end/conect.php');
     <link rel="stylesheet" href="../../estilo/estilo-painel.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <link rel="shortcut icon" href="../imagens/favicon-kipreco.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../imagens/favicon-kipreco.ico" type="image/x-icon">
     <title> ki preco </title>
 
     
@@ -69,6 +69,12 @@ include('../../arquivos-php/b-end/conect.php');
 
                 <li>
                     <a href="#"> Contato </a>
+
+                        <ul>
+                            <li id="list"> <a href="https://www.instagram.com/oficialkipreco/" target="_blank"> Instagram  </a></li>
+                            <li id="list"> <a href="https://www.facebook.com/oficialkipreco" target="_blank">   facebook   </a></li>
+                            <li id="list"> <a href="https://twitter.com/KiPreco" target="_blank">               Twitter    </a></li>
+                        </ul>
                 </li>
 
             </ul>
@@ -88,9 +94,7 @@ include('../../arquivos-php/b-end/conect.php');
                     <center>
                         <img src="../../imagens/img-footer.png" alt="">
                         <h2> 
-                            <?php
-                            echo $_SESSION['email'];
-                            ?>
+                            <?php echo $_SESSION['email']; ?>
                         </h2>
                     </center>
 
@@ -109,15 +113,6 @@ include('../../arquivos-php/b-end/conect.php');
                             </ion-icon>
                             <span>
                                 produtos
-                            </span>
-                        </a>
-
-                        <a href="../arquivos-php/f-end/ferramenta.php">
-                            <ion-icon name="settings-outline">
-                                
-                            </ion-icon>
-                            <span>
-                                ferramenta
                             </span>
                         </a>
 
@@ -174,7 +169,7 @@ include('../../arquivos-php/b-end/conect.php');
                                     }
                                     ?>
 
-                                    <?php   /* update dos campos */ 
+                                        <?php   /* update dos campos */ 
                                     
                                         if(isset($_POST['atualizar_produto'])){
 
@@ -196,18 +191,18 @@ include('../../arquivos-php/b-end/conect.php');
                                             if(!$result){
                                                 die("query failed".mysqli_error());
                                             }
-                                            else{
+                                            if ($result){
+                                                 
                                                 $_SESSION['atualizado'] = true;
-                                                
-                                            header('Location: ../../arquivos-php/f-end/produtos.php');
-                                            exit;
+                                                echo"<a href='../../arquivos-php/f-end/produtos.php' > acesse aqui <a/>";
+                                                exit;
                                             }
                                         }
                                     
                                     ?>
 
                                     <form method="post" action="../../arquivos-php/f-end/update.php? newId=<?php echo $id; ?>" id="form">
-                                           
+                                            
 
                                         <div id="inputs">
                                             

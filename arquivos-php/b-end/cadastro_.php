@@ -73,24 +73,25 @@ $result = mysqli_query($conexao, $sql);
 $row = mysqli_fetch_assoc($result);
 
 if($row['total'] == 1){
-    $_SESSION['usuario_existe'] = true;
+    $_SESSION['usuario_existe'] = TRUE;
     header('Location: ../../arquivos-php/f-end/cadastro.php');
     exit();
 }
 
 /*insert*/
                           
-$sql = "INSERT INTO empresa(cnpj_empresa, cep_empresa, nome_empresa, telefone_empresa, email_empresa, senha) VALUES ('$cnpj', '$cep', '$name', '$telephone', '$email', '$password')";
+$sql = "INSERT INTO empresa (cnpj_empresa, cep_empresa, nome_empresa, telefone_empresa, email_empresa, senha) VALUES ('$cnpj', '$cep', '$name', '$telephone', '$email', '$password')";
 
 /*validação insert*/
 
-if($conexao->query($sql) === true){
-     $_SESSION['status_cadastro'] = true;
+if($conexao->query($sql) === TRUE){
+     $_SESSION['status_cadastro'] = TRUE;
 } 
+
 
 $conexao->close();
 
 header('Location: ../../arquivos-php/f-end/entrar.php');
-exit;
+exit();
 
 

@@ -15,7 +15,7 @@ include('../../arquivos-php/graficos/grafico02.php');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../estilo/index.css">
-    <link rel="shortcut icon" href="../imagens/favicon-kipreco.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../imagens/favicon-kipreco.ico" type="image/x-icon">
     <link rel="stylesheet" href="../../estilo/estilo-painel.css">
     <title> ki preco </title>
 
@@ -65,6 +65,12 @@ include('../../arquivos-php/graficos/grafico02.php');
 
                 <li>
                     <a href="#"> contato </a>
+
+                        <ul>
+                            <li id="list"> <a href="https://www.instagram.com/oficialkipreco/" target="_blank"> Instagram  </a></li>
+                            <li id="list"> <a href="https://www.facebook.com/oficialkipreco" target="_blank">   facebook   </a></li>
+                            <li id="list"> <a href="https://twitter.com/KiPreco" target="_blank">               Twitter    </a></li>
+                        </ul>
                 </li>
 
             </ul>
@@ -108,15 +114,6 @@ include('../../arquivos-php/graficos/grafico02.php');
                             </span>
                         </a>
 
-                        <a href="../arquivos-php/f-end/ferramenta.php">
-                            <ion-icon name="settings-outline">
-                                
-                            </ion-icon>
-                            <span>
-                                ferramenta
-                            </span>
-                        </a>
-
                         <a href="../../arquivos-php/b-end/logout.php">
                             <ion-icon name="exit-outline">
                                 
@@ -154,37 +151,15 @@ include('../../arquivos-php/graficos/grafico02.php');
 
                             <div id="grafic">
 
-                                <!-- grafico 1-->
-                                <div id="chart_div" style="width: 100%; height: 100%;"></div>
+                                <!-- grafico 1 -->
+                                <div id="chart_div" style="width: 50px; height: 50px;"></div>
 
-                            </div>
+                            </div> 
 
-                            <div id="text_grafic">
-
-                                <!-- grafico 2-->
-                                <div id="piechart" style="width: 100%; height: 100%;"></div>
-
-                            </div>
+                            
 
                         </section>
                         
-
-                        <!-- asides -->
-                        <!-- <section class="home_aside">
-
-                            <div class="h_aside" id="h_aside_01">
-                                     
-                            </div>
-
-                            <div class="h_aside" id="h_aside_02">
-                                
-                            </div>
-
-                            <div class="h_aside" id="h_aside_03">
-                                
-                            </div>
-
-                        </section> -->
 
                 </section>
 
@@ -236,8 +211,8 @@ include('../../arquivos-php/graficos/grafico02.php');
                     
                     <ul id="ul_f01">
 
-                        <li>
-                            <a href="">
+                    <li>
+                            <a href="https://www.facebook.com/oficialkipreco" target="_blank">
 
                                 <img src="../../imagens/face-escuro.png" alt="">
                                 
@@ -246,7 +221,7 @@ include('../../arquivos-php/graficos/grafico02.php');
                         </li>
 
                         <li>
-                            <a href="">
+                            <a href="https://www.instagram.com/oficialkipreco/" target="_blank">
 
                                 <img src="../../imagens/insta-escuro.png" alt="">
                                 
@@ -255,7 +230,7 @@ include('../../arquivos-php/graficos/grafico02.php');
                         </li>
 
                         <li>
-                            <a href="">
+                            <a href="https://twitter.com/KiPreco" target="_blank">
 
                                 <img src="../../imagens/twitter-escuro.png" alt="">
                                 
@@ -264,14 +239,15 @@ include('../../arquivos-php/graficos/grafico02.php');
                         </li>
 
                         <li>
-                            <a href="">
+                            <a href=""  target="_blank">
 
                                 <img src="../../imagens/abaixar-escuro.png" alt="">
                                 
-                                <img src="../../imagens/asbaixar-claro.png" alt="">
+                                <img src="../../imagens/abaixar-claro.png" alt="">
 
                             </a>
                         </li>
+                         
 
                     </ul>
 
@@ -283,13 +259,13 @@ include('../../arquivos-php/graficos/grafico02.php');
 
             <div id="div_footer_ss">    
 
-                <a href=""> politica de privacidade </a>
+                <a href="../../arquivos-html/politica.html"> politica de privacidade </a>
                 
-                <a href=""> termos de uso </a>
+                <a href="../../arquivos-html/politica.html"> termos de uso </a>
 
                 <p> © 2022 pankakes </p>
 
-                <img src="../../imagens/img-ki-preco.png" alt="">
+                <img src="../../imagens/pancakes-logo-removebg-preview.png" alt="imagem-empresa">
 
                 
 
