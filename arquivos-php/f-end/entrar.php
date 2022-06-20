@@ -94,6 +94,26 @@ session_start();
                             endif;
                     ?>
 
+                    <?php
+                        if(isset($_SESSION['status_not_cadastro'])):
+                    ?>
+
+                            <div  id="div_title">
+                                <h1 style="
+                                    color: red;
+                                    font: normal bold 2vw 'arial';
+                                    text-align: center;
+                                    width: 100%;
+                                    ">
+                                        <ion-icon name="close-circle-outline"></ion-icon> erro cadastro
+                                </h1>
+                            </div>
+
+                    <?php
+                            unset($_SESSION['status_not_cadastro']);
+                            endif;
+                    ?>
+
 
                     
 
@@ -102,7 +122,7 @@ session_start();
                         <form method="post" action="../../arquivos-php/b-end/login.php" id="form"> <!-- formulario -->
 
                             <label class="text_f"   for=""> E-mail </label><br>  <!-- textbox email -->
-                            <input class=input_c maxlength="45" type="email" name="email" ><br>
+                            <input class=input_c maxlength="45" type="email" name="email"  value="exemplo@gmail.com"><br>
 
                                 <!-- email null --> 
                                 <?php

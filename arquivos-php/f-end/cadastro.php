@@ -129,7 +129,7 @@ session_start();
 
                             <!-- input telefone -->
                             <label for=""> Telefone </label><br>
-                            <input type="number" name="telephone" id=""><br>
+                            <input type="number" name="telephone" id=""  value="()_ _ _ _ _-_ _ _ _"><br>
 
                                         <!-- validação campo nome -->
                                         <?php
@@ -155,7 +155,7 @@ session_start();
 
                             <!-- input CEP -->
                             <label for=""> CEP </label><br>
-                            <input type="number" name="cep" id=""><br> 
+                            <input type="number" name="cep" id="" value="_____-___"><br> 
 
                                         <!-- validação campo cep -->
                                         <?php
@@ -185,7 +185,7 @@ session_start();
 
                             <!-- input CNPJ -->
                             <label for=""> CNPJ </label><br>
-                            <input type="number" name="cnpj" id=""><br>
+                            <input type="number" name="cnpj" id="" value="___________-___"><br>
 
                                         <!-- validação campo cnpj -->
                                         <?php

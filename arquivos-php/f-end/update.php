@@ -155,7 +155,7 @@ include('../../arquivos-php/b-end/conect.php');
                                         $id = $_GET['id'];
                                     
 
-                                        $query = "SELECT * FROM produtos where id_produto = '$id' ";
+                                        $query = "SELECT * FROM products where id = '$id' ";
                                         $result = mysqli_query($conexao, $query);
 
                                         if(!$result){
@@ -185,7 +185,7 @@ include('../../arquivos-php/b-end/conect.php');
                                             $newMarca = $_POST['newMarca'];
 
 
-                                            $query = "UPDATE produtos SET nome_produto='$newName', desc_produto='$newDesc', barCode_produto='$newCod', marca_produto='$newMarca' WHERE id_produto = '$id' ";
+                                            $query = "UPDATE products SET name='$newName', description='$newDesc', bar_code='$newCod', brand='$newMarca' WHERE id = '$id' ";
                                             $result = mysqli_query($conexao, $query);
 
                                             if(!$result){
@@ -218,7 +218,7 @@ include('../../arquivos-php/b-end/conect.php');
                                                         
 
                                                 <label class="text_f" for=""> Nome Produto </label><br>  <!-- textbox name -->
-                                                <input class="input_c" maxlength="45" type="text" name="newName" value="<?php echo $row['nome_produto']; ?>"><br>
+                                                <input class="input_c" maxlength="45" type="text" name="newName" value="<?php echo $row['name']; ?>"><br>
 
                                                      <!-- name null --> 
                                                     <?php
@@ -240,7 +240,7 @@ include('../../arquivos-php/b-end/conect.php');
                                                         ?>
 
                                                 <label class="text_f" for=""> Descrição Produto </label><br>  <!-- textbox descrição produto-->
-                                                <input class="input_c" maxlength="45" type="text" name="newDesc"  value="<?php echo $row['desc_produto']; ?>" ><br>
+                                                <input class="input_c" maxlength="45" type="text" name="newDesc"  value="<?php echo $row['description']; ?>" ><br>
 
 
                                                     <!-- desc null --> 
@@ -267,7 +267,7 @@ include('../../arquivos-php/b-end/conect.php');
                                             <div clas="input_p" id="input_p02">
 
                                                 <label class="text_f" for=""> Codigo de barra </label><br>  <!-- textbox codigo de barra -->
-                                                <input class="input_c" type="number" name="newCod" value="<?php echo $row['barCode_produto']; ?>" ><br>
+                                                <input class="input_c" type="number" name="newCod" value="<?php echo $row['bar_code']; ?>" ><br>
 
                                                     <!-- codBar null --> 
                                                     <?php
@@ -292,7 +292,7 @@ include('../../arquivos-php/b-end/conect.php');
 
 
                                                 <label class="text_f" for=""> Marca Produto </label><br>  <!-- textbox descrição produto-->
-                                                <input class="input_c" maxlength="45" type="text" name="newMarca" value="<?php echo $row['marca_produto']; ?>"><br>
+                                                <input class="input_c" maxlength="45" type="text" name="newMarca" value="<?php echo $row['brand']; ?>"><br>
 
                                                  <!-- marca null --> 
                                                         <?php

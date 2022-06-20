@@ -10,7 +10,7 @@ include('../../arquivos-php/b-end/conect.php');
         $id = $_GET['id'];
         
 
-        $query = "DELETE from produtos  where id_produto = '$id'";
+        $query = "DELETE from products  where id = '$id'";
 
         $result = mysqli_query($conexao, $query);
 

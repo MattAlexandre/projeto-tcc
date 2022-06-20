@@ -2,7 +2,7 @@
 define('HOST', '127.0.0.1');
 define('USUARIO', 'root');
 define('SENHA', '');
-define('DB', 't.c.c');
+define('DB', 'kipreco');
 
     $conexao = mysqli_connect(HOST,USUARIO,SENHA,DB) or die('erro de conect');
 

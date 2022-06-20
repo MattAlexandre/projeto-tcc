@@ -68,7 +68,7 @@ if(empty($_POST['aceptEmail']) || empty($_POST['aceptTerms'])  ){
 
     /*validação emal existente */
 
-$sql = "SELECT COUNT(*) as total FROM empresa WHERE email_empresa  = '$email' ";
+$sql = "SELECT COUNT(*) as total FROM companies WHERE email  = '$email' ";
 $result = mysqli_query($conexao, $sql);
 $row = mysqli_fetch_assoc($result);
 
@@ -80,13 +80,16 @@ if($row['total'] == 1){
 
 /*insert*/
                           
-$sql = "INSERT INTO empresa (cnpj_empresa, cep_empresa, nome_empresa, telefone_empresa, email_empresa, senha) VALUES ('$cnpj', '$cep', '$name', '$telephone', '$email', '$password')";
+$sql = "INSERT INTO companies (cnpj, zip_code, name, email, password, image, subscription_id) VALUES('$cnpj', '$cep', '$name', '$email', '$password','','')";
 
 /*validação insert*/
 
 if($conexao->query($sql) === TRUE){
      $_SESSION['status_cadastro'] = TRUE;
 } 
+else{
+    $_SESSION['status_not_cadastro'] = TRUE;
+}
 
 
 $conexao->close();

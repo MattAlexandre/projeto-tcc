@@ -207,7 +207,7 @@ include('../../arquivos-php/b-end/conect.php');
                                     <table> <!--tabela -->
 
                                     <?php
-                                        $consulta = "SELECT * FROM produtos";
+                                        $consulta = "SELECT * FROM products";
                                         $con = mysqli_query($conexao, $consulta);
                                        /* $result = mysqli_query($conexao, $query);*/
                                     ?>
@@ -227,29 +227,29 @@ include('../../arquivos-php/b-end/conect.php');
                                         <tr>
 
                                             <td>
-                                                <?php echo $dado['nome_produto']; ?> 
+                                                <?php echo $dado['name']; ?> 
                                             </td>
 
                                             <td>
-                                                <?php echo $dado['desc_produto']; ?>
+                                                <?php echo $dado['description']; ?>
                                             </td>
 
                                             <td>
-                                                <?php echo $dado['barCode_produto']; ?>
+                                                <?php echo $dado['bar_code']; ?>
                                             </td>
 
                                             <td> 
-                                                <?php echo $dado['marca_produto']; ?>
+                                                <?php echo $dado['brand']; ?>
                                             </td>
 
                                             <td>
-                                            <a href="../../arquivos-php/f-end/update.php?id=<?php echo $dado['id_produto']; ?> ">
+                                            <a href="../../arquivos-php/f-end/update.php?id=<?php echo $dado['id']; ?> ">
                                                 <ion-icon name="pencil-outline">
                                 
                                                 </ion-icon>
                                                     Editar 
                                                 </a>
-                                                <a href="../../arquivos-php/b-end/delete.php?id=<?php echo $dado['id_produto']; ?> ">
+                                                <a href="../../arquivos-php/b-end/delete.php?id=<?php echo $dado['id']; ?> ">
                                                 <ion-icon name="trash-outline">
                                 
                                                 </ion-icon>

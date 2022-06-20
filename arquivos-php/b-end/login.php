@@ -28,9 +28,7 @@ $password = mysqli_real_escape_string($conexao, $_POST['password']);
 /*delimitando caracteres*/
 
 
-
-
-$query = "SELECT email_empresa , senha FROM empresa WHERE email_empresa ='{$email}' AND senha ='{$password}' ";
+$query = "SELECT email , password FROM companies WHERE email ='{$email}' AND password ='{$password}' ";
 $result = mysqli_query($conexao, $query);
 $row = mysqli_num_rows($result);
 

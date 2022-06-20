@@ -59,7 +59,7 @@ if($row['total'] == 1){
 
 /*insert*/
                           
-$sql = " INSERT INTO produtos(nome_produto, desc_produto, barCode_produto, marca_produto) VALUES ('$name','$desc','$cod','$marca')";
+$sql = " INSERT INTO products (name, description, bar_code, brand, image) VALUES('$name','$desc','$cod','$marca', '')";
 /*validação insert*/
 
 if($conexao->query($sql) === TRUE){
