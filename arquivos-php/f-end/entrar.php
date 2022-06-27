@@ -198,8 +198,7 @@ session_start();
                         <h1> Cadastre-se agora em nossa plataforma </h1>
 
                         <p>
-                            O KiPreço muda e facilita o seu dia-a-dia.
-
+                            Seu Parceiro nas compras!
                         </p>
 
                     </div>

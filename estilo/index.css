@@ -575,7 +575,7 @@ main{
 }
 
 #div_m10{
-    background: var(--cor2) url('../imagens/img-fundo-entra.jpeg') center center no-repeat fixed;
+    background: var(--cor7) url('../imagens/img-fundo-entra.jpeg') center center no-repeat fixed;
     background-size: cover;
     height: 35vh;
     margin: 35px 15px;
@@ -991,8 +991,8 @@ footer{
     color: var(--cor1);
 }
 
-#div_footer_ss > img{
-    height: 15vh;
+#div_footer_ss > #img > a > img{
+    height: 10vh;
     width: 10vw;
     margin: auto;
     display: block;

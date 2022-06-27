@@ -30,7 +30,7 @@ include('../../arquivos-php/graficos/grafico02.php');
 
             <nav id="nav_topo">
 
-            <a href="../../arquivos-php/painel.php"><img src="../../imagens/img-ki-preco.png" alt="imagem-logo"></a>
+            <a href="../../arquivos-php/f-end/painel.php"><img src="../../imagens/img-ki-preco.png" alt="imagem-logo"></a>
 
             <ul>
 
@@ -147,20 +147,30 @@ include('../../arquivos-php/graficos/grafico02.php');
                         <!-- body -->
                         <section class="home_body">
                             
-                            <!--grafico--> 
+                            <!--grafico 1--> 
 
                             <div id="grafic">
 
                                 <!-- grafico 1 -->
-                                <div id="chart_div" style="width: 50px; height: 50px;"></div>
+                                <div id="chart_div" style="width: 70%; margin:auto;  height: 100%;"></div>
 
                             </div> 
 
+                        </section>
+
+                        <section class="home_body">
                             
+                            <!--grafico 2--> 
+
+                            <div id="grafic">
+
+                                <!-- grafico 2 -->
+                                <div id="piechart" style="width: 70%; margin:auto;  height: 100%;"></div>
+
+                            </div> 
 
                         </section>
                         
-
                 </section>
 
         </main>

@@ -61,10 +61,12 @@ if(empty($_POST['aceptEmail']) || empty($_POST['aceptTerms'])  ){
             
     $email     = mysqli_real_escape_string($conexao, trim($_POST['email']));
     $name      = mysqli_real_escape_string($conexao, trim($_POST['name']));
-    $telephone = mysqli_real_escape_string($conexao, trim($_POST['telephone']));
     $cep       = mysqli_real_escape_string($conexao, trim($_POST['cep']));
     $cnpj      = mysqli_real_escape_string($conexao, trim($_POST['cnpj']));
     $password  = mysqli_real_escape_string($conexao, trim($_POST['password']));
+
+
+    $var = $_POST['name_input'];
 
     /*validação emal existente */
 
@@ -80,7 +82,7 @@ if($row['total'] == 1){
 
 /*insert*/
                           
-$sql = "INSERT INTO companies (cnpj, zip_code, name, email, password, image, subscription_id) VALUES('$cnpj', '$cep', '$name', '$email', '$password','','')";
+$sql = " INSERT INTO companies (cnpj,  zip_code, name, email, password) VALUES ('$cnpj', '$cep', '$name', '$email', '$password') ";
 
 /*validação insert*/
 

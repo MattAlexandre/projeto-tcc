@@ -31,7 +31,7 @@
     --cor1:black;
     --cor2:white;
     --cor3:rgba(0, 0, 0, 0);
-    --cor4:#909aa7;
+    --cor4:#507997;
     --cor5:#507997;
     --cor6:#8dbcf5;
     --cor7:#c0d8f5;
@@ -40,7 +40,7 @@
 /*estilo corpo*/
 
 body{
-    background: var(--cor1) url("../imagens/img-fundo-entra.jpeg") center center no-repeat fixed;
+    background-color: var(--cor7);
     background-size: cover;
     
 }
@@ -223,7 +223,7 @@ body{
 
 #div_text > p{
     text-align: center;
-    font:normal bold 1vw var(--font2);
+    font:normal bold 2vw var(--font2);
     color: var(--cor4);
     margin:5px 5px;
 }

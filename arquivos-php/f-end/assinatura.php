@@ -150,7 +150,7 @@ session_start();
 
 
         <section id="img">
-            <img src="../../imagens/pancakes-logo-removebg-preview.png" alt="imagem-empresa">
+        <a href="../arquivos-html/pancakes.html"><img src="../imagens/pancakes-logo-removebg-preview.png" alt=""></a>
         </section>
 
     </section>

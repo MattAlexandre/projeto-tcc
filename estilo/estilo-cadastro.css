@@ -39,7 +39,7 @@
 }
 
 body{
-    background: var(--cor1) url("../imagens/img-fundo-entra.jpeg") center center no-repeat fixed;
+    background-color: var(--cor7);
     background-size: cover;
 }
 
