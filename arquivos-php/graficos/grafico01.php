@@ -13,7 +13,7 @@
 
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
-          ['Year', 'Sales', 'Expenses'],
+          ['Year', 'quantidade', 'cadastro'],
           ['2013',  1000,      400],
           ['2014',  1170,      460],
           ['2015',  660,       1120],
@@ -21,8 +21,8 @@
         ]);
 
         var options = {
-          title: 'Company Performance',
-          hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}},
+          title: 'Acesso',
+          hAxis: {title: 'acesso',  titleTextStyle: {color: '#333'}},
           vAxis: {minValue: 0}
         };
 
@@ -32,6 +32,6 @@
     </script>
 </head>
 <body>
-  
+        
 </body>
 </html>

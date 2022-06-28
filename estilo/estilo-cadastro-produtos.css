@@ -40,6 +40,10 @@
 
 /* home */ 
 
+body{
+    background-color:var(--cor5);
+}
+
 .produto{
     height: 100%;
     padding: 25px;

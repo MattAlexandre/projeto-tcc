@@ -92,7 +92,7 @@
     background: linear-gradient(to left,var(--cor7),var(--cor6),var(--cor7)) no-repeat;
     border-radius: 45px 45px 0px 0px;
     background-size: 300% 300%;
-    animation: gradient 10s ease alternate infinite;
+    animation: gradient 7s ease alternate infinite;
 }
 
 @keyframes gradient{

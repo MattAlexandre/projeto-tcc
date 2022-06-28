@@ -30,7 +30,7 @@ include('../../arquivos-php/b-end/conect.php');
 
             <nav id="nav_topo">
 
-            <a href="../../arquivos-php/f-end/painel.php"><img src="../../imagens/img-ki-preco.png" alt="imagem-logo"></a>
+            <a href="../../arquivos-php/f-end/painel.php"><img src="../../imagens/remo.png" alt="imagem-logo"></a>
 
             <ul>
 
@@ -88,7 +88,7 @@ include('../../arquivos-php/b-end/conect.php');
              <div class="sidebar">
 
                     <center>
-                        <img src="../../imagens/img-ki-preco.png" alt="">
+                        <img src="../../imagens/remo.png" alt="">
                         <h2> 
                             <?php
                             echo $_SESSION['email'];
